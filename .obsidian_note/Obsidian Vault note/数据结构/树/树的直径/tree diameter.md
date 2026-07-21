@@ -18,7 +18,7 @@
 ## 例题1：
 [543. 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/)
 
-![[Pasted image 20260708204006.png]]
+![配图](../../../../截图文件/Pasted image 20260708204006.png)
 ### 代码如下：
 ```c++
 /**
@@ -56,7 +56,7 @@ public:
 ## 例题2：
 [2385. 感染二叉树需要的总时间](https://leetcode.cn/problems/amount-of-time-for-binary-tree-to-be-infected/) **(这里有多解法)
 
-![[Pasted image 20260708203843.png]]
+![配图](../../../../截图文件/Pasted image 20260708203843.png)
 
 ### 思想一：—> 邻接表 + bfs
 

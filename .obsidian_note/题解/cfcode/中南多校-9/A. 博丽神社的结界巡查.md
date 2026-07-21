@@ -1,5 +1,5 @@
 https://codeforces.com/gym/695065/problem/A
-![[Pasted image 20260531211250.png]]
+![配图](../../../截图文件/Pasted image 20260531211250.png)
 
 ## 这题的关键就在于对于两个结界不重合，一定满足： x2 + y2 - r2 > x1 + x1 + r1
 

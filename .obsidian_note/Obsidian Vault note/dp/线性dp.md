@@ -11,7 +11,7 @@
 ## 例题1
 
 [D-小苯的序列涂色_牛客周赛 Round 137](https://ac.nowcoder.com/acm/contest/130843/D
-![[图1.png]]
+![配图](../../截图文件/图1.png)
 ```c++
 #include <bits/stdc++.h>
 using namespace std;
@@ -42,7 +42,7 @@ void solve() {
     return;
 } 
 ```
-![[Pasted image 20260330164458.png]]
+![配图](../../截图文件/Pasted image 20260330164458.png)
 **这题可以用上时间o(n * n); (通常是dp写法)
 
 **问题是：到第n个位置时的最小总代价；
