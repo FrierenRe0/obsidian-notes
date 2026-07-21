@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "算法比赛常见单词/单词/word.md",
+                "file": "题解/Leetcode/并查集/3710.最大划分因子.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "word"
+              "title": "3710.最大划分因子"
             }
           }
         ]
@@ -195,8 +195,10 @@
   },
   "active": "4851ccdfcc221c97",
   "lastOpenFiles": [
+    "题解/cfcode/中南多校-9/A. 博丽神社的结界巡查.md",
+    "题解/牛客/暑假训练营/2026/第1场/C-带权并查集.md",
+    "算法比赛常见单词/word.md",
     "算法比赛常见单词/单词/new_word.md",
-    "算法比赛常见单词/单词/word.md",
     "题解/Leetcode/二叉树/二叉树的遍历.md",
     "题解/Leetcode/并查集/3710.最大划分因子.md",
     "Obsidian Vault note/数论/叉积.md",
@@ -222,8 +224,6 @@
     "Obsidian Vault note/基础算法/分治递归.md",
     "Obsidian Vault note/基础算法/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
     "Obsidian Vault note/基础算法/位运算/异或.md",
-    "Obsidian Vault note/基础算法/前缀和，差分/差分.md",
-    "Obsidian Vault note/基础算法/前缀和，差分/前缀和.md",
     "Obsidian Vault note/截图文件/Pasted image 20260717194126.png",
     "题解/Leetcode/并查集",
     "Obsidian Vault note/数据结构/并查集/未命名",
