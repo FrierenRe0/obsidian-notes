@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "一些经典问题集合/矩阵的圈型遍历.md",
+                "file": "Obsidian Vault note/基础算法/滑窗和双指针.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "矩阵的圈型遍历"
+              "title": "滑窗和双指针"
             }
           }
         ],
@@ -210,6 +210,22 @@
   },
   "active": "9f51a7b7ae7b85b0",
   "lastOpenFiles": [
+    "Obsidian Vault note/基础算法/分治递归.md",
+    "Obsidian Vault note/基础算法/二分算法.md",
+    "屏幕截图 2025-12-26 093502.png",
+    "Obsidian Vault note/基础算法/滑窗和双指针.md",
+    "截图文件/Pasted image 20260423125228.png",
+    "截图文件/屏幕截图 2026-04-07 120732.png",
+    "截图文件/屏幕截图 2026-04-07 120732。png",
+    "截图文件/屏幕截图 2026-04-07 120732.md",
+    "截图文件/Pasted image 20260423211220.png",
+    "截图文件/Pasted image 20260424152154.png",
+    "截图文件/Pasted image 20260424170431.png",
+    "截图文件/Pasted image 20260423172327.png",
+    "截图文件/Pasted image 20260423120923.png",
+    "截图文件/Pasted image 20260420164445.png",
+    "截图文件/Pasted image 20260420164140.png",
+    "一些经典问题集合/矩阵的圈型遍历.md",
     "一些经典问题集合/矩阵覆盖问题.md",
     "一些经典问题集合/两个正方形的重叠关系.md",
     "Obsidian Vault note/数论/叉积.md",
@@ -219,21 +235,10 @@
     "Obsidian Vault note/图论/图论算法/最小生成树(Kruskal+Prim).md",
     "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
     "Obsidian Vault note/dp/背包.md",
-    "截图文件/屏幕截图 2026-04-07 120732.png",
-    "截图文件/Pasted image 20260423125228.png",
-    "截图文件/Pasted image 20260509145150.png",
-    "截图文件/Pasted image 20260720170355.png",
-    "截图文件/Pasted image 20260420144619.png",
-    "截图文件/Pasted image 20260414112919.png",
-    "屏幕截图 2026-04-07 120732.png",
-    "Pasted image 20260720170355.png",
-    "Pasted image 20260717194126.png",
-    "Pasted image 20260708204006.png",
     "题解/cfcode/中南多校-9/A. 博丽神社的结界巡查.md",
     "截图文件",
     "题解/天梯/模拟赛417/L 2-1.md",
     "题解/Leetcode/二叉树/二叉树的遍历.md",
-    "一些经典问题集合/矩阵的圈型遍历.md",
     "一些经典问题集合/Top-k问题.md",
     "一些经典问题集合/区间问题.md",
     "一些经典问题集合/截图文件",
@@ -246,16 +251,11 @@
     "未命名.base",
     "Obsidian Vault note/dp/树形dp.md",
     "Obsidian Vault note/dp/线性dp.md",
-    "Obsidian Vault note/图论/图论算法/DFS(联系于-stack)和并查集.md",
-    "Obsidian Vault note/图论/图论算法/Dijkstra(单源最短路).md",
-    "Obsidian Vault note/图论/图论算法/BFS(联系于-queue).md",
-    "Obsidian Vault note/图论/网格问题/坐标压缩(小技巧).md",
     "题解/Leetcode/并查集",
     "Obsidian Vault note/数据结构/并查集/未命名",
     "题解/牛客/暑假训练营/2026/第1场",
     "题解/牛客/暑假训练营/2026",
     "题解/牛客/暑假训练营/C-带权并查集",
-    "题解/牛客/暑假训练营",
-    "Obsidian Vault note/基础算法/排序"
+    "题解/牛客/暑假训练营"
   ]
 }
