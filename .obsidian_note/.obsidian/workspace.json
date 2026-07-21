@@ -193,8 +193,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "844b7a7b334775fe",
+  "active": "1cff170b5ea531be",
   "lastOpenFiles": [
+    "_encode_spaces.py",
+    "_encode_spaces.py.tmp.60884.8ff18a431a34",
     "一些经典问题集合/矩阵覆盖问题.md",
     "一些经典问题集合/两个正方形的重叠关系.md",
     "一些经典问题集合/区间问题.md",
@@ -239,7 +241,6 @@
     "算法比赛常见单词/word.md",
     "算法比赛常见单词/单词/new_word.md",
     "未命名.canvas",
-    "2026-07-21.md",
-    "题解/Leetcode/并查集"
+    "2026-07-21.md"
   ]
 }
