@@ -29,9 +29,9 @@ void solve() {
     count = n;
     p.resize(n + 1);  //based - 1
     sz.resize(n + 1); //based - 1
-    
+   
     for(int i = 0;i <= maxn;i++) p[i] = i;
-    
+   
     ....
     ....
 }

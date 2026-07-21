@@ -4,7 +4,7 @@
 //#using pp = pair<string,int>;两种写法任意
 struct cmp {
 	bool operator()(const pp& a,const pp& b) const {
-		//.....写排序逻辑 
+		//.....写排序逻辑
 	}
 };
 ```
@@ -12,10 +12,10 @@ struct cmp {
 但是注意：
 `priority_queue`的底层排序逻辑是大根堆，也就是说
 ```c++
-struct cmp { 
-	bool operator()(int a, int b) { 
-		return a < b; 
-	} 
+struct cmp {
+	bool operator()(int a, int b) {
+		return a < b;
+	}
 };
 ```
 
@@ -28,8 +28,8 @@ struct cmp {
 例如:[2-2 天梯赛的赛场安排 - 26天梯热身赛4](https://pintia.cn/problem-sets/2038803646327758848/exam/problems/type/7?problemSetProblemId=2038804504110510081)
 
 问题：
-**为什么 `priority_queue` 必须用 `struct` 写 `cmp`，不能像 `sort` 那样直接写函数？
-核心结论 
+**为什么 `priority_queue` 必须用 `struct` 写 `cmp`，不能像 `sort` 那样直接写函数？**
+核心结论
 - **`sort` 用的是函数**，实在调用变量名
 - **`priority_queue` 用的是** **类型（type）**
 
@@ -50,4 +50,3 @@ priority_queue<pp, vector<pp>, cmp>
 - `struct cmp` → **类型
 - **函数名 → 不是类型！**
 所以你**必须用 struct /class 包一层**，让它变成一个**类型**！
-

@@ -12,9 +12,9 @@ int d[4][2] = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
 int n, m, q;
 
 int fa[mxn],sz[mxn], req[mxn], a[mxn];
-//int fa[mxn]; // 并查集父节点 
-//int req[mxn]; // 点权：从该点出发吃完整个连通块需要的最小初始体型 
-//int sz[mxn]; // 集合总鱼数，仅根节点有效 
+//int fa[mxn]; // 并查集父节点
+//int req[mxn]; // 点权：从该点出发吃完整个连通块需要的最小初始体型
+//int sz[mxn]; // 集合总鱼数，仅根节点有效
 //int a[mxn]; // 格子鱼体型，只有集合根的r代表连通块最大鱼体型
 
 int find(int x)
@@ -67,7 +67,7 @@ void solve()
         {
             int v;
             cin >> v;
-            
+
             a[getid(x, y)] = v;
             for (auto &add : d)
             {

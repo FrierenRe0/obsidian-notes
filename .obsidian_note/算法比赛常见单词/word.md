@@ -8,7 +8,7 @@ cube.立方体
 derived起源于，来自
 adjacent 相邻的
 Permutation 排列
-corresponding 
+corresponding
 at each iteration
 Fraction分数
 optimally. 最优地
@@ -174,7 +174,7 @@ configuration 配置，布置
 suffix 后缀
 
 # 5.2
- trivially 显然地 
+ trivially 显然地
  lowercase Latin characters 小写拉丁字母。
  subset 子集
  excursion 短途旅行；游览

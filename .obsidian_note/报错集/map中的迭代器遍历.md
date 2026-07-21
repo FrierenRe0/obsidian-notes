@@ -1,7 +1,7 @@
 
 ## 1. 你的错误代码
 
-```
+```c++
 for(auto it = mp.rbegin();it != mp.rend();it--)  // ❌ 错误
 ```
 
@@ -17,7 +17,7 @@ for(auto it = mp.rbegin();it != mp.rend();it--)  // ❌ 错误
 
 ## 3. 正确写法（必须 ++）
 
-```
+```c++
 for(auto it = mp.rbegin(); it != mp.rend(); it++)  // ✅ 正确
     cout << it->first << " ";
 ```
@@ -36,7 +36,7 @@ for(auto it = mp.rbegin(); it != mp.rend(); it++)  // ✅ 正确
 ## 5. 完整正确示例
 
 
-```
+```c++
 map<int,int> mp = {{1,2},{3,4},{5,6}};
 
 // 从大到小输出 5 3 1
@@ -46,7 +46,7 @@ for(auto it = mp.rbegin(); it != mp.rend(); it++){
 ```
 
 `cout:`
-```
+```c++
 5 3 1
 ```
 
@@ -55,7 +55,7 @@ for(auto it = mp.rbegin(); it != mp.rend(); it++){
 ## 总结（超级重要）
 
 
-```
+```c++
 it++   ✅ 反向迭代器正确写法
 it--   ❌ 直接死循环、乱码、崩溃
 ```

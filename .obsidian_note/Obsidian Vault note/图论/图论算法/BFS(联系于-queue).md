@@ -19,7 +19,7 @@ int bfs(vector<vector<char>>& maze, vector<int>& entrance) {
         // 遍历当前层所有节点（逐层扩散）
         for (int i = 0; i < len; i++) {
             auto [x, y] = q.front();
-            q.pop(); // 出队 = 处理当前节点	
+            q.pop(); // 出队 = 处理当前节点
             // 业务逻辑：判断是否到达目标（如迷宫出口、终点）
             if ((x == 0 || x == m-1 || y == 0 || y == n-1) && (x != sx || y != sy)) {
                 return step; // 找到最短路径，直接返回步数

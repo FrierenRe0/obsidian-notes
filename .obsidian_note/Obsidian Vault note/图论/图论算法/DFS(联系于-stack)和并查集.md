@@ -27,7 +27,7 @@ void dfsStack(vector<vector<int>>& grid, int startX, int startY) {
 }
 ```
 
-## DFS递归模板（以二维网格/迷宫为例，可适配树、图等结构）<推荐>
+**DFS递归模板（以二维网格/迷宫为例，可适配树、图等结构）<推荐>**
 ```c++
 const int DIRS[4][2] = {{-1,0},{1,0},{0,-1},{0,1}}; // 上下左右四方向
 int m, n; // 全局/类内变量，存储网格行、列数
@@ -51,4 +51,3 @@ void dfs(vector<vector<int>>& grid, int x, int y) {
     // visited[x][y] = false; // 例：排列组合、所有路径问题需开启
 }
 ```
-

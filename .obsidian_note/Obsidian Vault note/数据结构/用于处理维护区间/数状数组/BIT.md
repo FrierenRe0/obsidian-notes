@@ -1,6 +1,6 @@
 ![配图](../../../../截图文件/Pasted%20image%2020260514115706.png)
 
-**提问：
+**提问**：
 - 在什么情况下我们可以用到树状数组，也就是说树状数组可以解决一个什么问题；
 - 在去理解树状数组的基本算法原理；
 	 关键是去理解 ：
@@ -10,7 +10,7 @@
      d
 [307. 区域和检索 - 数组可修改 - 力扣（LeetCode）](https://leetcode.cn/problems/range-sum-query-mutable/solutions/2524481/dai-ni-fa-ming-shu-zhuang-shu-zu-fu-shu-lyfll/)
 
-**树状数组的模板：
+**树状数组的模板**：
 ```c++
 vector<int> tree;
 void update(int i,int add) {

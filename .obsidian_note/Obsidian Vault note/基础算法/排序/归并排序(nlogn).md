@@ -13,12 +13,12 @@
 2. **治（合并）**：将两个有序小数组，合并成一个大有序数组
 
 
-### 这里就用模板题演式归并排序：
+**这里就用模板题演式归并排序**：
 #### [排序数组](https://leetcode.cn/problems/sort-an-array/)
 归并排序代码如下：
 ```c++
 class Solution {
-public: 
+public:
     void merge(vector<int>& nums,int l,int r,int mid) {
         vector<int> tmp;
         tmp.reserve(r - l + 1);

@@ -19,7 +19,7 @@ using namespace std;
 const int mod = 1e9 + 7;
 const int N = 3e5 + 7;
 
-void solve() { 
+void solve() {
     int n;
     cin >> n;
     vector<int> a(n + 1),acc(n + 1);
@@ -40,7 +40,7 @@ void solve() {
     }
     cout << dp[n] << endl;
     return;
-} 
+}
 ```
 ![配图](../../截图文件/Pasted%20image%2020260330164458.png)
 **这题可以用上时间o(n * n); (通常是dp写法)
@@ -52,4 +52,3 @@ void solve() {
 `acc[i] ^ acc[j - 1]`表示的是从j到i的异或和；
 mn这是将左端点向左枚举，同时维护dp(min)值，因为每一个块可以重复染色；
 将左区间枚举完成，维护min情况，递推到第n层即可；
-
