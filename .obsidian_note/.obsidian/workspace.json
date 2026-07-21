@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/dp/线性dp.md",
+                "file": "一些经典问题集合/矩阵的圈型遍历.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "线性dp"
+              "title": "矩阵的圈型遍历"
             }
           }
         ]
@@ -195,6 +195,8 @@
   },
   "active": "844b7a7b334775fe",
   "lastOpenFiles": [
+    "一些经典问题集合/矩阵覆盖问题.md",
+    "Obsidian Vault note/dp/线性dp.md",
     "Obsidian Vault note/dp/树形dp.md",
     "Obsidian Vault note/dp/背包.md",
     "Obsidian Vault note/图论/网格问题/坐标压缩(小技巧).md",
@@ -219,8 +221,6 @@
     "Obsidian Vault note/数据结构/用于处理维护区间/ST表/st表.md",
     "Obsidian Vault note/数据结构/树/树的直径/tree diameter.md",
     "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
-    "Obsidian Vault note/数据结构/堆/priority_queue内部定义.md",
-    "Obsidian Vault note/数据结构/堆/堆（思想）排序.md",
     "_encode_spaces.py",
     "_encode_spaces.py.tmp.60884.8ff18a431a34",
     "截图文件/Pasted image 20260414112900.png",
