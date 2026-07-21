@@ -1,0 +1,12 @@
+# Obsidian 本地布局、插件缓存，不同设备不同步
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/obsidian-git/data.json
+.obsidian/cache
+# 回收站、系统垃圾文件
+.trash/
+.DS_Store
+# 临时文件、缓存
+*.tmp
+*.log
+.obsidian_note/
