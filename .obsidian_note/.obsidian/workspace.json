@@ -193,17 +193,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1cff170b5ea531be",
+  "active": "844b7a7b334775fe",
   "lastOpenFiles": [
+    "一些经典问题集合/矩阵覆盖问题.md",
+    "一些经典问题集合/区间问题.md",
+    "一些经典问题集合/两个正方形的重叠关系.md",
+    "Obsidian Vault note/图论/图论算法/floyd(多源最短路).md",
+    "Obsidian Vault note/图论/图论算法/Dijkstra(单源最短路).md",
+    "Obsidian Vault note/图论/图论算法/DFS(联系于-stack)和并查集.md",
+    "Obsidian Vault note/图论/图论算法/最小生成树(Kruskal+Prim).md",
+    "Obsidian Vault note/图论/图论算法/BFS(联系于-queue).md",
+    "一些经典问题集合/矩阵的圈型遍历.md",
     "_encode_spaces.py",
     "_encode_spaces.py.tmp.60884.8ff18a431a34",
-    "一些经典问题集合/矩阵覆盖问题.md",
-    "一些经典问题集合/两个正方形的重叠关系.md",
-    "一些经典问题集合/区间问题.md",
     "截图文件/Pasted image 20260414112900.png",
     "截图文件/Pasted image 20260414112324.png",
     "截图文件/Pasted image 20260408170920.png",
-    "一些经典问题集合/矩阵的圈型遍历.md",
     "_fix_sizes.py",
     "_fix_sizes.py.tmp.60884.f5f3e3a8bf27",
     "_convert_images.py",
@@ -229,18 +234,13 @@
     "Obsidian Vault note/数论/埃式筛 线性筛.md",
     "Obsidian Vault note/数论/isprime(判断质数).md",
     "Obsidian Vault note/数论/费马小定理.md",
-    "Obsidian Vault note/图论/图论算法/最小生成树(Kruskal+Prim).md",
     "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
     "Obsidian Vault note/dp/背包.md",
     "截图文件",
     "题解/天梯/模拟赛417/L 2-1.md",
     "题解/Leetcode/二叉树/二叉树的遍历.md",
-    "一些经典问题集合/截图文件",
     "题解/Leetcode/并查集/3710.最大划分因子.md",
     "题解/牛客/暑假训练营/2026/第1场/C-带权并查集.md",
-    "算法比赛常见单词/word.md",
-    "算法比赛常见单词/单词/new_word.md",
-    "未命名.canvas",
-    "2026-07-21.md"
+    "未命名.canvas"
   ]
 }
