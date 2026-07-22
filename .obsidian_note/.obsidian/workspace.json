@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
+                "file": "Obsidian Vault note/数论/叉积.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "按位取反、按位与、按位或、按位异或满足的运算法则"
+              "title": "叉积"
             }
           }
         ]
@@ -195,6 +195,7 @@
   },
   "active": "844b7a7b334775fe",
   "lastOpenFiles": [
+    "Obsidian Vault note/数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
     "Obsidian Vault note/数论/位运算/线性基.md",
     "Obsidian Vault note/数论/isprime(判断质数).md",
     "Obsidian Vault note/数论/费马小定理.md",
@@ -202,7 +203,6 @@
     "Obsidian Vault note/数论/埃式筛 线性筛.md",
     "Obsidian Vault note/图论/图论算法/floyd(多源最短路).md",
     "题解/Leetcode/格雷码.md",
-    "Obsidian Vault note/数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
     "一些经典问题集合/矩阵的圈型遍历.md",
     "一些经典问题集合/区间问题.md",
     "一些经典问题集合/Top-k问题.md",
