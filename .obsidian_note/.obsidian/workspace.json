@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "一些经典问题集合/矩阵的圈型遍历.md",
+                "file": "Obsidian Vault note/数论/位运算/线性基.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "矩阵的圈型遍历"
+              "title": "线性基"
             }
           }
         ]
@@ -195,6 +195,11 @@
   },
   "active": "844b7a7b334775fe",
   "lastOpenFiles": [
+    "一些经典问题集合/矩阵的圈型遍历.md",
+    "Obsidian Vault note/数论/位运算/线性基.md",
+    "一些经典问题集合/区间问题.md",
+    "一些经典问题集合/Top-k问题.md",
+    "报错集/map中的迭代器遍历.md",
     "一些经典问题集合/矩阵覆盖问题.md",
     "Obsidian Vault note/dp/线性dp.md",
     "Obsidian Vault note/dp/树形dp.md",
@@ -216,11 +221,6 @@
     "Obsidian Vault note/数据结构/ordered_set/ordered_set(底层红黑树 - 平衡二叉搜索树).md",
     "Obsidian Vault note/数据结构/用于处理维护区间/ST表/模板例题.md",
     "Obsidian Vault note/数据结构/用于处理维护区间/线段树/Segment Tree.md",
-    "Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md",
-    "Obsidian Vault note/数据结构/树/二叉树转化.md",
-    "Obsidian Vault note/数据结构/用于处理维护区间/ST表/st表.md",
-    "Obsidian Vault note/数据结构/树/树的直径/tree diameter.md",
-    "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
     "_encode_spaces.py",
     "_encode_spaces.py.tmp.60884.8ff18a431a34",
     "截图文件/Pasted image 20260414112900.png",
