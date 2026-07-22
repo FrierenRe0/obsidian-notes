@@ -6,6 +6,9 @@
 # 回收站、系统垃圾文件
 .trash/
 .DS_Store
+# Obsidian Vault note - 不上传GitHub
+.obsidian_note/Obsidian Vault note/
+
 # 临时文件、缓存
 *.tmp
 *.log
