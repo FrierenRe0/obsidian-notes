@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
+                "file": "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "树上倍增"
+              "title": "B - Bitwise Maximization"
             }
           }
         ]
@@ -195,12 +195,13 @@
   },
   "active": "844b7a7b334775fe",
   "lastOpenFiles": [
+    "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
+    "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
+    "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
     "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md.tmp.57532.458ce0059d51",
     "Obsidian Vault note/数据结构/用于处理维护区间/线段树/Segment Tree.md",
     "Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md",
-    "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
     "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md.tmp.57532.7a8058183f48",
-    "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
     "Obsidian Vault note/基础算法/二分算法.md",
     "Obsidian Vault note/基础算法/分治递归.md",
     "Obsidian Vault note/基础算法/排序/插入排序 (n).md",
@@ -234,7 +235,6 @@
     "_fix_sizes.py.tmp.60884.f5f3e3a8bf27",
     "_convert_images.py",
     "_convert_images.py.tmp.60884.2edef05f9262",
-    "未命名.base",
     "截图文件/图1.png",
     "截图文件/屏幕截图 2026-04-07 120732.png",
     "截图文件/Pasted image 20260414111412.png",
