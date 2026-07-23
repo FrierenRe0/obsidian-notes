@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
+                "file": "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "G - GCD graph"
+              "title": "树上倍增"
             }
           }
         ]
@@ -195,7 +195,11 @@
   },
   "active": "844b7a7b334775fe",
   "lastOpenFiles": [
+    "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md.tmp.57532.458ce0059d51",
+    "Obsidian Vault note/数据结构/用于处理维护区间/线段树/Segment Tree.md",
+    "Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md",
     "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
+    "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md.tmp.57532.7a8058183f48",
     "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
     "Obsidian Vault note/基础算法/二分算法.md",
     "Obsidian Vault note/基础算法/分治递归.md",
@@ -221,9 +225,6 @@
     "题解/Leetcode/格雷码.md",
     "一些经典问题集合/矩阵的圈型遍历.md",
     "一些经典问题集合/区间问题.md",
-    "一些经典问题集合/Top-k问题.md",
-    "报错集/map中的迭代器遍历.md",
-    "一些经典问题集合/矩阵覆盖问题.md",
     "_encode_spaces.py",
     "_encode_spaces.py.tmp.60884.8ff18a431a34",
     "截图文件/Pasted image 20260414112900.png",
@@ -240,7 +241,6 @@
     "截图文件/Pasted image 20260610201408.png",
     "截图文件/Pasted image 20260509143105.jpg",
     "截图文件/Pasted image 20260519121152.png",
-    "未命名 1.base",
     "未命名.canvas"
   ]
 }
