@@ -1,4 +1,5 @@
 这是一道非常经典的线性基（Linear Basis）在异或性质上的变形应用题。你的核心代码逻辑和位运算转化方向完全正确，且切中了问题的最关键突破口——**区分“独立位”与“绑定位”**。
+
 ## 题目大意
 
 给定一个包含 $n$ 个非负整数的序列，要求将所有数字划分到两个多重集（Multiset）$S_1$ 和 $S_2$ 中。
@@ -30,7 +31,7 @@ $$X_1 \oplus X_2 = S_{all}$$
 
 - 对于 $S_{all}$ 为 1 的位：贡献固定为 $S_{all}$。
     
-- 对于 $S_{all}$ 为 0 的位：我们要尽可能让 $X_1$（或 $X_2$）在这些位上为 1。如果 $X_1$ 在 these 位上的最大异或和为 $M_x$，那么两者的共同贡献就是 $2 \times M_x$。
+- 对于 $S_{all}$ 为 0 的位：我们要尽可能让 $X_1$（或 $X_2$）在这些位上为 1。如果 $X_1$ 在这些位上的最大异或和为 $M_x$，那么两者的共同贡献就是 $2 \times M_x$。
     
 
 因此，最终的答案公式可以转化为：
@@ -47,11 +48,12 @@ $$M_x = x_1 \mathbin{\&} y_1 = x_1 \mathbin{\&} (\sim s)$$
 
 这里我来解释一下，为什么存在 $x_1 \mathbin{\&} y_1 = x_1 \mathbin{\&} (\sim s)$
 
-对于 $x_1$ 和 $y_1$ 无非就是在二进制位运算中无非就是两种情况；
+对于 $x_1$ 和 $y_1$ 在二进制位运算中无非就是两种情况：
 
-- 当 $\text{bit}[x_1] = \text{bit}[y_1]$ 时，这里此时的 $\text{bit}[x_1] \mathbin{\&} \text{bit}[y_1] = \text{bit}[x_1]$，这里对应的 $\text{bit}[S_{all}] = 0$，反之，$\sim \text{bit}[S_{all}] = 1$，这可以推算出 $\text{bit}[x_1] \mathbin{\&} (\sim \text{bit}[S_{all}]) = \text{bit}[x_1]$，合理满足上述说法
+- 当 $\text{bit}[x_1] = \text{bit}[y_1]$ 时，这里此时的 $\text{bit}[x_1] \mathbin{\&} \text{bit}[y_1] = \text{bit}[x_1]$，这里对应的 $\text{bit}[S_{all}] = 0$，反之，$\sim \text{bit}[S_{all}] = 1$，这可以推算出 $\text{bit}[x_1] \mathbin{\&} (\sim \text{bit}[S_{all}]) = \text{bit}[x_1]$，合理满足上述说法。
     
-- 当 $\text{bit}[x_1] \neq \text{bit}[y_1]$ 时，这里此时的 $\text{bit}[x_1] \mathbin{\&} \text{bit}[y_1] = 0$，这里对应的 $\text{bit}[S_{all}] = 1$，反之，$\sim \text{bit}[S_{all}] = 0$，这可以推算出 $\text{bit}[x_1] \mathbin{\&} (\sim \text{bit}[S_{all}]) = 0$，合理满足上述说法
+- 当 $\text{bit}[x_1] \neq \text{bit}[y_1]$ 时，这里此时的 $\text{bit}[x_1] \mathbin{\&} \text{bit}[y_1] = 0$，这里对应的 $\text{bit}[S_{all}] = 1$，反之，$\sim \text{bit}[S_{all}] = 0$，这可以推算出 $\text{bit}[x_1] \mathbin{\&} (\sim \text{bit}[S_{all}]) = 0$，合理满足上述说法。
+    
 
 继续对 $M_x$ 进行转化：
 
