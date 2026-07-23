@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
+                "file": "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B - Bitwise Maximization"
+              "title": "G - GCD graph"
             }
           }
         ]
@@ -195,11 +195,11 @@
   },
   "active": "844b7a7b334775fe",
   "lastOpenFiles": [
+    "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
     "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
     "Obsidian Vault note/基础算法/二分算法.md",
     "Obsidian Vault note/基础算法/分治递归.md",
     "Obsidian Vault note/基础算法/排序/插入排序 (n).md",
-    "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
     "题解/牛客/暑假训练营/2026/第1场/C - 带权并查集.md",
     "Obsidian Vault note/数论/组合数学/容斥原理.md",
     "题解/牛客/暑假训练营/2026/第2场",
