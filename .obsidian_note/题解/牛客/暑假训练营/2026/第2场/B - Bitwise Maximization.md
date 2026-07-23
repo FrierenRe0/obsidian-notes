@@ -40,26 +40,26 @@ $$\text{Max Score} = S_{all} + 2 \times M_x$$
 
 ### 3. 如何最大化 $M_x$
 
-现在已知 $M_x = x_1 \& y_1$。
+现在已知 $M_x = x_1 \land y_1$。
 
 我们直接处理 $M_x$ 不好弄，可以将 $M_x$ 进行转化：
 
-$$M_x = x_1 \& y_1 = x_1 \& (\sim s)$$
+$$M_x = x_1 \land y_1 = x_1 \land (\sim s)$$
 
-这里我来解释一下，为什么存在 $x_1 \& y_1 = x_1 \& (\sim s)$：
+这里我来解释一下，为什么存在 $x_1 \land y_1 = x_1 \land (\sim s)$：
 
 对于 $x_1$ 和 $y_1$ 在二进制位运算中无非就是两种情况：
 
-- 当 $\text{bit}[x_1] = \text{bit}[y_1]$ 时，这里此时的 $\text{bit}[x_1] \& \text{bit}[y_1] = \text{bit}[x_1]$，这里对应的 $\text{bit}[S_{all}] = 0$，反之，$\sim \text{bit}[S_{all}] = 1$，这可以推算出 $\text{bit}[x_1] \& (\sim \text{bit}[S_{all}]) = \text{bit}[x_1]$，合理满足上述说法。
+- 当 $\text{bit}[x_1] = \text{bit}[y_1]$ 时，这里此时的 $\text{bit}[x_1] \land \text{bit}[y_1] = \text{bit}[x_1]$，这里对应的 $\text{bit}[S_{all}] = 0$，反之，$\sim \text{bit}[S_{all}] = 1$，这可以推算出 $\text{bit}[x_1] \land (\sim \text{bit}[S_{all}]) = \text{bit}[x_1]$，合理满足上述说法。
     
-- 当 $\text{bit}[x_1] \neq \text{bit}[y_1]$ 时，这里此时的 $\text{bit}[x_1] \& \text{bit}[y_1] = 0$，这里对应的 $\text{bit}[S_{all}] = 1$，反之，$\sim \text{bit}[S_{all}] = 0$，这可以推算出 $\text{bit}[x_1] \& (\sim \text{bit}[S_{all}]) = 0$，合理满足上述说法。
+- 当 $\text{bit}[x_1] \neq \text{bit}[y_1]$ 时，这里此时的 $\text{bit}[x_1] \land \text{bit}[y_1] = 0$，这里对应的 $\text{bit}[S_{all}] = 1$，反之，$\sim \text{bit}[S_{all}] = 0$，这可以推算出 $\text{bit}[x_1] \land (\sim \text{bit}[S_{all}]) = 0$，合理满足上述说法。
     
 
 继续对 $M_x$ 进行转化：
 
-$$M_x = (x_1 \& (\sim s)) \oplus (x_2 \& (\sim s)) \oplus (x_3 \& (\sim s)) \oplus \dots \oplus (x_k \& (\sim s))$$
+$$M_x = (x_1 \land (\sim s)) \oplus (x_2 \land (\sim s)) \oplus (x_3 \land (\sim s)) \oplus \dots \oplus (x_k \land (\sim s))$$
 
-这里我们把 $(x_i \& (\sim s))$ 看成一个整体 $t$，求解其最大异或和可以用到线性基（对应的时间复杂度为 $O(n \times m)$，这里的 $m$ 对应为 $t$ 的二进制长度，相当于把这里的时间复杂度从 $O(n^2)$ 降到了 $O(n)$）；
+这里我们把 $(x_i \land (\sim s))$ 看成一个整体 $t$，求解其最大异或和可以用到线性基（对应的时间复杂度为 $O(n \times m)$，这里的 $m$ 对应为 $t$ 的二进制长度，相当于把这里的时间复杂度从 $O(n^2)$ 降到了 $O(n)$）；
 
 之后就是创建线性基 + 求最大异或和的板子了，之后就用代码展示。
 
