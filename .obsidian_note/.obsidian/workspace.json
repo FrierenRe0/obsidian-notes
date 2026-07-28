@@ -207,9 +207,12 @@
   },
   "active": "ba50335858897656",
   "lastOpenFiles": [
-    "Pasted image 20260728223938.png",
-    "Obsidian Vault note/数论/组合数学/预处理 - 组合数.md",
+    "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md",
+    "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
+    "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
     "题解/牛客/暑假训练营/2026/第3场/A - Bitmask.md",
+    "截图文件/Pasted image 20260728223938.png",
+    "Obsidian Vault note/数论/组合数学/预处理 - 组合数.md",
     "Obsidian Vault note/数论/组合数学/容斥原理.md",
     "Obsidian Vault note/数论/费马小定理.md",
     "Obsidian Vault note/数论/叉积.md",
@@ -231,13 +234,11 @@
     "Obsidian Vault note/图论/图论算法/拓扑排序（相当于时加了条件的BFS）.md",
     "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
     "Obsidian Vault note/数论/isprime(判断质数).md",
-    "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md",
     "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md.tmp.33008.1bc473021dce",
     "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md.tmp.33008.a90adcdfd8ac",
     "截图文件/Pasted image 20260725141031.png",
     "题解/牛客/暑假训练营/2026/第3场",
     "Obsidian Vault note/图论/网格问题/坐标压缩(小技巧).md",
-    "Obsidian Vault note/图论/图论算法/floyd(多源最短路).md",
     "未命名 1.base",
     "未命名.base",
     "Obsidian Vault note/数据结构/树/树的遍历",
@@ -252,7 +253,6 @@
     "截图文件/屏幕截图 2026-04-07 120732.png",
     "截图文件/Pasted image 20260414111412.png",
     "截图文件/Pasted image 20260610201408.png",
-    "截图文件/Pasted image 20260509143105.jpg",
     "未命名.canvas"
   ]
 }
