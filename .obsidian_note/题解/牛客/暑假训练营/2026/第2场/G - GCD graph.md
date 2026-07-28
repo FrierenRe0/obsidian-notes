@@ -245,7 +245,7 @@ int split = max(l,n - B);
     //将区间一分为二
     //
     //  ----------|-------------
-    //  |         |            |fadwdawdaw
+    //  |         |            |
     //  l         split        r     
     //
 if(split < n) {
