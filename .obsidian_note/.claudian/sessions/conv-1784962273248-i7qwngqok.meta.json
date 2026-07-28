@@ -4,22 +4,21 @@
   "title": "Convert Markdown bold to LaTeX for GitHub",
   "titleGenerationStatus": "success",
   "createdAt": 1784962273250,
-  "updatedAt": 1784962429092,
-  "lastResponseAt": 1784962429092,
+  "updatedAt": 1785253019488,
+  "lastResponseAt": 1785253019488,
   "sessionId": "ac15fb93-1695-46be-9c7d-33fa5141d0dd",
   "selectedModel": "haiku",
   "providerState": {
     "providerSessionId": "ac15fb93-1695-46be-9c7d-33fa5141d0dd"
   },
-  "currentNote": "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md",
   "usage": {
     "model": "haiku",
-    "inputTokens": 1058,
+    "inputTokens": 305,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 41856,
+    "cacheReadInputTokens": 52352,
     "contextWindow": 200000,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 42914,
-    "percentage": 21
+    "contextTokens": 52657,
+    "percentage": 26
   }
 }
