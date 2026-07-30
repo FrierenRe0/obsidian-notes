@@ -1,3 +1,9 @@
+## 相关链接
+题卷：[2026牛客暑期多校训练营_3.pdf](file:///C:/Users/l'x/Downloads/2026%E7%89%9B%E5%AE%A2%E6%9A%91%E6%9C%9F%E5%A4%9A%E6%A0%A1%E8%AE%AD%E7%BB%83%E8%90%A5_3.pdf)
+题目链接：[A-Bitmask_2026牛客暑期多校训练营3](https://ac.nowcoder.com/acm/contest/133878/A)
+
+## 题目大意：
+
 ![](Pasted%20image%2020260728223938.png)
 
 ## 一 . 思路：

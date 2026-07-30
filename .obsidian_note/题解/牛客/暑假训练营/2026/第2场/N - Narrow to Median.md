@@ -1,3 +1,8 @@
+## 相关链接：
+题卷查看：[2026_暑期多校_2.pdf](file:///C:/Users/l'x/Downloads/2026_%E6%9A%91%E6%9C%9F%E5%A4%9A%E6%A0%A1_2.pdf)
+题目链接：[N-Narrow to Median_2026牛客暑期多校训练营2](https://ac.nowcoder.com/acm/contest/133877/N)
+## 题目大意：
+
 ![](../../../../../截图文件/Pasted%20image%2020260725141031.png)
 
 ## 本题大意：

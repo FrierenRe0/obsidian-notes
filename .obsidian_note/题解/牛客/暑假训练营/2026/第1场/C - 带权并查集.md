@@ -1,3 +1,8 @@
+## 相关链接
+题卷查看：[2026+牛客暑期多校训练营1.pdf](file:///C:/Users/l'x/Downloads/2026+%E7%89%9B%E5%AE%A2%E6%9A%91%E6%9C%9F%E5%A4%9A%E6%A0%A1%E8%AE%AD%E7%BB%83%E8%90%A5+1.pdf)
+题目链接：[C-Fish Eating_2026牛客暑期多校训练营1](https://ac.nowcoder.com/acm/contest/133876/C)
+
+## 题目大意：
 [C-Fish Eating_2026牛客暑期多校训练营1](https://ac.nowcoder.com/acm/contest/133876/C)
 ![配图](../../../../../截图文件/Pasted%20image%2020260717194126.png)
 
