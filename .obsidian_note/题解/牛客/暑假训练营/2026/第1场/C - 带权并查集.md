@@ -3,7 +3,7 @@
 题目链接：[C-Fish Eating_2026牛客暑期多校训练营1](https://ac.nowcoder.com/acm/contest/133876/C)
 
 ## 题目大意：
-[C-Fish Eating_2026牛客暑期多校训练营1](https://ac.nowcoder.com/acm/contest/133876/C)
+
 ![配图](../../../../../截图文件/Pasted%20image%2020260717194126.png)
 
 ```c++

@@ -11,14 +11,12 @@
             "id": "ba50335858897656",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "题解/牛客/暑假训练营/2026/第3场/L - Uphill Duel.md",
-                "mode": "source",
-                "source": false
+                "file": "截图文件/Pasted image 20260728223938.png"
               },
-              "icon": "lucide-file",
-              "title": "L - Uphill Duel"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260728223938"
             }
           }
         ]
@@ -205,17 +203,23 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "ba50335858897656",
+  "active": "1cff170b5ea531be",
   "lastOpenFiles": [
-    "题解/牛客/暑假训练营/2026/第3场/K - Turn-by-Turn Navigation.md",
-    "题解/牛客/暑假训练营/2026/第3场/L - Uphill Duel.md",
+    "截图文件/Pasted image 20260725141031.png",
+    "截图文件/Pasted image 20260728223938.png",
+    "截图文件/Pasted image 20260730152118.png",
+    "截图文件/Pasted image 20260730152242.png",
+    "截图文件/Pasted image 20260730154436.png",
     "题解/牛客/暑假训练营/2026/第3场/A - Bitmask.md",
-    "题解/牛客/暑假训练营/2026/第4场/B - Quadratic Residue.md",
     "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md",
     "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
     "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
-    "Obsidian Vault note/数据结构/并查集/带权并查集.md",
+    "题解/牛客/暑假训练营/2026/第1场/C - 带权并查集.md",
+    "题解/牛客/暑假训练营/2026/第3场/L - Uphill Duel.md",
+    "题解/牛客/暑假训练营/2026/第4场/B - Quadratic Residue.md",
     "题解/牛客/暑假训练营/2026/第4场/I - Rounddog II.md",
+    "题解/牛客/暑假训练营/2026/第3场/K - Turn-by-Turn Navigation.md",
+    "Obsidian Vault note/数据结构/并查集/带权并查集.md",
     "Obsidian Vault note/图论/图论算法/最小生成树(Kruskal+Prim).md",
     "Obsidian Vault note/图论/图论算法/拓扑排序（相当于时加了条件的BFS）.md",
     "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
@@ -231,22 +235,15 @@
     "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
     "Obsidian Vault note/数据结构/树/树的遍历/二叉树转化.md",
     "Obsidian Vault note/数据结构/并查集/Union and find.md",
-    "Obsidian Vault note/基础算法/双指针，滑动窗口.md",
-    "Obsidian Vault note/基础算法/分治递归.md",
     "截图文件/Pasted image 20260730182518.png",
     "题解/牛客/江西九校联盟",
     "截图文件/Pasted image 20260730180954.png",
     "题解/牛客/暑假训练营/2026/第4场",
-    "截图文件/Pasted image 20260730154436.png",
     "截图文件/Pasted image 20260730153731.png",
     "截图文件/Pasted image 20260730153408.png",
-    "截图文件/Pasted image 20260730152242.png",
-    "截图文件/Pasted image 20260730152118.png",
-    "截图文件/Pasted image 20260728223938.png",
     "Obsidian Vault note/数论/哥德巴赫猜想",
     "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md.tmp.33008.1bc473021dce",
     "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md.tmp.33008.a90adcdfd8ac",
-    "截图文件/Pasted image 20260725141031.png",
     "题解/牛客/暑假训练营/2026/第3场",
     "未命名 1.base",
     "未命名.base",
