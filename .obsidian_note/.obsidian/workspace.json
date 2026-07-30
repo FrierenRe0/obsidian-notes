@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "题解/牛客/暑假训练营/2026/第2场/N - Narrow to Median.md",
+                "file": "Obsidian Vault note/数论/叉积.md",
                 "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "N - Narrow to Median 的反向链接列表"
+              "title": "叉积 的反向链接列表"
             }
           },
           {
@@ -207,6 +207,8 @@
   },
   "active": "1cff170b5ea531be",
   "lastOpenFiles": [
+    "Obsidian Vault note/数论/叉积.md.tmp.50268.c54bc6785b12",
+    "Obsidian Vault note/数论/叉积.md.tmp.50268.478400568050",
     "Obsidian Vault note/数论/isprime(判断质数).md",
     "Obsidian Vault note/数论/费马小定理.md",
     "Obsidian Vault note/数论/叉积.md",
@@ -244,14 +246,12 @@
     "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
     "Obsidian Vault note/图论/图论算法/BFS(联系于-queue).md",
     "Obsidian Vault note/图论/图论算法/DFS(联系于-stack)和并查集.md",
-    "Obsidian Vault note/图论/图论算法/Dijkstra(单源最短路).md",
     "截图文件/Pasted image 20260730182518.png",
     "题解/牛客/江西九校联盟",
     "截图文件/Pasted image 20260730180954.png",
     "题解/牛客/暑假训练营/2026/第4场",
     "截图文件/Pasted image 20260730153731.png",
     "截图文件/Pasted image 20260730153408.png",
-    "Obsidian Vault note/数论/哥德巴赫猜想",
     "截图文件/Pasted image 20260723152444.png",
     "未命名.canvas"
   ]
