@@ -1,5 +1,5 @@
 ## 相关链接：
-题卷查看：[chinese.pdf](https://uploadfiles.nowcoder.com/files/20260729/999991351_1785297491535/chinese.pdf)
+题卷查看：[第4场题卷](../题卷/第4场.pdf)
 题目链接：[B-Quadratic Residue_2026牛客暑期多校训练营4](https://ac.nowcoder.com/acm/contest/133879/B)
 
 ## 评价：数学题

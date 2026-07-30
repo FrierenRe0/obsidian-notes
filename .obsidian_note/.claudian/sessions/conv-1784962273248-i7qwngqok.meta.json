@@ -4,21 +4,426 @@
   "title": "Convert Markdown bold to LaTeX for GitHub",
   "titleGenerationStatus": "success",
   "createdAt": 1784962273250,
-  "updatedAt": 1785411307307,
-  "lastResponseAt": 1785411307307,
+  "updatedAt": 1785412874696,
+  "lastResponseAt": 1785412874696,
   "sessionId": "ac15fb93-1695-46be-9c7d-33fa5141d0dd",
   "selectedModel": "haiku",
   "providerState": {
-    "providerSessionId": "ac15fb93-1695-46be-9c7d-33fa5141d0dd"
+    "providerSessionId": "ac15fb93-1695-46be-9c7d-33fa5141d0dd",
+    "subagentData": {
+      "call_00_x16W5VZZTqANQgwbgHao6413": {
+        "id": "call_00_x16W5VZZTqANQgwbgHao6413",
+        "description": "Scan Obsidian Vault note for GitHub issues",
+        "prompt": "Scan ALL 42 markdown files under \"Obsidian Vault note/\" in the vault at C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note for every issue that would break rendering on GitHub.\n\nCheck for these problems and give me a complete report with file paths and line numbers for each:\n\n1. **Wiki-links `[[...]]`** - These don't render on GitHub at all (broken links). List every occurrence.\n2. **Obsidian callouts** like `> [!note]`, `> [!warning]`, `> [!tip]`, `> [!info]`, `> [!danger]`, `> [!example]`, `> [!abstract]`, etc. These won't render as styled callouts on GitHub.\n3. **Dataview blocks** - ```dataview sections\n4. **Obsidian comments `%%...%%`** - These will show as visible text on GitHub\n5. **Highlighting `==text==`** - GitHub doesn't support `==highlight==` syntax\n6. **Nested `$` in LaTeX** - Like `$\\textbf{text $math$}$` where `$` appears inside `$\\textbf{...}$` (will break KaTeX). Check ALL `$...$` for nested `$`.\n7. **Unbalanced LaTeX `$`** - Odd number of `$` in a file (unclosed math)\n8. **LaTeX `$$` display math spanning multiple lines** - Check if properly opened and closed\n9. **Obsidian `\\begin{align}` etc** without proper `$$` wrapper - KaTeX on GitHub requires `$$` around `\\begin{}`\n10. **Local `file:///` paths** - Already checked, but double-check\n11. **Non-standard GitHub LaTeX** - Commands like `\\xbx`, `\\choice`, `\\then` that KaTeX doesn't support\n12. **Embedded `![[note.md]]` wiki-links to other notes** (not images) - Won't work on GitHub\n\nFor each finding, report: FILE:LINE → the exact problematic text.\n\nRun this comprehensively - grep all 42 files. This is important for the user to know what they need to fix before pushing to GitHub.",
+        "mode": "async",
+        "isExpanded": false,
+        "status": "completed",
+        "toolCalls": [
+          {
+            "id": "call_00_mJfd9QlJar3n7xnnb2OL5944",
+            "name": "Glob",
+            "input": {
+              "pattern": "Obsidian Vault note/**/*.md",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Obsidian Vault note\\图论\\建图\\邻接表与邻接矩阵.md\nObsidian Vault note\\数据结构\\并查集\\带权并查集.md\nObsidian Vault note\\数据结构\\并查集\\Union and find.md\nObsidian Vault note\\数据结构\\堆\\堆（思想）排序.md\nObsidian Vault note\\基础算法\\排序\\插入排序 (n).md\nObsidian Vault note\\基础算法\\排序\\归并排序(nlogn).md\nObsidian Vault note\\基础算法\\前缀和，差分\\差分.md\nObsidian Vault note\\基础算法\\前缀和，差分\\前缀和.md\nObsidian Vault note\\基础算法\\分治递归.md\nObsidian Vault note\\基础算法\\双指针，滑动窗口.md\nObsidian Vault note\\数据结构\\堆\\priority_queue内部定义.md\nObsidian Vault note\\数据结构\\树\\树的直径\\tree diameter.md\nObsidian Vault note\\数据结构\\用于处理维护区间\\数状数组\\BIT.md\nObsidian Vault note\\数据结构\\用于处理维护区间\\线段树\\Segment Tree.md\nObsidian Vault note\\数据结构\\用于处理维护区间\\ST表\\模板例题.md\nObsidian Vault note\\数据结构\\用于处理维护区间\\ST表\\st表.md\nObsidian Vault note\\数据结构\\ordered_set\\ordered_set(底层红黑树 - 平衡二叉搜索树).md\nObsidian Vault note\\数据结构\\stack\\单调栈.md\nObsidian Vault note\\数论\\埃式筛 线性筛.md\nObsidian Vault note\\数论\\费马小定理.md\nObsidian Vault note\\图论\\图论算法\\二分图（相当于时加了一种节点状态的DFS）.md\nObsidian Vault note\\图论\\图论算法\\拓扑排序（相当于时加了条件的BFS）.md\nObsidian Vault note\\图论\\图论算法\\最小生成树(Kruskal+Prim).md\nObsidian Vault note\\图论\\图论算法\\BFS(联系于-queue).md\nObsidian Vault note\\图论\\图论算法\\DFS(联系于-stack)和并查集.md\nObsidian Vault note\\图论\\图论算法\\Dijkstra(单源最短路).md\nObsidian Vault note\\图论\\图论算法\\floyd(多源最短路).md\nObsidian Vault note\\图论\\网格问题\\坐标压缩(小技巧).md\nObsidian Vault note\\dp\\背包.md\nObsidian Vault note\\dp\\树形dp.md\nObsidian Vault note\\dp\\线性dp.md\nObsidian Vault note\\数论\\位运算\\线性基.md\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md\nObsidian Vault note\\数论\\叉积.md\nObsidian Vault note\\数论\\组合数学\\容斥原理.md\nObsidian Vault note\\基础算法\\二分算法.md\nObsidian Vault note\\数据结构\\树\\LCA\\树上倍增.md\nObsidian Vault note\\数论\\isprime(判断质数).md\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md\nObsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md\nObsidian Vault note\\数据结构\\树\\树的遍历\\二叉树转化.md"
+          },
+          {
+            "id": "call_01_awFCzBxiOmbhHyaBTC8f6052",
+            "name": "Bash",
+            "input": {
+              "command": "find \"C:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note\" -maxdepth 5 -name \"*.md\" | sort",
+              "description": "List all 42 markdown files under Obsidian Vault note"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "C:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/dp/树形dp.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/dp/线性dp.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/dp/背包.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/图论算法/BFS(联系于-queue).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/图论算法/DFS(联系于-stack)和并查集.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/图论算法/Dijkstra(单源最短路).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/图论算法/floyd(多源最短路).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/图论算法/拓扑排序（相当于时加了条件的BFS）.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/图论算法/最小生成树(Kruskal+Prim).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/建图/邻接表与邻接矩阵.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/图论/网格问题/坐标压缩(小技巧).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/基础算法/二分算法.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/基础算法/分治递归.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/基础算法/前缀和，差分/前缀和.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/基础算法/前缀和，差分/差分.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/基础算法/双指针，滑动窗口.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/基础算法/排序/归并排序(nlogn).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/基础算法/排序/插入排序 (n).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/ordered_set/ordered_set(底层红黑树 - 平衡二叉搜索树).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/stack/单调栈.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/堆/priority_queue内部定义.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/堆/堆（思想）排序.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/并查集/Union and find.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/并查集/带权并查集.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/树/LCA/树上倍增.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/树/树的直径/tree diameter.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/树/树的遍历/二叉树转化.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/用于处理维护区间/ST表/st表.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/用于处理维护区间/ST表/模板例题.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数据结构/用于处理维护区间/线段树/Segment Tree.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/isprime(判断质数).md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/位运算/线性基.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/叉积.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/哥德巴赫猜想/Goldbach's Conjecture.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/哥德巴赫猜想/模板题：哥德巴赫猜想与质数拆分.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/埃式筛 线性筛.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/组合数学/容斥原理.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/组合数学/预处理 - 组合数.md\nC:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note/数论/费马小定理.md"
+          },
+          {
+            "id": "call_00_zZpUIvL7npIo6HHHBvPA2374",
+            "name": "Grep",
+            "input": {
+              "pattern": "\\[\\[.*?\\]\\]",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content",
+              "-n": true
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_01_Lk1ORP2pdxf4xTLYkf7m3626",
+            "name": "Grep",
+            "input": {
+              "pattern": "^>\\s*\\[!(?:note|warning|tip|info|danger|example|abstract|todo|success|question|failure|bug|quote|hint|check|done|error|cite|important|seealso)",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content",
+              "-n": true
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_02_mGaDIz9nvEh0xNJOM9Ru1855",
+            "name": "Grep",
+            "input": {
+              "pattern": "```dataview|\\bdataview\\b",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content",
+              "-n": true
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_03_zirrjZIxPYRPT0ygt1lh2184",
+            "name": "Grep",
+            "input": {
+              "pattern": "%%.*?%%",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content",
+              "-n": true
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_04_N5rZ3aprRBPChGbgUgUu0274",
+            "name": "Grep",
+            "input": {
+              "pattern": "==[^=]+==",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content",
+              "-n": true
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Obsidian Vault note\\基础算法\\二分算法.md:5:答：想一想，对于求最小的题目，开区间二分的写法，为什么最终返回的是 right，而不是别的数？在初始化（循环之前）、循环中、循环结束后，都时时刻刻保证 check(right) == true 和 check(left) == false，这就叫循环不变量。根据循环不变量，循环结束时 left+1=right，那么 right 就是最小的满足要求的数（因为再 −1 就不满足要求了），所以答案是 right。\nObsidian Vault note\\基础算法\\二分算法.md:44:        // 此时 check(left) == false 而 check(left+1) == check(right) == true\nObsidian Vault note\\图论\\图论算法\\BFS(联系于-queue).md:24:            if ((x == 0 || x == m-1 || y == 0 || y == n-1) && (x != sx || y != sy)) {\nObsidian Vault note\\图论\\图论算法\\floyd(多源最短路).md:65:所以只能在 f 数组前在加一个二维数组；k == 0 来表示 k == -1,其他的k值情况就依次后移1位；则状态转移方程就变为：`f[k+1][i][j]=min(f[k][i][j],f[k][i][k]+f[k][k][j])`"
+          },
+          {
+            "id": "call_05_nkbYEwJ0QukROVGNDnwe3627",
+            "name": "Grep",
+            "input": {
+              "pattern": "file:///",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content",
+              "-n": true
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_06_bTDLAEUzCZZVNfXOCFQm7509",
+            "name": "Grep",
+            "input": {
+              "pattern": "!\\[\\[",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content",
+              "-n": true
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_00_aElNdvWbJ9Hoann6xcwn4337",
+            "name": "Grep",
+            "input": {
+              "-n": true,
+              "pattern": "\\$",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Obsidian Vault note\\数论\\费马小定理.md:6:先给出定理原文，再讲解适用场景与实操用法，结合组合数、快速幂、取模等做题场景。 ## 一、费马小定理前提 & 公式 设： 1. **p 是质数** 2. a 不是 p 的倍数（$\\gcd(a,p)=1$） 则有： $$a^{p-1} \\equiv 1 \\pmod p$$ ## 高频变形 $$a^{p-2} \\equiv a^{-1} \\pmod p$$ 核心结论：$\\boldsymbol{a^{p-2}}$ 就是 a 在模 p 意义下的乘法逆元\nObsidian Vault note\\数论\\费马小定理.md:11:**场景 1：求模质数下的乘法逆元（最主流） 遇到式子 $\\displaystyle \\frac{x}{y} \\bmod p$（p 为质数），**整数除法不能直接取模**，必须转换为乘法形式： $$\\frac{x}{y} \\equiv x \\cdot y^{-1} \\pmod p$$ 结合费马小定理： $$y^{-1} \\equiv y^{p-2} \\pmod p$$ **适用条件**：模数 p 为质数**\nObsidian Vault note\\数论\\费马小定理.md:12:#### 典型应用：组合数取模 $\\boldsymbol{C_n^k \\bmod p}$ 组合数公式： $$C_n^k = \\frac{n!}{k!\\cdot (n-k)!}$$ 对质数 p 取模转换： $$C_n^k \\bmod p = \\big(n! \\cdot \\text{inv}(k!) \\cdot \\text{inv}((n-k)!)\\big) \\bmod p$$ 其中： $$\\text{inv}(x!) = (x!)^{\\,p-2} \\bmod p$$\nObsidian Vault note\\数论\\费马小定理.md:16:**计算 $a^b \\bmod p$，若指数 b 极大（如 $10^{18}$）且 p 为质数，可先化简指数： 利用 $a^{p-1}\\equiv1\\pmod p$，将指数对 $p-1$ 取模，再用快速幂计算**。\nObsidian Vault note\\数论\\费马小定理.md:18:示例：求 $2^{1000000} \\bmod 7$ ;\nObsidian Vault note\\数论\\费马小定理.md:19:$p=7$（质数) ;\nObsidian Vault note\\数论\\费马小定理.md:20:$p-1=6$ ;\nObsidian Vault note\\数论\\费马小定理.md:21:$1000000 \\bmod 6 = 4$ ;\nObsidian Vault note\\数论\\费马小定理.md:22:原式等价于：$2^4 = 16 \\equiv 2 \\pmod 7$\nObsidian Vault note\\数论\\费马小定理.md:26:**反向推导： 若存在整数 a，使得 $a^{p-1} \\not\\equiv 1 \\pmod p$ $\\boldsymbol{\\Rightarrow}$ p 一定不是质数**\nObsidian Vault note\\数论\\费马小定理.md:35:- 组合数 $C_n^k \\bmod$ 质数 - 超大指数幂取模（化简指数）\nObsidian Vault note\\数论\\isprime(判断质数).md:23:$x ^ (12)$ ≥ a;\nObsidian Vault note\\数论\\isprime(判断质数).md:25:**所以，则我们只要看是否存在一个 $(0，x ^ 1/2]$ 的情况，有则为合数，否则为质数；\nObsidian Vault note\\数论\\叉积.md:10:*   **平面二维向量**：$\\vec{u} = (x_1, y_1)$，$\\vec{v} = (x_2, y_2)$。\nObsidian Vault note\\数论\\叉积.md:11:    *   在三维空间中，可以等价看作 $z$ 轴分量为 $0$ 的向量：$\\vec{u} = (x_1, y_1, 0)$，$\\vec{v} = (x_2, y_2, 0)$。\nObsidian Vault note\\数论\\叉积.md:12:*   **空间三维向量**：$\\vec{a} = (a_x, a_y, a_z)$，$\\vec{b} = (b_x, b_y, b_z)$。\nObsidian Vault note\\数论\\叉积.md:13:*   **点变向量（减法）**：若有三点 $A, B, P$，则以 $A$ 为起点的向量表示为：\nObsidian Vault note\\数论\\叉积.md:14:    *   $\\vec{AB} = B - A = (B_x - A_x, B_y - A_y)$\nObsidian Vault note\\数论\\叉积.md:15:    *   $\\vec{AP} = P - A = (P_x - A_x, P_y - A_y)$\nObsidian Vault note\\数论\\叉积.md:17:**2.** 向量夹角 $\\alpha$\nObsidian Vault note\\数论\\叉积.md:18:将两个向量的起点平移到同一点后，两条向量之间在 $[0, \\pi]$ 范围内的夹角记为 $\\alpha$ ($0 \\le \\alpha \\le \\pi$)。\nObsidian Vault note\\数论\\叉积.md:26:三维向量 $\\vec{a} \\times \\vec{b}$ 的结果是一个**向量**，可以通过三阶行列式进行计算：\nObsidian Vault note\\数论\\叉积.md:28:$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ a_x & a_y & a_z \\\\ b_x & b_y & b_z \\end{vmatrix} = (a_y b_z - a_z b_y)\\vec{i} - (a_x b_z - a_z b_x)\\vec{j} + (a_x b_y - a_y b_x)\\vec{k}$$\nObsidian Vault note\\数论\\叉积.md:30:*   其中 $\\vec{i}, \\vec{j}, \\vec{k}$ 分别是 $x, y, z$ 轴的单位方向向量。\nObsidian Vault note\\数论\\叉积.md:33:$$\\left| \\vec{a} \\times \\vec{b} \\right| = \\left| \\vec{a} \\right| \\cdot \\left| \\vec{b} \\right| \\cdot \\sin\\alpha$$\nObsidian Vault note\\数论\\叉积.md:35:*   **几何意义**：结果向量的模长（长度），等于以 $\\vec{a}$ 和 $\\vec{b}$ 为邻边所围成的**平行四边形的面积**。\nObsidian Vault note\\数论\\叉积.md:38:*   结果向量 $\\vec{a} \\times \\vec{b}$ 始终同时**垂直于** $\\vec{a}$ 和 $\\vec{b}$ 所在的平面。\nObsidian Vault note\\数论\\叉积.md:39:*   **右手定则**：伸出右手，四指从 $\\vec{a}$ 沿小于 $\\pi$ 的夹角转向 $\\vec{b}$，大拇指所指的方向就是 $\\vec{a} \\times \\vec{b}$ 的方向。\nObsidian Vault note\\数论\\叉积.md:42:*   **反交换律**：$\\vec{a} \\times \\vec{b} = -(\\vec{b} \\times \\vec{a})$ （方向相反）\nObsidian Vault note\\数论\\叉积.md:43:*   **自身叉积**：$\\vec{a} \\times \\vec{a} = \\vec{0}$ （同向共线，夹角为 0，$\\sin 0 = 0$）\nObsidian Vault note\\数论\\叉积.md:44:*   **数乘结合律**：$(k\\vec{a}) \\times \\vec{b} = k(\\vec{a} \\times \\vec{b})$\nObsidian Vault note\\数论\\叉积.md:45:*   **分配律**：$\\vec{a} \\times (\\vec{b} + \\vec{c}) = \\vec{a} \\times \\vec{b} + \\vec{a} \\times \\vec{c}$\nObsidian Vault note\\数论\\叉积.md:52:日常刷题和做计算几何时，平面向量都落在 $xy$ 平面上（即 $z=0$）。将其代入三维叉积行列式：\nObsidian Vault note\\数论\\叉积.md:54:$$\\vec{u} \\times \\vec{v} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ x_1 & y_1 & 0 \\\\ x_2 & y_2 & 0 \\end{vmatrix} = 0\\vec{i} - 0\\vec{j} + (x_1 y_2 - x_2 y_1)\\vec{k}$$\nObsidian Vault note\\数论\\叉积.md:56:因为结果只有 $z$ 轴分量有效，为了方便，计算几何中直接提取该数值，定义为**二维叉积（标量）**。\nObsidian Vault note\\数论\\叉积.md:59:$$\\text{cross}(\\vec{u}, \\vec{v}) = x_1 y_2 - x_2 y_1$$\nObsidian Vault note\\数论\\叉积.md:62:$$\\left| \\text{cross}(\\vec{u}, \\vec{v}) \\right| = \\left| \\vec{u} \\right| \\cdot \\left| \\vec{v} \\right| \\cdot \\sin\\alpha$$\nObsidian Vault note\\数论\\叉积.md:64:*   $\\alpha$ 是平面内两向量起点重合后的夹角。\nObsidian Vault note\\数论\\叉积.md:67:设 $\\text{cross} = \\text{cross}(\\vec{u}, \\vec{v})$：\nObsidian Vault note\\数论\\叉积.md:68:*   **$\\text{cross} > 0$**：$\\vec{v}$ 在 $\\vec{u}$ 的**逆时针方向（左侧）**，此时旋转角 $\\alpha \\in (0, \\pi)$，$\\sin\\alpha > 0$。\nObsidian Vault note\\数论\\叉积.md:69:*   **$\\text{cross} < 0$**：$\\vec{v}$ 在 $\\vec{u}$ 的**顺时针方向（右侧）**，等效于负旋转角，$\\sin\\alpha < 0$。\nObsidian Vault note\\数论\\叉积.md:70:*   **$\\text{cross} = 0$**：$\\sin\\alpha = 0$，此时 $\\alpha = 0$ 或 $\\pi$，说明两向量**共线**（同向或反向）。\nObsidian Vault note\\数论\\叉积.md:73:*   $\\left| \\text{cross}(\\vec{u}, \\vec{v}) \\right|$ = 以 $\\vec{u}, \\vec{v}$ 为邻边的**平行四边形面积**。\nObsidian Vault note\\数论\\叉积.md:74:*   $\\frac{1}{2} \\left| \\text{cross}(\\vec{u}, \\vec{v}) \\right|$ = 以 $\\vec{u}, \\vec{v}$ 为两边的**三角形面积**。\nObsidian Vault note\\数论\\叉积.md:77:已知平面三点 $A(A_x, A_y)$、$B(B_x, B_y)$、$C(C_x, C_y)$，构造向量 $\\vec{AB}$ 和 $\\vec{AC}$，其叉积为：\nObsidian Vault note\\数论\\叉积.md:78:$$\\text{cross}(A, B, C) = \\vec{AB} \\times \\vec{AC} = (B_x - A_x)(C_y - A_y) - (B_y - A_y)(C_x - A_x)$$\nObsidian Vault note\\数论\\叉积.md:80:*   **$\\text{cross}(A, B, C) > 0$**：点 $C$ 在有向直线 $AB$ 的**左侧**。\nObsidian Vault note\\数论\\叉积.md:81:*   **$\\text{cross}(A, B, C) < 0$**：点 $C$ 在有向直线 $AB$ 的**右侧**。\nObsidian Vault note\\数论\\叉积.md:82:*   **$\\text{cross}(A, B, C) = 0$**：$A, B, C$ **三点共线**。\nObsidian Vault note\\数论\\叉积.md:92:| **二维叉积** | **实数**（Scalar） | 判断左右位置、求平面多边形面积 | 实数（本质是三维叉积的 $z$ 轴分量数值） |\nObsidian Vault note\\数论\\叉积.md:101:给定直线过两点 $A, B$，判断点 $P$ 在直线哪一侧：\nObsidian Vault note\\数论\\叉积.md:104:   $$\\overrightarrow{AB} = (B_x - A_x, B_y - A_y)$$\nObsidian Vault note\\数论\\叉积.md:105:   $$\\overrightarrow{AP} = (P_x - A_x, P_y - A_y)$$\nObsidian Vault note\\数论\\叉积.md:108:   $$\\text{cross} = \\overrightarrow{AB} \\times \\overrightarrow{AP}$$\nObsidian Vault note\\数论\\叉积.md:111:   * $\\text{cross} > 0$：$P$ 在直线 $AB$ 左侧\nObsidian Vault note\\数论\\叉积.md:112:   * $\\text{cross} < 0$：$P$ 在直线 $AB$ 右侧\nObsidian Vault note\\数论\\叉积.md:113:   * $\\text{cross} = 0$：$P$ 在直线 $AB$ 上\nObsidian Vault note\\数论\\叉积.md:117:1. $\\text{cross}(\\overrightarrow{AB}, \\overrightarrow{AP}) = 0$（确保共线）\nObsidian Vault note\\数论\\叉积.md:118:2. $P$ 的坐标在 $A, B$ 横、纵坐标区间内（即 $\\min \\le \\text{坐标} \\le \\max$，确保点在线段内而非延长线上）\nObsidian Vault note\\数论\\叉积.md:125:* 直线 1 过点：$A, B$\nObsidian Vault note\\数论\\叉积.md:126:* 直线 2 过点：$C, D$\nObsidian Vault note\\数论\\叉积.md:129:   $$c_1 = \\text{cross}(\\overrightarrow{AB}, \\overrightarrow{CD})$$\nObsidian Vault note\\数论\\叉积.md:130:   * $c_1 = 0$：两直线平行或重合\nObsidian Vault note\\数论\\叉积.md:131:   * $c_1 \\neq 0$：两直线相交（有唯一交点）\nObsidian Vault note\\数论\\叉积.md:134:   再计算：$$c_2 = \\text{cross}(\\overrightarrow{AB}, \\overrightarrow{AC})$$\nObsidian Vault note\\数论\\叉积.md:135:   * $c_1 = 0$ 且 $c_2 = 0$：两直线**完全重合**\nObsidian Vault note\\数论\\叉积.md:136:   * $c_1 = 0$ 且 $c_2 \\neq 0$：两直线**平行且无交点**\nObsidian Vault note\\数论\\叉积.md:144:线段 $AB$、$\\text{CD}$ 相交的充要条件是：\nObsidian Vault note\\数论\\叉积.md:145:* $C、D$ 两点分别在直线 $AB$ 的两侧；\nObsidian Vault note\\数论\\叉积.md:146:* $A、B$ 两点分别在直线 $CD$ 的两侧。\nObsidian Vault note\\数论\\叉积.md:149:$$\\begin{aligned}\nObsidian Vault note\\数论\\叉积.md:154:\\end{aligned}$$\nObsidian Vault note\\数论\\叉积.md:156:* **普通相交**（交点在线段内部）：$c_1 \\cdot c_2 < 0$ 且 $c_3 \\cdot c_4 < 0$\nObsidian Vault note\\数论\\叉积.md:159:若上述某一个叉积 $c_i = 0$，说明对应的端点落在另一条直线上。此时再通过**坐标区间覆盖**（即点在线段上的判定方法）来判断是否属于线段端点相交或部分重叠。\nObsidian Vault note\\数论\\叉积.md:167:对于连续的三点 $A, B, C$，计算 $\\text{cross}(\\overrightarrow{AB}, \\overrightarrow{BC})$：\nObsidian Vault note\\数论\\叉积.md:168:* $> 0$：**左转**（凸拐点）\nObsidian Vault note\\数论\\叉积.md:169:* $< 0$：**右转**（凹拐点）\nObsidian Vault note\\数论\\叉积.md:170:* $= 0$：三点共线\nObsidian Vault note\\数论\\叉积.md:173:依次顺时针或逆时针取多边形的每一条边。如果待测点 $P$ 始终在所有边的同侧（即与每条边计算的叉积符号保持统一，全部 $>0$ 或全部 $<0$），则点 $P$ 在多边形内部。\nObsidian Vault note\\数论\\叉积.md:181:  $$S = \\frac{1}{2} | \\overrightarrow{AB} \\times \\overrightarrow{AP} |$$\nObsidian Vault note\\数论\\叉积.md:183:* **点 $P$ 到直线 $AB$ 的距离**：\nObsidian Vault note\\数论\\叉积.md:184:  $$d = \\frac{| \\overrightarrow{AB} \\times \\overrightarrow{AP} |}{| \\overrightarrow{AB} |}$$\nObsidian Vault note\\基础算法\\二分算法.md:16:开区间 ： $l + 1 < r$;\nObsidian Vault note\\基础算法\\二分算法.md:17:闭区间 ：$l < r$;\nObsidian Vault note\\基础算法\\二分算法.md:18:这里就是常常再写闭区间中，容易发生的错误，再闭区间中的端点的边界位置处理时，没有正确的加1减1，或者忘记加1减1，导致再 $l + 1 == r$的状态时，发生死循环情况；\nObsidian Vault note\\基础算法\\二分算法.md:19:但是再闭区间没有可以很好规避这种问题，再 $l + 1 == r$ 处时，因为这已经跳出循环了，也就规避了发生死循环情况；\nObsidian Vault note\\基础算法\\二分算法.md:58:求最小：$check(mid) == true$ 时更新 $right = mid$，反之更新 $left = mid$，最后返回 right.\nObsidian Vault note\\基础算法\\二分算法.md:59:求最大：$check(mid) == true$ 时更新 $left = mid$，反之更新 $right = mid$，最后返回 left.\nObsidian Vault note\\基础算法\\二分算法.md:60:对于开区间写法，简单来说 $check(mid) == true$ 时更新的是谁，最后就返回谁。\nObsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md:3:- 阶乘前缀和 ： $fac[i]$ 表示为 i 的阶乘  (注意这里0的阶乘为1)\nObsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md:4:- 逆元 (费马小定理) ：  再模运算中，$a^{-1} \\ mod \\ p$ 等价于  $a^{p - 2} \\ mod \\ p$ ，同时这里a与p互质\nObsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md:5:- 快速幂 ：在计算逆元 $a^{p - 2}$ 时，需要使用上快速幂\nObsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md:7:## 对于 $C_n^k$ 以及 $A_n^k$ 的相关代码如下：\nObsidian Vault note\\数论\\组合数学\\容斥原理.md:4:$$\\vert{}A \\cup B \\cup C\\vert{} = \\vert{}A\\vert{} + \\vert{}B\\vert{} + \\vert{}C\\vert{} - \\vert{}A \\cap B\\vert{} - \\vert{}A \\cap C\\vert{} - \\vert{}B \\cap C\\vert{} + \\vert{}A \\cap B \\cap C\\vert{}$$\nObsidian Vault note\\数论\\组合数学\\容斥原理.md:7:$$\\left\\vert{} \\bigcup_{i=1}^n A_i \\right\\vert{} = \\sum_{k=1}^n (-1)^{k-1} \\sum_{1 \\le i_1 < i_2 < \\dots < i_k \\le n} \\vert{}A_{i_1} \\cap A_{i_2} \\cap \\dots \\cap A_{i_k}\\vert{}$$\nObsidian Vault note\\数论\\位运算\\线性基.md:24:假设你手里有一个数字集合 $S = \\{3, 5, 6\\}$。\nObsidian Vault note\\数论\\位运算\\线性基.md:28:- $3 = (011)_2$\nObsidian Vault note\\数论\\位运算\\线性基.md:30:- $5 = (101)_2$\nObsidian Vault note\\数论\\位运算\\线性基.md:32:- $6 = (110)_2$\nObsidian Vault note\\数论\\位运算\\线性基.md:37:- 选单个数字：$3, 5, 6$\nObsidian Vault note\\数论\\位运算\\线性基.md:39:- 两两异或：$3 \\oplus 5 = 6$, $3 \\oplus 6 = 5$, $5 \\oplus 6 = 3$ （发现了吗？它们内部异或居然又绕回去了，这里你因该可以想到我刚刚上面说的基础2了，说明这里存在a ^ b = 0，会有数据的舍弃，继续看后续理解）\nObsidian Vault note\\数论\\位运算\\线性基.md:41:- 三个异或  或者  不选：$3 \\oplus 5 \\oplus 6 = 0$\nObsidian Vault note\\数论\\位运算\\线性基.md:44:所以，集合 $S$ 能够异或组合出来的所有可能结果是：**$\\{0, 3, 5, 6\\}$**。\nObsidian Vault note\\数论\\位运算\\线性基.md:48:其实不需要。如果我们把 $6$ 扔掉，只留下 $\\{3, 5\\}$：\nObsidian Vault note\\数论\\位运算\\线性基.md:50:- 只选 $3$ 或 $5$，可以得到 $3, 5$\nObsidian Vault note\\数论\\位运算\\线性基.md:52:- $3 \\oplus 5$，可以得到 $6$\nObsidian Vault note\\数论\\位运算\\线性基.md:54:- 都不选（或者自己异或自己），可以得到 $0$\nObsidian Vault note\\数论\\位运算\\线性基.md:57:你会发现，仅仅靠 **$\\{3, 5\\}$**，就能完美生成出原集合所有的异或结果 $\\{0, 3, 5, 6\\}$！此时，$6$ 就是一个“多余”的元素。\nObsidian Vault note\\数论\\位运算\\线性基.md:59:这里的 **$\\{3, 5\\}$ 就是原集合 $S$ 的一个线性基**。\nObsidian Vault note\\数论\\位运算\\线性基.md:67:我们尝试把 $S = \\{3, 5, 6\\}$ 逐个**插入**到线性基中：\nObsidian Vault note\\数论\\位运算\\线性基.md:69:### 1. 插入 $3 = (011)_2$\nObsidian Vault note\\数论\\位运算\\线性基.md:75:- 直接把 $3$ 放入 `p[1]`。此时线性基为：`p[1] = 3`。\nObsidian Vault note\\数论\\位运算\\线性基.md:78:### 2. 插入 $5 = (101)_2$\nObsidian Vault note\\数论\\位运算\\线性基.md:84:- 直接把 $5$ 放入 `p[2]`。此时线性基为：`p[1] = 3`, `p[2] = 5`。\nObsidian Vault note\\数论\\位运算\\线性基.md:87:### 3. 插入 $6 = (110)_2$\nObsidian Vault note\\数论\\位运算\\线性基.md:93:- 为了消除当前位的 `1`，我们让 $6$ 异或 `p[2]`：\nObsidian Vault note\\数论\\位运算\\线性基.md:95:    $$6 \\oplus 5 = (110)_2 \\oplus (101)_2 = (011)_2 = 3$$\nObsidian Vault note\\数论\\位运算\\线性基.md:97:- 剩下的值变成了 $3$。继续看当前 $3$ 的最高位，在第 1 位。\nObsidian Vault note\\数论\\位运算\\线性基.md:101:- 继续消除：$3 \\oplus \\text{p}[1] = 3 \\oplus 3 = 0$。\nObsidian Vault note\\数论\\位运算\\线性基.md:103:- 数字变成了 $0$，说明 $6$ 彻底被压榨干净了，无法为线性基贡献新的独立维度（它能被现有的线性基组合出来）。**拒绝插入**。\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:1:#### 四种位运算及其运算律 设操作数为整数 $a,b,c$ 符号说明：\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:2: - $\\sim$：按位取反（一元运算）\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:3: - $\\&$：按位与\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:4: - $\\mid$：按位或\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:5: - $\\hat{}$（代码写作 `^`）：按位异或\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:8:#### 一、按位取反 $\\sim x$ 一元运算，不存在交换律、结合律，满足以下规律：1. 双重否定律 $$\\sim(\\sim a) = a$$2. 德摩根律（配合按位与、按位或） $$\\sim(a\\&b) = (\\sim a)\\mid(\\sim b),\\quad \\sim(a\\mid b) = (\\sim a)\\&(\\sim b)$$ 3. 补码恒等式（计算机有符号整数特有） $$\\sim a = -a-1$$\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:10:#### 二、按位与 $\\&$（二元运算）\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:11:#### 1. 交换律 $$a\\&b = b\\&a$$ 2. 结合律 $$(a\\&b)\\&c = a\\&(b\\&c)$$ 3. 幂等律 $$a\\&a = a$$ 4. 吸收律（搭配按位或） $$a\\&(a\\mid b) = a$$ 5. 分配律（对按位或分配） $$a\\&(b\\mid c) = (a\\&b)\\mid(a\\&c)$$ 6. 零元 / 单位元性质 $$a\\&0 = 0,\\quad a\\&\\text{全1掩码}=a$$ 7. 互补律（搭配按位取反） $$a\\&(\\sim a) = 0$$\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:13:#### 三、按位或 $\\mid$（二元运算）\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:14:#### 1. 交换律 $$a\\mid b = b\\mid a$$ 2. 结合律 $$(a\\mid b)\\mid c = a\\mid(b\\mid c)$$ 3. 幂等律 $$a\\mid a = a$$ 4. 吸收律（搭配按位与） $$a\\mid(a\\&b) = a$$ 5. 分配律（对按位与分配） $$a\\mid(b\\&c) = (a\\mid b)\\&(a\\mid c)$$ 6. 零元 / 单位元性质 $$a\\mid 0 = a,\\quad a\\mid\\text{全1掩码}=\\text{全1掩码}$$ 7. 互补律（搭配按位取反） $$a\\mid(\\sim a) = \\text{全1掩码}$$\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:16:#### 四、按位异或 $\\hat{}$（代码符号 `^`，二元运算）-> 重要结论：异或不满足对 $\\&$、$\\mid$ 的分配律\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:17:#### 1. 交换律 $$a\\hat{}b = b\\hat{}a$$ 2. 结合律 $$(a\\hat{}b)\\hat{}c = a\\hat{}(b\\hat{}c)$$ 3. 归零律（自身异或结果为0） $$a\\hat{}a = 0$$ 4. 恒等律（异或0数值不变） $$a\\hat{}0 = a$$ 5. 自逆可逆性质 若 $x = a\\hat{}b$，则 $a = x\\hat{}b,\\ b = x\\hat{}a$\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:3:**题目常见形式**：给定一个正整数 $n$，要求将其拆分为最少数量的质数之和，输出最少的质数个数。如果无法拆分（如 $n=1$），输出 $-1$。\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:11:    - _公式表达_：$n = p_1 + p_2$ （其中 $n \\% 2 == 0$ 且 $n > 2$，$p_1, p_2$ 为质数）。\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:15:    - _公式表达_：$n = p_1 + p_2 + p_3$ （其中 $n \\% 2 \\neq 0$ 且 $n > 5$，$p_1, p_2, p_3$ 为质数）。\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:22:基于上述定理，对于任意正整数 $n$，我们可以展开如下的分类讨论：\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:24:### 情况 ①：$n = 1$\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:31:### 情况 ②：$n$ 本身是质数\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:36:### 情况 ③：$n$ 是大于 2 的偶数\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:41:### 情况 ④：$n$ 是大于 3 的奇数\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:43:由于 $n$ 不是质数（已在情况 ② 排除），因此答案至少为 2。我们优先尝试能不能拆成 **2 个质数**。\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:50:    因为唯一的偶质数是 **2**，所以如果 $n$ 能拆成两个质数，其中一个**必须是 2**，另一个则必须是 $n - 2$。\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:54:    - 如果 `isprime(n - 2)` 为真，说明 $n = 2 + (n - 2)$ 成立，输出 `2`。\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:7:    - _公式表达_：$n = p_1 + p_2$ （其中 $n \\% 2 == 0$ 且 $n > 2$，$p_1, p_2$ 为质数）。\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:11:    - _公式表达_：$n = p_1 + p_2 + p_3$ （其中 $n \\% 2 \\neq 0$ 且 $n > 5$，$p_1, p_2, p_3$ 为质数）。\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:18:我们先强行从奇数 $n$ 里面拿走一个质数 3；\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:19:因为 $n$ 是奇数，3 也是奇数，减完之后，`n - 3` 就变成了一个偶数；\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:22:$$n = 3 + (n - 3) = 3 + (\\text{质数} + \\text{质数})$$"
+          },
+          {
+            "id": "call_01_DTcAUhGPLTyOGoMJcC8a5659",
+            "name": "Grep",
+            "input": {
+              "-n": true,
+              "pattern": "\\\\begin\\{",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Obsidian Vault note\\数论\\叉积.md:28:$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ a_x & a_y & a_z \\\\ b_x & b_y & b_z \\end{vmatrix} = (a_y b_z - a_z b_y)\\vec{i} - (a_x b_z - a_z b_x)\\vec{j} + (a_x b_y - a_y b_x)\\vec{k}$$\nObsidian Vault note\\数论\\叉积.md:54:$$\\vec{u} \\times \\vec{v} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ x_1 & y_1 & 0 \\\\ x_2 & y_2 & 0 \\end{vmatrix} = 0\\vec{i} - 0\\vec{j} + (x_1 y_2 - x_2 y_1)\\vec{k}$$\nObsidian Vault note\\数论\\叉积.md:149:$$\\begin{aligned}"
+          },
+          {
+            "id": "call_02_vGlpDCEA0wMXnUSYzwLP1579",
+            "name": "Grep",
+            "input": {
+              "-n": true,
+              "pattern": "\\\\xbx|\\\\choice|\\\\then|\\\\newcommand|\\\\def\\b",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_00_OTP5F3WcoKQXlBC6AAxr6274",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\叉积.md",
+              "offset": 145,
+              "limit": 15
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "145\t* $C、D$ 两点分别在直线 $AB$ 的两侧；\n146\t* $A、B$ 两点分别在直线 $CD$ 的两侧。\n147\t\n148\t用叉积可以表示为：\n149\t$$\\begin{aligned}\n150\tc_1 &= \\text{cross}(\\overrightarrow{AB}, \\overrightarrow{AC}) \\\\\n151\tc_2 &= \\text{cross}(\\overrightarrow{AB}, \\overrightarrow{AD}) \\\\\n152\tc_3 &= \\text{cross}(\\overrightarrow{CD}, \\overrightarrow{CA}) \\\\\n153\tc_4 &= \\text{cross}(\\overrightarrow{CD}, \\overrightarrow{CB})\n154\t\\end{aligned}$$\n155\t\n156\t* **普通相交**（交点在线段内部）：$c_1 \\cdot c_2 < 0$ 且 $c_3 \\cdot c_4 < 0$\n157\t\n158\t**2.** 包含端点共线相交（特殊情况）\n159\t若上述某一个叉积 $c_i = 0$，说明对应的端点落在另一条直线上。此时再通过**坐标区间覆盖**（即点在线段上的判定方法）来判断是否属于线段端点相交或部分重叠。"
+          },
+          {
+            "id": "call_01_YcrlqBoPAYKroGKx9pdM3743",
+            "name": "Grep",
+            "input": {
+              "pattern": "\\$\\$[^$]*\\$\\$",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "count"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Obsidian Vault note\\数论\\费马小定理.md:3\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:4\nObsidian Vault note\\数论\\位运算\\线性基.md:1\nObsidian Vault note\\数论\\组合数学\\容斥原理.md:2\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:1\nObsidian Vault note\\数论\\叉积.md:13\n\nFound 24 total occurrences across 6 files."
+          },
+          {
+            "id": "call_00_GR4Sn3C4gQE5Zoo8h2204998",
+            "name": "Bash",
+            "input": {
+              "command": "cd \"C:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note\" && for f in $(find . -name \"*.md\" | sort); do count=$(grep -c '\\$' \"$f\" 2>/dev/null || echo 0); echo \"$count $f\"; done",
+              "description": "Count $ occurrences per file - excluding code blocks to avoid false positives"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "0\n0 ./dp/树形dp.md\n0\n0 ./dp/线性dp.md\n0\n0 ./dp/背包.md\n0\n0 ./图论/图论算法/BFS(联系于-queue).md\n0\n0 ./图论/图论算法/DFS(联系于-stack)和并查集.md\n0\n0 ./图论/图论算法/Dijkstra(单源最短路).md\n0\n0 ./图论/图论算法/floyd(多源最短路).md\n0\n0 ./图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md\n0\n0 ./图论/图论算法/拓扑排序（相当于时加了条件的BFS）.md\n0\n0 ./图论/图论算法/最小生成树(Kruskal+Prim).md\n0\n0 ./图论/建图/邻接表与邻接矩阵.md\n0\n0 ./图论/网格问题/坐标压缩(小技巧).md\n7 ./基础算法/二分算法.md\n0\n0 ./基础算法/分治递归.md\n0\n0 ./基础算法/前缀和，差分/前缀和.md\n0\n0 ./基础算法/前缀和，差分/差分.md\n0\n0 ./基础算法/双指针，滑动窗口.md\n0\n0 ./基础算法/排序/归并排序(nlogn).md\n0 ./基础算法/排序/插入排序\n0 (n).md\n0 ./数据结构/ordered_set/ordered_set(底层红黑树\n0\n0 -\n0 平衡二叉搜索树).md\n0\n0 ./数据结构/stack/单调栈.md\n0\n0 ./数据结构/堆/priority_queue内部定义.md\n0\n0 ./数据结构/堆/堆（思想）排序.md\n0 ./数据结构/并查集/Union\n0 and\n0 find.md\n0\n0 ./数据结构/并查集/带权并查集.md\n0\n0 ./数据结构/树/LCA/树上倍增.md\n0 ./数据结构/树/树的直径/tree\n0 diameter.md\n0\n0 ./数据结构/树/树的遍历/二叉树转化.md\n0\n0 ./数据结构/用于处理维护区间/ST表/st表.md\n0\n0 ./数据结构/用于处理维护区间/ST表/模板例题.md\n0\n0 ./数据结构/用于处理维护区间/数状数组/BIT.md\n0 ./数据结构/用于处理维护区间/线段树/Segment\n0 Tree.md\n2 ./数论/isprime(判断质数).md\n12 ./数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md\n25 ./数论/位运算/线性基.md\n69 ./数论/叉积.md\n0 ./数论/哥德巴赫猜想/Goldbach's\n0 Conjecture.md\n11 ./数论/哥德巴赫猜想/模板题：哥德巴赫猜想与质数拆分.md\n0 ./数论/埃式筛\n0 线性筛.md\n2 ./数论/组合数学/容斥原理.md\n0 ./数论/组合数学/预处理\n0\n0 -\n0 组合数.md\n11 ./数论/费马小定理.md"
+          },
+          {
+            "id": "call_01_tKgt52iMskYPL0cWr93I7663",
+            "name": "Grep",
+            "input": {
+              "pattern": "\\$[^$]+\\$[^$]+\\$[^$]+\\$",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content",
+              "-n": true
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Obsidian Vault note\\数论\\费马小定理.md:16:**计算 $a^b \\bmod p$，若指数 b 极大（如 $10^{18}$）且 p 为质数，可先化简指数： 利用 $a^{p-1}\\equiv1\\pmod p$，将指数对 $p-1$ 取模，再用快速幂计算**。\nObsidian Vault note\\数论\\费马小定理.md:26:**反向推导： 若存在整数 a，使得 $a^{p-1} \\not\\equiv 1 \\pmod p$ $\\boldsymbol{\\Rightarrow}$ p 一定不是质数**\nObsidian Vault note\\数论\\叉积.md:10:*   **平面二维向量**：$\\vec{u} = (x_1, y_1)$，$\\vec{v} = (x_2, y_2)$。\nObsidian Vault note\\数论\\叉积.md:11:    *   在三维空间中，可以等价看作 $z$ 轴分量为 $0$ 的向量：$\\vec{u} = (x_1, y_1, 0)$，$\\vec{v} = (x_2, y_2, 0)$。\nObsidian Vault note\\数论\\叉积.md:12:*   **空间三维向量**：$\\vec{a} = (a_x, a_y, a_z)$，$\\vec{b} = (b_x, b_y, b_z)$。\nObsidian Vault note\\数论\\叉积.md:13:*   **点变向量（减法）**：若有三点 $A, B, P$，则以 $A$ 为起点的向量表示为：\nObsidian Vault note\\数论\\叉积.md:18:将两个向量的起点平移到同一点后，两条向量之间在 $[0, \\pi]$ 范围内的夹角记为 $\\alpha$ ($0 \\le \\alpha \\le \\pi$)。\nObsidian Vault note\\数论\\叉积.md:30:*   其中 $\\vec{i}, \\vec{j}, \\vec{k}$ 分别是 $x, y, z$ 轴的单位方向向量。\nObsidian Vault note\\数论\\叉积.md:35:*   **几何意义**：结果向量的模长（长度），等于以 $\\vec{a}$ 和 $\\vec{b}$ 为邻边所围成的**平行四边形的面积**。\nObsidian Vault note\\数论\\叉积.md:38:*   结果向量 $\\vec{a} \\times \\vec{b}$ 始终同时**垂直于** $\\vec{a}$ 和 $\\vec{b}$ 所在的平面。\nObsidian Vault note\\数论\\叉积.md:39:*   **右手定则**：伸出右手，四指从 $\\vec{a}$ 沿小于 $\\pi$ 的夹角转向 $\\vec{b}$，大拇指所指的方向就是 $\\vec{a} \\times \\vec{b}$ 的方向。\nObsidian Vault note\\数论\\叉积.md:43:*   **自身叉积**：$\\vec{a} \\times \\vec{a} = \\vec{0}$ （同向共线，夹角为 0，$\\sin 0 = 0$）\nObsidian Vault note\\数论\\叉积.md:52:日常刷题和做计算几何时，平面向量都落在 $xy$ 平面上（即 $z=0$）。将其代入三维叉积行列式：\nObsidian Vault note\\数论\\叉积.md:68:*   **$\\text{cross} > 0$**：$\\vec{v}$ 在 $\\vec{u}$ 的**逆时针方向（左侧）**，此时旋转角 $\\alpha \\in (0, \\pi)$，$\\sin\\alpha > 0$。\nObsidian Vault note\\数论\\叉积.md:69:*   **$\\text{cross} < 0$**：$\\vec{v}$ 在 $\\vec{u}$ 的**顺时针方向（右侧）**，等效于负旋转角，$\\sin\\alpha < 0$。\nObsidian Vault note\\数论\\叉积.md:70:*   **$\\text{cross} = 0$**：$\\sin\\alpha = 0$，此时 $\\alpha = 0$ 或 $\\pi$，说明两向量**共线**（同向或反向）。\nObsidian Vault note\\数论\\叉积.md:73:*   $\\left| \\text{cross}(\\vec{u}, \\vec{v}) \\right|$ = 以 $\\vec{u}, \\vec{v}$ 为邻边的**平行四边形面积**。\nObsidian Vault note\\数论\\叉积.md:74:*   $\\frac{1}{2} \\left| \\text{cross}(\\vec{u}, \\vec{v}) \\right|$ = 以 $\\vec{u}, \\vec{v}$ 为两边的**三角形面积**。\nObsidian Vault note\\数论\\叉积.md:77:已知平面三点 $A(A_x, A_y)$、$B(B_x, B_y)$、$C(C_x, C_y)$，构造向量 $\\vec{AB}$ 和 $\\vec{AC}$，其叉积为：\nObsidian Vault note\\数论\\叉积.md:80:*   **$\\text{cross}(A, B, C) > 0$**：点 $C$ 在有向直线 $AB$ 的**左侧**。\nObsidian Vault note\\数论\\叉积.md:81:*   **$\\text{cross}(A, B, C) < 0$**：点 $C$ 在有向直线 $AB$ 的**右侧**。\nObsidian Vault note\\数论\\叉积.md:82:*   **$\\text{cross}(A, B, C) = 0$**：$A, B, C$ **三点共线**。\nObsidian Vault note\\数论\\叉积.md:101:给定直线过两点 $A, B$，判断点 $P$ 在直线哪一侧：\nObsidian Vault note\\数论\\叉积.md:111:   * $\\text{cross} > 0$：$P$ 在直线 $AB$ 左侧\nObsidian Vault note\\数论\\叉积.md:112:   * $\\text{cross} < 0$：$P$ 在直线 $AB$ 右侧\nObsidian Vault note\\数论\\叉积.md:113:   * $\\text{cross} = 0$：$P$ 在直线 $AB$ 上\nObsidian Vault note\\数论\\叉积.md:118:2. $P$ 的坐标在 $A, B$ 横、纵坐标区间内（即 $\\min \\le \\text{坐标} \\le \\max$，确保点在线段内而非延长线上）\nObsidian Vault note\\数论\\叉积.md:135:   * $c_1 = 0$ 且 $c_2 = 0$：两直线**完全重合**\nObsidian Vault note\\数论\\叉积.md:136:   * $c_1 = 0$ 且 $c_2 \\neq 0$：两直线**平行且无交点**\nObsidian Vault note\\数论\\叉积.md:144:线段 $AB$、$\\text{CD}$ 相交的充要条件是：\nObsidian Vault note\\数论\\叉积.md:145:* $C、D$ 两点分别在直线 $AB$ 的两侧；\nObsidian Vault note\\数论\\叉积.md:146:* $A、B$ 两点分别在直线 $CD$ 的两侧。\nObsidian Vault note\\数论\\叉积.md:156:* **普通相交**（交点在线段内部）：$c_1 \\cdot c_2 < 0$ 且 $c_3 \\cdot c_4 < 0$\nObsidian Vault note\\数论\\叉积.md:167:对于连续的三点 $A, B, C$，计算 $\\text{cross}(\\overrightarrow{AB}, \\overrightarrow{BC})$：\nObsidian Vault note\\数论\\叉积.md:173:依次顺时针或逆时针取多边形的每一条边。如果待测点 $P$ 始终在所有边的同侧（即与每条边计算的叉积符号保持统一，全部 $>0$ 或全部 $<0$），则点 $P$ 在多边形内部。\nObsidian Vault note\\数论\\叉积.md:183:* **点 $P$ 到直线 $AB$ 的距离**：\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:3:**题目常见形式**：给定一个正整数 $n$，要求将其拆分为最少数量的质数之和，输出最少的质数个数。如果无法拆分（如 $n=1$），输出 $-1$。\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:11:    - _公式表达_：$n = p_1 + p_2$ （其中 $n \\% 2 == 0$ 且 $n > 2$，$p_1, p_2$ 为质数）。\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:15:    - _公式表达_：$n = p_1 + p_2 + p_3$ （其中 $n \\% 2 \\neq 0$ 且 $n > 5$，$p_1, p_2, p_3$ 为质数）。\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md:50:    因为唯一的偶质数是 **2**，所以如果 $n$ 能拆成两个质数，其中一个**必须是 2**，另一个则必须是 $n - 2$。\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:7:    - _公式表达_：$n = p_1 + p_2$ （其中 $n \\% 2 == 0$ 且 $n > 2$，$p_1, p_2$ 为质数）。\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:11:    - _公式表达_：$n = p_1 + p_2 + p_3$ （其中 $n \\% 2 \\neq 0$ 且 $n > 5$，$p_1, p_2, p_3$ 为质数）。\nObsidian Vault note\\基础算法\\二分算法.md:58:求最小：$check(mid) == true$ 时更新 $right = mid$，反之更新 $left = mid$，最后返回 right.\nObsidian Vault note\\基础算法\\二分算法.md:59:求最大：$check(mid) == true$ 时更新 $left = mid$，反之更新 $right = mid$，最后返回 left.\nObsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md:4:- 逆元 (费马小定理) ：  再模运算中，$a^{-1} \\ mod \\ p$ 等价于  $a^{p - 2} \\ mod \\ p$ ，同时这里a与p互质\nObsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md:7:## 对于 $C_n^k$ 以及 $A_n^k$ 的相关代码如下：\nObsidian Vault note\\数论\\位运算\\线性基.md:39:- 两两异或：$3 \\oplus 5 = 6$, $3 \\oplus 6 = 5$, $5 \\oplus 6 = 3$ （发现了吗？它们内部异或居然又绕回去了，这里你因该可以想到我刚刚上面说的基础2了，说明这里存在a ^ b = 0，会有数据的舍弃，继续看后续理解）\nObsidian Vault note\\数论\\位运算\\线性基.md:44:所以，集合 $S$ 能够异或组合出来的所有可能结果是：**$\\{0, 3, 5, 6\\}$**。\nObsidian Vault note\\数论\\位运算\\线性基.md:48:其实不需要。如果我们把 $6$ 扔掉，只留下 $\\{3, 5\\}$：\nObsidian Vault note\\数论\\位运算\\线性基.md:50:- 只选 $3$ 或 $5$，可以得到 $3, 5$\nObsidian Vault note\\数论\\位运算\\线性基.md:52:- $3 \\oplus 5$，可以得到 $6$\nObsidian Vault note\\数论\\位运算\\线性基.md:57:你会发现，仅仅靠 **$\\{3, 5\\}$**，就能完美生成出原集合所有的异或结果 $\\{0, 3, 5, 6\\}$！此时，$6$ 就是一个“多余”的元素。\nObsidian Vault note\\数论\\位运算\\线性基.md:59:这里的 **$\\{3, 5\\}$ 就是原集合 $S$ 的一个线性基**。\nObsidian Vault note\\数论\\位运算\\线性基.md:97:- 剩下的值变成了 $3$。继续看当前 $3$ 的最高位，在第 1 位。\nObsidian Vault note\\数论\\位运算\\线性基.md:103:- 数字变成了 $0$，说明 $6$ 彻底被压榨干净了，无法为线性基贡献新的独立维度（它能被现有的线性基组合出来）。**拒绝插入**。\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:16:#### 四、按位异或 $\\hat{}$（代码符号 `^`，二元运算）-> 重要结论：异或不满足对 $\\&$、$\\mid$ 的分配律\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:17:#### 1. 交换律 $$a\\hat{}b = b\\hat{}a$$ 2. 结合律 $$(a\\hat{}b)\\hat{}c = a\\hat{}(b\\hat{}c)$$ 3. 归零律（自身异或结果为0） $$a\\hat{}a = 0$$ 4. 恒等律（异或0数值不变） $$a\\hat{}0 = a$$ 5. 自逆可逆性质 若 $x = a\\hat{}b$，则 $a = x\\hat{}b,\\ b = x\\hat{}a$"
+          },
+          {
+            "id": "call_00_JMjnYSdnAhQrPxwCxO5p1568",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\费马小定理.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t**引入**：\n2\t在取模运算中，因为在运算过程中+，- ， * 是满足运算的；\n3\t但是在除法中是不满足模运算的，所以这里就引入了费马小定理\n4\t# 费马小定理（常用场景 + 用法，算法竞赛 / 做题）\n5\t\n6\t先给出定理原文，再讲解适用场景与实操用法，结合组合数、快速幂、取模等做题场景。 ## 一、费马小定理前提 & 公式 设： 1. **p 是质数** 2. a 不是 p 的倍数（$\\gcd(a,p)=1$） 则有： $$a^{p-1} \\equiv 1 \\pmod p$$ ## 高频变形 $$a^{p-2} \\equiv a^{-1} \\pmod p$$ 核心结论：$\\boldsymbol{a^{p-2}}$ 就是 a 在模 p 意义下的乘法逆元\n7\t\n8\t---\n9\t\n10\t## 二、核心使用场景\n11\t**场景 1：求模质数下的乘法逆元（最主流） 遇到式子 $\\displaystyle \\frac{x}{y} \\bmod p$（p 为质数），**整数除法不能直接取模**，必须转换为乘法形式： $$\\frac{x}{y} \\equiv x \\cdot y^{-1} \\pmod p$$ 结合费马小定理： $$y^{-1} \\equiv y^{p-2} \\pmod p$$ **适用条件**：模数 p 为质数**\n12\t#### 典型应用：组合数取模 $\\boldsymbol{C_n^k \\bmod p}$ 组合数公式： $$C_n^k = \\frac{n!}{k!\\cdot (n-k)!}$$ 对质数 p 取模转换： $$C_n^k \\bmod p = \\big(n! \\cdot \\text{inv}(k!) \\cdot \\text{inv}((n-k)!)\\big) \\bmod p$$ 其中： $$\\text{inv}(x!) = (x!)^{\\,p-2} \\bmod p$$\n13\t\n14\t### 场景 2：大指数取模（化简高次幂）\n15\t\n16\t**计算 $a^b \\bmod p$，若指数 b 极大（如 $10^{18}$）且 p 为质数，可先化简指数： 利用 $a^{p-1}\\equiv1\\pmod p$，将指数对 $p-1$ 取模，再用快速幂计算**。\n17\t\n18\t示例：求 $2^{1000000} \\bmod 7$ ;\n19\t$p=7$（质数) ;\n20\t$p-1=6$ ;\n21\t$1000000 \\bmod 6 = 4$ ;\n22\t原式等价于：$2^4 = 16 \\equiv 2 \\pmod 7$\n23\t\n24\t### 场景 3：素性检验（判断合数）\n25\t(用法较少 -> 一般都是使用isprime函数来判断是否为质数)\n26\t**反向推导： 若存在整数 a，使得 $a^{p-1} \\not\\equiv 1 \\pmod p$ $\\boldsymbol{\\Rightarrow}$ p 一定不是质数**\n27\t\n28\t---\n29\t## 三、一句话总结使用条件\n30\t\n31\t**满足下面两条，优先使用费马小定理**：\n32\t1.模数 p 是质数**（必要前提）\n33\t**2.需求为以下任意一种**：\n34\t- 分数 / 除法 取模（求逆元）\n35\t- 组合数 $C_n^k \\bmod$ 质数 - 超大指数幂取模（化简指数）\n36\t- 快速判断一个数是否为合数\n37\t"
+          },
+          {
+            "id": "call_01_woUcag7BNTHC1j1fdkcT7159",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\位运算\\线性基.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t**思想引入： 这里可以用我们高中所学习的向量坐标知识比较好形容线性基的思路，高中介绍的向量基底 如  𝒊![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 \"\\boldsymbol{i}\")，𝒋![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 \"\\boldsymbol{j}\")，𝒌这类的基向量，之后空间中任意一个向量都可以由这组基向量表示，这里通过少量的数据就可以等效代替海量数据的思路是线性基的本质思想\n2\t\n3\t# 异或空间线性基\n4\t\n5\t**介绍(关键）：在一堆数据中任意取，所能得到的非0异或和的所有结果，可以被元素个数尽可能少的集合不多不少的等效获取\n6\t那么我就说，这个等效集合就是这堆数据的异或空间异或基\n7\t\n8\t**--> 这里注意哦，我在数据（insert函数）插入的顺序不同时，所构建的异或空间异或基可能时不同的，但是这里依旧等价，没有任何问题；\n9\t\n10\t\n11\t## 如下几个结论是构建异或空间线性基的基础：\n12\t\n13\t- 一堆数字中，任意的a和b，用\\( a ^ b \\)的结果替代a、b中的一个数字，不会影响异或和的组成\n14\t\n15\t- 一堆数字中，任意的a和b，如果有\\( a ^ b = 0 \\)，那么舍弃掉a、b其中一个数字，不会影响异或和的组成\n16\t\n17\t- 一堆数字能否异或出0，在求出异或空间线性基之后，需要被单独标记\n18\t\n19\t\n20\t\n21\t## 举例说明：现在我用一个例子，来完成对于线性基构建过程便于快速理解\n22\t### (普通消元  -->  可以求出关于如下信息：线性基大小，异或和个数，异或和是否有没有0，(子集)最大异或和....等信息)\n23\t\n24\t假设你手里有一个数字集合 $S = \\{3, 5, 6\\}$。\n25\t\n26\t我们先把它们转换成二进制来看看：\n27\t\n28\t- $3 = (011)_2$\n29\t    \n30\t- $5 = (101)_2$\n31\t    \n32\t- $6 = (110)_2$\n33\t\n34\t\n35\t这个集合通过不选，选1个，选2个，选3个。总共可以“生产”出哪些数字呢？\n36\t\n37\t- 选单个数字：$3, 5, 6$\n38\t    \n39\t- 两两异或：$3 \\oplus 5 = 6$, $3 \\oplus 6 = 5$, $5 \\oplus 6 = 3$ （发现了吗？它们内部异或居然又绕回去了，这里你因该可以想到我刚刚上面说的基础2了，说明这里存在a ^ b = 0，会有数据的舍弃，继续看后续理解）\n40\t    \n41\t- 三个异或  或者  不选：$3 \\oplus 5 \\oplus 6 = 0$\n42\t\n43\t\n44\t所以，集合 $S$ 能够异或组合出来的所有可能结果是：**$\\{0, 3, 5, 6\\}$**。\n45\t\n46\t### 思考：我们真的需要全部这 3 个数吗？\n47\t\n48\t其实不需要。如果我们把 $6$ 扔掉，只留下 $\\{3, 5\\}$：\n49\t\n50\t- 只选 $3$ 或 $5$，可以得到 $3, 5$\n51\t    \n52\t- $3 \\oplus 5$，可以得到 $6$\n53\t    \n54\t- 都不选（或者自己异或自己），可以得到 $0$\n55\t\n56\t\n57\t你会发现，仅仅靠 **$\\{3, 5\\}$**，就能完美生成出原集合所有的异或结果 $\\{0, 3, 5, 6\\}$！此时，$6$ 就是一个“多余”的元素。\n58\t\n59\t这里的 **$\\{3, 5\\}$ 就是原集合 $S$ 的一个线性基**。\n60\t\n61\t## 🛠 线性基是怎么运作的？\n62\t\n63\t在实际算法中，线性基通常表现为一个数组（或者说时对应的一个bit位），**每个位置对应二进制的一个最高位（最高位的 1）**。\n64\t\n65\t对于 32 位整数，我们会准备一个大小为 32 的数组 `p`。`p[i]` 存放的数字，其二进制的最高位必须是第 `i` 位。\n66\t\n67\t我们尝试把 $S = \\{3, 5, 6\\}$ 逐个**插入**到线性基中：\n68\t\n69\t### 1. 插入 $3 = (011)_2$\n70\t\n71\t- 最高位的 `1` 在第 1 位（从右往左，从 0 开始计数：第 0 位是 1，第 1 位是 1）。\n72\t    \n73\t- 检查 `p[1]`，目前是空的。\n74\t    \n75\t- 直接把 $3$ 放入 `p[1]`。此时线性基为：`p[1] = 3`。\n76\t    \n77\t\n78\t### 2. 插入 $5 = (101)_2$\n79\t\n80\t- 最高位的 `1` 在第 2 位。\n81\t    \n82\t- 检查 `p[2]`，目前是空的。\n83\t    \n84\t- 直接把 $5$ 放入 `p[2]`。此时线性基为：`p[1] = 3`, `p[2] = 5`。\n85\t    \n86\t\n87\t### 3. 插入 $6 = (110)_2$\n88\t\n89\t- 最高位的 `1` 在第 2 位。\n90\t    \n91\t- 检查 `p[2]`，发现里面**已经有数字 5 了**！\n92\t    \n93\t- 为了消除当前位的 `1`，我们让 $6$ 异或 `p[2]`：\n94\t    \n95\t    $$6 \\oplus 5 = (110)_2 \\oplus (101)_2 = (011)_2 = 3$$\n96\t    \n97\t- 剩下的值变成了 $3$。继续看当前 $3$ 的最高位，在第 1 位。\n98\t    \n99\t- 检查 `p[1]`，发现里面**也已经有数字 3 了**！\n100\t    \n101\t- 继续消除：$3 \\oplus \\text{p}[1] = 3 \\oplus 3 = 0$。\n102\t    \n103\t- 数字变成了 $0$，说明 $6$ 彻底被压榨干净了，无法为线性基贡献新的独立维度（它能被现有的线性基组合出来）。**拒绝插入**。\n104\t    \n105\t\n106\t最终得到的线性基就是 `p[1]=3`, `p[2]=5`。\n107\t\n108\t\n109\t## 具体代码如下：(普通消元)\n110\t```c++\n111\tint bit[N];//这里的N表示为：数据元素中的最大二进制长度\n112\tbool zero = false;\n113\t\n114\tbool insert(int x) {\n115\t\tfor(int i = N - 1;i >= 0;i--) {\n116\t\t\tint cur = (x >> i);\n117\t\t\tif(cur) {\n118\t\t\t\tif(bit[i] == 0) {\n119\t\t\t\t\tbit[i] = cur;\n120\t\t\t\t\treturn true;\n121\t\t\t\t}\n122\t\t\t\tx ^= bit[i];\n123\t\t\t}\n124\t\t}\n125\t\treturn false;\n126\t}\n127\t\n128\tint find_mx_xor() {\n129\t\t// 从高到低贪心：越高的位，越必须是 1\n130\t    // 由于每个位的基至多一个，所以每个位只需考虑异或一个基，若能变大，则异或之\n131\t\tint mx = 0;\n132\t\tfor(int i = N - 1;i >= 0;i--) {\n133\t\t\tmx = max(mx,mx ^ bit[i]);\n134\t\t}\n135\t\treturn mx;\n136\t}\n137\tvoid solve() {\n138\t\tint n;// n 个元素\n139\t\tcin >> n;\n140\t\tfor(int i = 0;i < n;i++) {\n141\t\t\tif(!insert(a)) {\n142\t\t\t\t//这里表示当前的元素被抵消为0了，说明我当前的元素已经可以被线性基中的各个bit元素表示出来了，不在需要加了，这里则一定存在线性基中元素数量<n,对应基础2 --> 存在a ^ b == 0,这样在所有的异或结果中有0这一种情况;\n143\t\t\t\tzero = true;\n144\t\t\t}\n145\t\t}\n146\t\tint mx_xor = find_mx_xor();\n147\t}\n148\t```"
+          },
+          {
+            "id": "call_02_h0EuCjsgnrUt2eJQb5M97499",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\组合数学\\容斥原理.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t**容斥原理是我们高中就有接触过的数学知识，该经典图片就明确表示了其原理\n2\t\n3\t![截图](../../../截图文件/Pasted%20image%2020260723152444.png)\n4\t$$\\vert{}A \\cup B \\cup C\\vert{} = \\vert{}A\\vert{} + \\vert{}B\\vert{} + \\vert{}C\\vert{} - \\vert{}A \\cap B\\vert{} - \\vert{}A \\cap C\\vert{} - \\vert{}B \\cap C\\vert{} + \\vert{}A \\cap B \\cap C\\vert{}$$\n5\t\n6\t**推广为：\n7\t$$\\left\\vert{} \\bigcup_{i=1}^n A_i \\right\\vert{} = \\sum_{k=1}^n (-1)^{k-1} \\sum_{1 \\le i_1 < i_2 < \\dots < i_k \\le n} \\vert{}A_{i_1} \\cap A_{i_2} \\cap \\dots \\cap A_{i_k}\\vert{}$$\n8\t\n9\t**代码如下 + 解析（更易理解）：\n10\t\n11\t```c++\n12\tint num;//这里表示就是有num个集合\n13\t\n14\t//这里f函数功能：计算所有集合的并集\n15\tint f() {\n16\t\t//每单个集合->\"选与不选\"映射到二进制i表达上 \n17\t\t//bit[i] == 0 表示a中下标为i的集合不选；\n18\t\t//否则，bit[i] == 1,表示a中下标为i的集合选；\n19\t\t//由数学组合原理（选与不选）易得有i可以有(1 << num) - 1中选法；\n20\t\tif(num <= 0) return 0;\n21\t\tint ans = 0;\n22\t\tfor(int i = 1;i < (1 << num);i++) {\n23\t\t\tint sum = 0; // sum 表示在这个状态一共所选择的数量\n24\t\t\tint temp = 0; // 该状态对应的集合大小\n25\t\t\tfor(int j = 0;j < num;j++) {\n26\t\t\t\tint vis = (i >> j) & 1;\n27\t\t\t\tif(vis) {\n28\t\t\t\t\tsum++;\n29\t\t\t\t\ttemp = ;//这里变为选上该集合后的交集大小\n30\t\t\t\t}\n31\t\t\t\tif(!temp) break;\n32\t\t\t}\n33\t\t\tif(sum & 1) ans += temp;\n34\t\t\telse ans -= temp;\n35\t\t}\n36\t\treturn ans;\n37\t}\n38\tvoid solve() {\n39\t\tcin >> num; \n40\t\tint all = f();\n41\t}\n42\t```"
+          },
+          {
+            "id": "call_03_kzdnhadt3QfHQ4MO6n9l4454",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\基础算法\\二分算法.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t# 二分答案\n2\t\n3\t一些常见的问题：\n4\t1.什么是循环不变量？\n5\t答：想一想，对于求最小的题目，开区间二分的写法，为什么最终返回的是 right，而不是别的数？在初始化（循环之前）、循环中、循环结束后，都时时刻刻保证 check(right) == true 和 check(left) == false，这就叫循环不变量。根据循环不变量，循环结束时 left+1=right，那么 right 就是最小的满足要求的数（因为再 −1 就不满足要求了），所以答案是 right。\n6\t\n7\t2.**问**：有些题目，明明 m 可以是答案，但却不在初始二分区间中。比如闭区间二分初始化 right=m−1或者开区间 right= m，这不会算错吗？\n8\t答：不会算错。注意「答案所在区间」和「二分区间」是两个概念。想一想，如果二分的 while 循环每次更新的都是 left，那么最终答案是什么？正好就是 m。一般地，如果一开始就能确定 m 一定可以满足题目要求，那么 m 是不需要在二分区间中的。换句话说，二分区间是「尚未确定是否满足题目要求」的数的范围。那些在区间外面的数，都是已确定的满足（不满足）题目要求的数。\n9\t\n10\t3.推荐用开区间：\n11\t![配图](../../截图文件/Pasted%20image%2020260423120923.png)\n12\t**好处**：\n13\t对于开区间，端点处和两端点之外已经完成判断，查询区间为这两个端点之间（但不含两个端点）；\n14\t对于闭区间，端点出是一个还没完成判断但两端点之外已经完成判断，查询区间为这两个端点之间（但包含两个端点）；\n15\t这就导致再这while循环的终止条件：\n16\t开区间 ： $l + 1 < r$;\n17\t闭区间 ：$l < r$;\n18\t这里就是常常再写闭区间中，容易发生的错误，再闭区间中的端点的边界位置处理时，没有正确的加1减1，或者忘记加1减1，导致再 $l + 1 == r$的状态时，发生死循环情况；\n19\t但是再闭区间没有可以很好规避这种问题，再 $l + 1 == r$ 处时，因为这已经跳出循环了，也就规避了发生死循环情况；\n20\t\n21\t## 开区间写法：（推荐）\n22\t![配图](../../截图文件/Pasted%20image%2020260423125228.png)\n23\t```c++\n24\tclass Solution {\n25\tpublic:\n26\t    // 计算满足 check(x) == true 的最小整数 x\n27\t    int binarySearchMin(vector<int>& nums) {\n28\t        // 二分猜答案：判断 mid 是否满足题目要求\n29\t        auto check = [&](int mid) -> bool {\n30\t\n31\t        };\n32\t\n33\t        int left = ; // 循环不变量：check(left) 恒为 false\n34\t        int right = ; // 循环不变量：check(right) 恒为 true\n35\t        while (left + 1 < right) { // 开区间不为空\n36\t            int mid = left + (right - left) / 2;\n37\t            if (check(mid)) { // 说明 check(>= mid 的数) 均为 true\n38\t                right = mid; // 接下来在 (left, mid) 中二分答案\n39\t            } else { // 说明 check(<= mid 的数) 均为 false\n40\t                left = mid; // 接下来在 (mid, right) 中二分答案\n41\t            }\n42\t        }\n43\t        // 循环结束后 left+1 = right\n44\t        // 此时 check(left) == false 而 check(left+1) == check(right) == true\n45\t        // 所以 right 就是最小的满足 check 的值\n46\t        return right;\n47\t    }\n48\t};\n49\t```\n50\t请注意「求最小」和「求最大」在二分写法上的区别。\n51\t\n52\t「求最小」和二分查找求「排序数组中某元素的第一个位置」是类似的，按照红蓝染色法，左边是不满足要求的（红色），右边则是满足要求的（蓝色）。\n53\t\n54\t「求最大」的题目则相反，左边是满足要求的（蓝色），右边是不满足要求的（红色）。这会导致二分写法和上面的「求最小」有一些区别。\n55\t\n56\t以开区间二分为例：\n57\t\n58\t求最小：$check(mid) == true$ 时更新 $right = mid$，反之更新 $left = mid$，最后返回 right.\n59\t求最大：$check(mid) == true$ 时更新 $left = mid$，反之更新 $right = mid$，最后返回 left.\n60\t对于开区间写法，简单来说 $check(mid) == true$ 时更新的是谁，最后就返回谁。\n61\t相比其他二分写法，开区间写法不需要思考加一减一等细节，推荐使用开区间写二分。\n62\t\n63\t\n64\t## 闭区间写法：\n65\t**求min\n66\t```c++\n67\tint find_min(int l, int r) {\n68\t    while (l < r) {\n69\t        int mid = l + (r - l) / 2;\n70\t        if (check(mid)) {\n71\t            r = mid;      // 满足，尝试更小\n72\t        } else {\n73\t            l = mid + 1;  // 不满足，必须变大\n74\t        }\n75\t    }\n76\t    return l;\n77\t    //return r;\n78\t}\n79\t```\n80\t求max\n81\t```c++\n82\tint find_min(int l, int r) {\n83\t    while (l < r) {\n84\t        int mid = l + (r - l) / 2;\n85\t        if (check(mid)) {\n86\t            l = mid;      // 满足，尝试更大\n87\t        } else {\n88\t            r = mid - 1;  // 不满足，必须变小\n89\t        }\n90\t    }\n91\t    return l;\n92\t    //return r;\n93\t}\n94\t```\n95\t"
+          },
+          {
+            "id": "call_04_2PVTEt2wAn6onZYARXeM8881",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t## 1. 问题模型\n2\t\n3\t**题目常见形式**：给定一个正整数 $n$，要求将其拆分为最少数量的质数之和，输出最少的质数个数。如果无法拆分（如 $n=1$），输出 $-1$。\n4\t\n5\t## 2. 核心数学定理（基石）\n6\t\n7\t解决此问题的核心在于数论中的两个重要猜想/定理：\n8\t\n9\t- **强哥德巴赫猜想**：任何大于 2 的**偶数**都可以写成**两个质数**的和。\n10\t    \n11\t    - _公式表达_：$n = p_1 + p_2$ （其中 $n \\% 2 == 0$ 且 $n > 2$，$p_1, p_2$ 为质数）。\n12\t        \n13\t- **弱哥德巴赫猜想**（已被完全证明）：任何大于 5 的**奇数**都可以写成**三个质数**的和。\n14\t    \n15\t    - _公式表达_：$n = p_1 + p_2 + p_3$ （其中 $n \\% 2 \\neq 0$ 且 $n > 5$，$p_1, p_2, p_3$ 为质数）。\n16\t        \n17\t\n18\t> **补充常识**：在所有质数中，**2 是唯一的偶质数**，其余所有质数均为奇数。\n19\t\n20\t## 3. 分类讨论与核心逻辑\n21\t\n22\t基于上述定理，对于任意正整数 $n$，我们可以展开如下的分类讨论：\n23\t\n24\t### 情况 ①：$n = 1$\n25\t\n26\t- **结论**：无法拆分，输出 `-1`。\n27\t    \n28\t- **原因**：因为最小的质数是 2，1 本身不是质数，也无法由任何质数相加得到。\n29\t\n30\t\n31\t### 情况 ②：$n$ 本身是质数\n32\t\n33\t- **结论**：不需要拆分，输出 `1`。\n34\t\n35\t\n36\t### 情况 ③：$n$ 是大于 2 的偶数\n37\t\n38\t- **结论**：根据_强哥德巴赫猜想_，必然可以拆分为 2 个质数，输出 `2`。\n39\t\n40\t\n41\t### 情况 ④：$n$ 是大于 3 的奇数\n42\t\n43\t由于 $n$ 不是质数（已在情况 ② 排除），因此答案至少为 2。我们优先尝试能不能拆成 **2 个质数**。\n44\t\n45\t\n46\t- **数学推理**：\n47\t    \n48\t    要让两个数相加等于奇数，必须是 **一奇 + 一偶**。\n49\t    \n50\t    因为唯一的偶质数是 **2**，所以如果 $n$ 能拆成两个质数，其中一个**必须是 2**，另一个则必须是 $n - 2$。\n51\t    \n52\t- **判断逻辑**：\n53\t    \n54\t    - 如果 `isprime(n - 2)` 为真，说明 $n = 2 + (n - 2)$ 成立，输出 `2`。\n55\t        \n56\t    - 如果 `isprime(n - 2)` 为假，说明无论如何都不可能拆成 2 个质数了。根据_弱哥德巴赫猜想_，它一定能拆成 **3 个质数**（可以通过先拿走一个质数 3，让剩下的偶数 `n - 3` 拆成 2 个质数来实现），输出 `3`。\n57\t    \n58\t\n59\t## 4. 算法状态机（速查表）\n60\t\n61\t```\n62\t                  [ 输入整数 n ]\n63\t                        │\n64\t         ┌──────────────┴──────────────┐\n65\t       n = 1                        n > 1\n66\t         │                             │\n67\t    ┌────┴────┐               ┌────────┴────────┐\n68\t   输出 -1                n 是质数           n 不是质数\n69\t                              │                 │\n70\t                           输出 1        ┌──────┴──────┐\n71\t                                      n 为偶数      n 为奇数\n72\t                                         │             │\n73\t                                       输出 2    ┌─────┴─────┐\n74\t                                            n-2是质数    n-2不是质数\n75\t                                                 │           │\n76\t                                               输出 2      输出 3\n77\t```\n78\t\n79\t## 代码如下：\n80\t\n81\t```c++\n82\t#include <bits/stdc++.h>\n83\tusing namespace std;\n84\t#define int long long\n85\tconst int mod = 1e9 + 7;\n86\tconst int N = 3e5 + 7;\n87\t\n88\t//isprime  -->  判断质因数模板\n89\tbool isprime(int x) {\n90\t\tfor(int i = 2;i * i <= x;i++) {\n91\t\t\tif(x % i == 0) return false;\n92\t\t}\n93\t\treturn x >= 2;\n94\t}\n95\t\n96\tvoid solve() {\n97\t    int n;\n98\t    cin >> n;\n99\t    \n100\t    //哥德巴赫猜想思路\n101\t    if(n == 1) {\n102\t        cout << -1 << endl;\n103\t    }\n104\t    else if(isprime(n)) {\n105\t        cout << 1 << endl;\n106\t    }\n107\t    else if(n % 2 == 0) {\n108\t        cout << 2 << endl;\n109\t    }\n110\t    else {\n111\t        if(isprime(n - 2)) cout << 2 << endl;\n112\t        else cout << 3 << endl;\n113\t    }\n114\t    \n115\t    return;\n116\t}\n117\tsigned main() {\n118\t    ios::sync_with_stdio(false);\n119\t    cin.tie(nullptr);\n120\t    cout.tie(0);\n121\t    int T = 1;\n122\t    cin >> T;\n123\t    while (T--) {\n124\t        solve();\n125\t    }\n126\t    return 0;\n127\t}\n128\t```"
+          },
+          {
+            "id": "call_05_n23OiSZd31eqmZJqWQAv7362",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\isprime(判断质数).md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t```c++\n2\tbool isprime(int x) {\n3\t\tfor(int i = 2;i * i <= x;i++) {\n4\t\t\tif(x % i == 0) return false;\n5\t\t}\n6\t\t//这里因为只有x >= 4的所有数字得到筛查。1，2，3这里3这三个数中，也只有1不是质数，则这里判断 x >= 2 即可；\n7\t\treturn x >= 2;\n8\t}\n9\t```\n10\t\n11\t## 疑问：\n12\t\n13\t**1.为啥这里如果存在一个（0，x ^ 1/2】的情况就表示是合数？\n14\t\n15\t**思考如果对于一个数来说，他的质因数数量一定是>=2,对于合数来说，其质因数数量 > 2,这里一定存在一质因数对 a  *  b == x（ 定：a <= b && a != 1 );\n16\t\n17\t**我们假设 a ≤ b\n18\t那么一定有：\n19\ta * b ≥ a * a;\n20\t也就是：\n21\tx ≥ a ^ 2\n22\t移项得：\n23\t$x ^ (12)$ ≥ a;\n24\t\n25\t**所以，则我们只要看是否存在一个 $(0，x ^ 1/2]$ 的情况，有则为合数，否则为质数；\n26\t"
+          },
+          {
+            "id": "call_06_An3Y5Maeglctl34MBjlk1157",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t## 前置知识：\n2\t\n3\t- 阶乘前缀和 ： $fac[i]$ 表示为 i 的阶乘  (注意这里0的阶乘为1)\n4\t- 逆元 (费马小定理) ：  再模运算中，$a^{-1} \\ mod \\ p$ 等价于  $a^{p - 2} \\ mod \\ p$ ，同时这里a与p互质\n5\t- 快速幂 ：在计算逆元 $a^{p - 2}$ 时，需要使用上快速幂\n6\t\n7\t## 对于 $C_n^k$ 以及 $A_n^k$ 的相关代码如下：\n8\t```c++\n9\tconst int N = ;\n10\tconst int M = ;//这里自己根据题目来定\n11\tconst int mod = 1e9 + 7;\n12\tconst int MOD = 998244353;\n13\tint fac[N], inv[N];\n14\t\n15\tint ksm(int n, int m){\n16\t    int res = 1;\n17\t    n %= mod;\n18\t    while(m){\n19\t        if(m & 1){\n20\t            res = res * n % mod;\n21\t        }\n22\t        n = n * n % mod;\n23\t        m = m >> 1;\n24\t    }\n25\t    return res;\n26\t}\n27\t\n28\tint init = [](){\n29\t    fac[0] = inv[0] = 1;\n30\t    for(int i = 1; i < N; i++){\n31\t        fac[i] = fac[i - 1] * i % mod;\n32\t        inv[i] = ksm(fac[i], mod - 2);\n33\t    }\n34\t    return 0;\n35\t}();\n36\t\n37\tint C(int n, int m){\n38\t    return fac[n] * inv[n - m] % mod * inv[m] % mod;\n39\t}\n40\tint A(int n, int m){\n41\t    return fac[n] * inv[m] % mod;\n42\t}\n43\t```\n44\t\n45\t"
+          },
+          {
+            "id": "call_00_dLSx7ZrW34q8CD4PduQW9089",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t#### 四种位运算及其运算律 设操作数为整数 $a,b,c$ 符号说明：\n2\t - $\\sim$：按位取反（一元运算）\n3\t - $\\&$：按位与\n4\t - $\\mid$：按位或\n5\t - $\\hat{}$（代码写作 `^`）：按位异或\n6\t\n7\t---\n8\t#### 一、按位取反 $\\sim x$ 一元运算，不存在交换律、结合律，满足以下规律：1. 双重否定律 $$\\sim(\\sim a) = a$$2. 德摩根律（配合按位与、按位或） $$\\sim(a\\&b) = (\\sim a)\\mid(\\sim b),\\quad \\sim(a\\mid b) = (\\sim a)\\&(\\sim b)$$ 3. 补码恒等式（计算机有符号整数特有） $$\\sim a = -a-1$$\n9\t---\n10\t#### 二、按位与 $\\&$（二元运算）\n11\t#### 1. 交换律 $$a\\&b = b\\&a$$ 2. 结合律 $$(a\\&b)\\&c = a\\&(b\\&c)$$ 3. 幂等律 $$a\\&a = a$$ 4. 吸收律（搭配按位或） $$a\\&(a\\mid b) = a$$ 5. 分配律（对按位或分配） $$a\\&(b\\mid c) = (a\\&b)\\mid(a\\&c)$$ 6. 零元 / 单位元性质 $$a\\&0 = 0,\\quad a\\&\\text{全1掩码}=a$$ 7. 互补律（搭配按位取反） $$a\\&(\\sim a) = 0$$\n12\t---\n13\t#### 三、按位或 $\\mid$（二元运算）\n14\t#### 1. 交换律 $$a\\mid b = b\\mid a$$ 2. 结合律 $$(a\\mid b)\\mid c = a\\mid(b\\mid c)$$ 3. 幂等律 $$a\\mid a = a$$ 4. 吸收律（搭配按位与） $$a\\mid(a\\&b) = a$$ 5. 分配律（对按位与分配） $$a\\mid(b\\&c) = (a\\mid b)\\&(a\\mid c)$$ 6. 零元 / 单位元性质 $$a\\mid 0 = a,\\quad a\\mid\\text{全1掩码}=\\text{全1掩码}$$ 7. 互补律（搭配按位取反） $$a\\mid(\\sim a) = \\text{全1掩码}$$\n15\t---\n16\t#### 四、按位异或 $\\hat{}$（代码符号 `^`，二元运算）-> 重要结论：异或不满足对 $\\&$、$\\mid$ 的分配律\n17\t#### 1. 交换律 $$a\\hat{}b = b\\hat{}a$$ 2. 结合律 $$(a\\hat{}b)\\hat{}c = a\\hat{}(b\\hat{}c)$$ 3. 归零律（自身异或结果为0） $$a\\hat{}a = 0$$ 4. 恒等律（异或0数值不变） $$a\\hat{}0 = a$$ 5. 自逆可逆性质 若 $x = a\\hat{}b$，则 $a = x\\hat{}b,\\ b = x\\hat{}a$\n18\t"
+          },
+          {
+            "id": "call_01_Rdp4EGotUL7o3mTLx8xk5050",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t## 核心数学定理（基石）\n2\t\n3\t### 两个重要猜想/定理：\n4\t\n5\t- **强哥德巴赫猜想**(猜想1)：任何大于 2 的**偶数**都可以写成**两个质数**的和。\n6\t    \n7\t    - _公式表达_：$n = p_1 + p_2$ （其中 $n \\% 2 == 0$ 且 $n > 2$，$p_1, p_2$ 为质数）。\n8\t        \n9\t- **弱哥德巴赫猜想**(猜想1)（已被完全证明）：任何大于 5 的**奇数**都可以写成**三个质数**的和。\n10\t    \n11\t    - _公式表达_：$n = p_1 + p_2 + p_3$ （其中 $n \\% 2 \\neq 0$ 且 $n > 5$，$p_1, p_2, p_3$ 为质数）。\n12\t        \n13\t> **补充常识**：在所有质数中，**2 是唯一的偶质数**，其余所有质数均为奇数。\n14\t\n15\t### 这里对于(猜想2)本质就是(猜想1)，为什么 ？？\n16\t\n17\t**解释：\n18\t我们先强行从奇数 $n$ 里面拿走一个质数 3；\n19\t因为 $n$ 是奇数，3 也是奇数，减完之后，`n - 3` 就变成了一个偶数；\n20\t根据我们前面第 2 点说的，任何大于 2 的偶数都能拆成 2 个质数；\n21\t所以：\n22\t$$n = 3 + (n - 3) = 3 + (\\text{质数} + \\text{质数})$$\n23\t这就正好是 3 个质数\n24\t"
+          },
+          {
+            "id": "call_02_eKeAG7cvs5kI8RbWA0Vs4891",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\叉积.md"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t\n2\t# No.1  叉积前置基础知识（计算几何 / 二维直线）\n3\t\n4\t\n5\t---\n6\t\n7\t## 一、 向量基础知识\n8\t\n9\t**1.** 向量的表示\n10\t*   **平面二维向量**：$\\vec{u} = (x_1, y_1)$，$\\vec{v} = (x_2, y_2)$。\n11\t    *   在三维空间中，可以等价看作 $z$ 轴分量为 $0$ 的向量：$\\vec{u} = (x_1, y_1, 0)$，$\\vec{v} = (x_2, y_2, 0)$。\n12\t*   **空间三维向量**：$\\vec{a} = (a_x, a_y, a_z)$，$\\vec{b} = (b_x, b_y, b_z)$。\n13\t*   **点变向量（减法）**：若有三点 $A, B, P$，则以 $A$ 为起点的向量表示为：\n14\t    *   $\\vec{AB} = B - A = (B_x - A_x, B_y - A_y)$\n15\t    *   $\\vec{AP} = P - A = (P_x - A_x, P_y - A_y)$\n16\t\n17\t**2.** 向量夹角 $\\alpha$\n18\t将两个向量的起点平移到同一点后，两条向量之间在 $[0, \\pi]$ 范围内的夹角记为 $\\alpha$ ($0 \\le \\alpha \\le \\pi$)。\n19\t\n20\t\n21\t---\n22\t\n23\t## 二、 三维向量叉积（标准严格定义）\n24\t\n25\t**1.** 行列式计算公式\n26\t三维向量 $\\vec{a} \\times \\vec{b}$ 的结果是一个**向量**，可以通过三阶行列式进行计算：\n27\t\n28\t$$\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ a_x & a_y & a_z \\\\ b_x & b_y & b_z \\end{vmatrix} = (a_y b_z - a_z b_y)\\vec{i} - (a_x b_z - a_z b_x)\\vec{j} + (a_x b_y - a_y b_x)\\vec{k}$$\n29\t\n30\t*   其中 $\\vec{i}, \\vec{j}, \\vec{k}$ 分别是 $x, y, z$ 轴的单位方向向量。\n31\t\n32\t**2.** 模长公式\n33\t$$\\left| \\vec{a} \\times \\vec{b} \\right| = \\left| \\vec{a} \\right| \\cdot \\left| \\vec{b} \\right| \\cdot \\sin\\alpha$$\n34\t\n35\t*   **几何意义**：结果向量的模长（长度），等于以 $\\vec{a}$ 和 $\\vec{b}$ 为邻边所围成的**平行四边形的面积**。\n36\t\n37\t**3.** 方向（右手定则）\n38\t*   结果向量 $\\vec{a} \\times \\vec{b}$ 始终同时**垂直于** $\\vec{a}$ 和 $\\vec{b}$ 所在的平面。\n39\t*   **右手定则**：伸出右手，四指从 $\\vec{a}$ 沿小于 $\\pi$ 的夹角转向 $\\vec{b}$，大拇指所指的方向就是 $\\vec{a} \\times \\vec{b}$ 的方向。\n40\t\n41\t**4.** 核心运算性质\n42\t*   **反交换律**：$\\vec{a} \\times \\vec{b} = -(\\vec{b} \\times \\vec{a})$ （方向相反）\n43\t*   **自身叉积**：$\\vec{a} \\times \\vec{a} = \\vec{0}$ （同向共线，夹角为 0，$\\sin 0 = 0$）\n44\t*   **数乘结合律**：$(k\\vec{a}) \\times \\vec{b} = k(\\vec{a} \\times \\vec{b})$\n45\t*   **分配律**：$\\vec{a} \\times (\\vec{b} + \\vec{c}) = \\vec{a} \\times \\vec{b} + \\vec{a} \\times \\vec{c}$\n46\t\n47\t\n48\t---\n49\t\n50\t## 三、 二维叉积（伪叉乘）\n51\t\n52\t日常刷题和做计算几何时，平面向量都落在 $xy$ 平面上（即 $z=0$）。将其代入三维叉积行列式：\n53\t\n54\t$$\\vec{u} \\times \\vec{v} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ x_1 & y_1 & 0 \\\\ x_2 & y_2 & 0 \\end{vmatrix} = 0\\vec{i} - 0\\vec{j} + (x_1 y_2 - x_2 y_1)\\vec{k}$$\n55\t\n56\t因为结果只有 $z$ 轴分量有效，为了方便，计算几何中直接提取该数值，定义为**二维叉积（标量）**。\n57\t\n58\t**1.** 数值定义\n59\t$$\\text{cross}(\\vec{u}, \\vec{v}) = x_1 y_2 - x_2 y_1$$\n60\t\n61\t**2.** 模长与夹角关系\n62\t$$\\left| \\text{cross}(\\vec{u}, \\vec{v}) \\right| = \\left| \\vec{u} \\right| \\cdot \\left| \\vec{v} \\right| \\cdot \\sin\\alpha$$\n63\t\n64\t*   $\\alpha$ 是平面内两向量起点重合后的夹角。\n65\t\n66\t**3.** 符号含义（判断点在直线哪一侧的核心）\n67\t设 $\\text{cross} = \\text{cross}(\\vec{u}, \\vec{v})$：\n68\t*   **$\\text{cross} > 0$**：$\\vec{v}$ 在 $\\vec{u}$ 的**逆时针方向（左侧）**，此时旋转角 $\\alpha \\in (0, \\pi)$，$\\sin\\alpha > 0$。\n69\t*   **$\\text{cross} < 0$**：$\\vec{v}$ 在 $\\vec{u}$ 的**顺时针方向（右侧）**，等效于负旋转角，$\\sin\\alpha < 0$。\n70\t*   **$\\text{cross} = 0$**：$\\sin\\alpha = 0$，此时 $\\alpha = 0$ 或 $\\pi$，说明两向量**共线**（同向或反向）。\n71\t\n72\t**4.** 几何面积意义\n73\t*   $\\left| \\text{cross}(\\vec{u}, \\vec{v}) \\right|$ = 以 $\\vec{u}, \\vec{v}$ 为邻边的**平行四边形面积**。\n74\t*   $\\frac{1}{2} \\left| \\text{cross}(\\vec{u}, \\vec{v}) \\right|$ = 以 $\\vec{u}, \\vec{v}$ 为两边的**三角形面积**。\n75\t\n76\t**5.** 常用三点式（直线位置判断专用）\n77\t已知平面三点 $A(A_x, A_y)$、$B(B_x, B_y)$、$C(C_x, C_y)$，构造向量 $\\vec{AB}$ 和 $\\vec{AC}$，其叉积为：\n78\t$$\\text{cross}(A, B, C) = \\vec{AB} \\times \\vec{AC} = (B_x - A_x)(C_y - A_y) - (B_y - A_y)(C_x - A_x)$$\n79\t\n80\t*   **$\\text{cross}(A, B, C) > 0$**：点 $C$ 在有向直线 $AB$ 的**左侧**。\n81\t*   **$\\text{cross}(A, B, C) < 0$**：点 $C$ 在有向直线 $AB$ 的**右侧**。\n82\t*   **$\\text{cross}(A, B, C) = 0$**：$A, B, C$ **三点共线**。\n83\t\n84\t\n85\t---\n86\t\n87\t## 四、 二维与三维叉积的本质区别\n88\t\n89\t| 维度类型     | 运算结果性质         | 主要几何作用          | 计算产物                   |\n90\t| :------- | :------------- | :-------------- | :--------------------- |\n91\t| **三维叉积** | **向量**（Vector） | 求法向量、空间面积、空间旋转  | 具有大小和空间方向的矢量           |\n92\t| **二维叉积** | **实数**（Scalar） | 判断左右位置、求平面多边形面积 | 实数（本质是三维叉积的 $z$ 轴分量数值） |\n93\t\n94\t\n95\t# No.2  叉积在位置关系中的应用\n96\t\n97\t\n98\t---\n99\t## 一、点与直线的位置关系（最常用）\n100\t\n101\t给定直线过两点 $A, B$，判断点 $P$ 在直线哪一侧：\n102\t\n103\t1. **构造向量**：\n104\t   $$\\overrightarrow{AB} = (B_x - A_x, B_y - A_y)$$\n105\t   $$\\overrightarrow{AP} = (P_x - A_x, P_y - A_y)$$\n106\t\n107\t2. **计算叉积**：\n108\t   $$\\text{cross} = \\overrightarrow{AB} \\times \\overrightarrow{AP}$$\n109\t\n110\t3. **位置判定**：\n111\t   * $\\text{cross} > 0$：$P$ 在直线 $AB$ 左侧\n112\t   * $\\text{cross} < 0$：$P$ 在直线 $AB$ 右侧\n113\t   * $\\text{cross} = 0$：$P$ 在直线 $AB$ 上\n114\t\n115\t### 拓展：点在线段上的判定\n116\t需要同时满足两个条件：\n117\t1. $\\text{cross}(\\overrightarrow{AB}, \\overrightarrow{AP}) = 0$（确保共线）\n118\t2. $P$ 的坐标在 $A, B$ 横、纵坐标区间内（即 $\\min \\le \\text{坐标} \\le \\max$，确保点在线段内而非延长线上）\n119\t\n120\t\n121\t---\n122\t\n123\t## 二、两直线相交 / 平行判定\n124\t\n125\t* 直线 1 过点：$A, B$\n126\t* 直线 2 过点：$C, D$\n127\t\n128\t1. **计算方向向量的叉积**：\n129\t   $$c_1 = \\text{cross}(\\overrightarrow{AB}, \\overrightarrow{CD})$$\n130\t   * $c_1 = 0$：两直线平行或重合\n131\t   * $c_1 \\neq 0$：两直线相交（有唯一交点）\n132\t\n133\t2. **区分平行 vs 重合**：\n134\t   再计算：$$c_2 = \\text{cross}(\\overrightarrow{AB}, \\overrightarrow{AC})$$\n135\t   * $c_1 = 0$ 且 $c_2 = 0$：两直线**完全重合**\n136\t   * $c_1 = 0$ 且 $c_2 \\neq 0$：两直线**平行且无交点**\n137\t\n138\t\n139\t---\n140\t\n141\t## 三、两线段相交判定（计算几何核心）\n142\t\n143\t**1.** 跨立实验（标准方法）\n144\t线段 $AB$、$\\text{CD}$ 相交的充要条件是：\n145\t* $C、D$ 两点分别在直线 $AB$ 的两侧；\n146\t* $A、B$ 两点分别在直线 $CD$ 的两侧。\n147\t\n148\t用叉积可以表示为：\n149\t$$\\begin{aligned}\n150\tc_1 &= \\text{cross}(\\overrightarrow{AB}, \\overrightarrow{AC}) \\\\\n151\tc_2 &= \\text{cross}(\\overrightarrow{AB}, \\overrightarrow{AD}) \\\\\n152\tc_3 &= \\text{cross}(\\overrightarrow{CD}, \\overrightarrow{CA}) \\\\\n153\tc_4 &= \\text{cross}(\\overrightarrow{CD}, \\overrightarrow{CB})\n154\t\\end{aligned}$$\n155\t\n156\t* **普通相交**（交点在线段内部）：$c_1 \\cdot c_2 < 0$ 且 $c_3 \\cdot c_4 < 0$\n157\t\n158\t**2.** 包含端点共线相交（特殊情况）\n159\t若上述某一个叉积 $c_i = 0$，说明对应的端点落在另一条直线上。此时再通过**坐标区间覆盖**（即点在线段上的判定方法）来判断是否属于线段端点相交或部分重叠。\n160\t\n161\t\n162\t---\n163\t\n164\t## 四、多边形相关延伸（直线位置衍生）\n165\t\n166\t**1.** 凸包拐点转向判断\n167\t对于连续的三点 $A, B, C$，计算 $\\text{cross}(\\overrightarrow{AB}, \\overrightarrow{BC})$：\n168\t* $> 0$：**左转**（凸拐点）\n169\t* $< 0$：**右转**（凹拐点）\n170\t* $= 0$：三点共线\n171\t\n172\t**2.** 点在凸多边形内部\n173\t依次顺时针或逆时针取多边形的每一条边。如果待测点 $P$ 始终在所有边的同侧（即与每条边计算的叉积符号保持统一，全部 $>0$ 或全部 $<0$），则点 $P$ 在多边形内部。\n174\t\n175\t\n176\t---\n177\t\n178\t## 五、距离快速推导（叉积求高）\n179\t\n180\t* **三角形面积**：\n181\t  $$S = \\frac{1}{2} | \\overrightarrow{AB} \\times \\overrightarrow{AP} |$$\n182\t\n183\t* **点 $P$ 到直线 $AB$ 的距离**：\n184\t  $$d = \\frac{| \\overrightarrow{AB} \\times \\overrightarrow{AP} |}{| \\overrightarrow{AB} |}$$\n185\t> **小技巧**：在实际算法中，如果只需要**比较距离大小**而不需要具体数值，可以直接比较分子（叉积绝对值）的大小，从而避免了分母求模长时昂贵的**开根号 (sqrt)** 计算。\n186\t\n187\t\n188\t# No.3 有关叉积的相关例题\n189\t\n190\t[小红的分割线](https://ac.nowcoder.com/acm/contest/137561/E)\n191\t"
+          },
+          {
+            "id": "call_00_tV4NhYKlCAHHaKPC5xgk5024",
+            "name": "Bash",
+            "input": {
+              "command": "cd \"C:/Users/l'x/OneDrive/Desktop/个人仓库/.obsidian_note/Obsidian Vault note\" && for f in $(find . -name \"*.md\" -print0 | xargs -0); do awk 'BEGIN { line=0 } { line++; total = gsub(/\\$/, \"&\"); if (total % 2 != 0) print FILENAME \":\" line \" (odd $\" total \") \" $0 }' \"$f\" 2>/dev/null; done",
+              "description": "Find lines with odd number of $ signs (unbalanced inline math)"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "(Bash completed with no output)"
+          },
+          {
+            "id": "call_01_tkhPFXe45tZBJI8cdQxg9227",
+            "name": "Grep",
+            "input": {
+              "-n": true,
+              "pattern": "\\!\\s*\\[.*\\]\\(.*\\.md",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_02_5CB21ChovyXUm5Dhz39H9069",
+            "name": "Grep",
+            "input": {
+              "-n": true,
+              "pattern": "\\!\\s*\\[",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Obsidian Vault note\\dp\\背包.md:4:![配图](../../截图文件/屏幕截图%202026-04-07%20120732.png)\nObsidian Vault note\\dp\\背包.md:71:![配图](../../截图文件/Pasted%20image%2020260408170920.png)\nObsidian Vault note\\数论\\位运算\\线性基.md:1:[Omitted long matching line]\nObsidian Vault note\\dp\\线性dp.md:14:![配图](../../截图文件/图1.png)\nObsidian Vault note\\dp\\线性dp.md:45:![配图](../../截图文件/Pasted%20image%2020260330164458.png)\nObsidian Vault note\\图论\\网格问题\\坐标压缩(小技巧).md:41:![配图](../../../截图文件/Pasted%20image%2020260701160935.png)\nObsidian Vault note\\数论\\组合数学\\容斥原理.md:3:![截图](../../../截图文件/Pasted%20image%2020260723152444.png)\nObsidian Vault note\\数据结构\\stack\\单调栈.md:5:![配图](../../../截图文件/Pasted%20image%2020260423172327.png)\nObsidian Vault note\\数据结构\\stack\\单调栈.md:102:![配图](../../../截图文件/Pasted%20image%2020260423211220.png)\nObsidian Vault note\\基础算法\\二分算法.md:11:![配图](../../截图文件/Pasted%20image%2020260423120923.png)\nObsidian Vault note\\基础算法\\二分算法.md:22:![配图](../../截图文件/Pasted%20image%2020260423125228.png)\nObsidian Vault note\\基础算法\\前缀和，差分\\前缀和.md:11:![配图](../../../截图文件/Pasted%20image%2020260424152154.png)\nObsidian Vault note\\基础算法\\前缀和，差分\\前缀和.md:86:![配图](../../../截图文件/Pasted%20image%2020260424170431.png)\nObsidian Vault note\\基础算法\\前缀和，差分\\前缀和.md:99:![配图](../../../截图文件/Pasted%20image%2020260424194154.png)![配图](../../../截图文件/Pasted%20image%2020260424195141.png)\nObsidian Vault note\\基础算法\\前缀和，差分\\差分.md:20:\t![配图](../../../截图文件/Pasted%20image%2020260519121152.png)\nObsidian Vault note\\基础算法\\前缀和，差分\\差分.md:30:![配图](../../../截图文件/Pasted%20image%2020260526122051.png)\nObsidian Vault note\\数据结构\\树\\树的直径\\tree diameter.md:20:![配图](../../../../截图文件/Pasted%20image%2020260708204006.png)\nObsidian Vault note\\数据结构\\树\\树的直径\\tree diameter.md:55:![配图](../../../../截图文件/Pasted%20image%2020260708203843.png)\nObsidian Vault note\\数据结构\\树\\树的遍历\\二叉树转化.md:257:![配图](../../../../截图文件/Pasted%20image%2020260414111412.png)\nObsidian Vault note\\数据结构\\树\\树的遍历\\二叉树转化.md:490:![配图](../../../../截图文件/Pasted%20image%2020260414112306.png)\nObsidian Vault note\\数据结构\\树\\树的遍历\\二叉树转化.md:491:![配图](../../../../截图文件/Pasted%20image%2020260414112324.png)\nObsidian Vault note\\数据结构\\树\\树的遍历\\二叉树转化.md:492:![配图](../../../../截图文件/Pasted%20image%2020260414112358.png)\nObsidian Vault note\\数据结构\\树\\树的遍历\\二叉树转化.md:657:![配图](../../../../截图文件/Pasted%20image%2020260414112900.png)\nObsidian Vault note\\数据结构\\树\\树的遍历\\二叉树转化.md:658:![配图](../../../../截图文件/Pasted%20image%2020260414112919.png)\nObsidian Vault note\\数据结构\\用于处理维护区间\\ST表\\模板例题.md:2:![配图](../../../../截图文件/Pasted%20image%2020260420164140.png)\nObsidian Vault note\\数据结构\\用于处理维护区间\\ST表\\模板例题.md:53:![配图](../../../../截图文件/Pasted%20image%2020260610201408.png)\nObsidian Vault note\\图论\\图论算法\\floyd(多源最短路).md:2:![配图](../../../截图文件/Pasted%20image%2020260526164457.png)\nObsidian Vault note\\数据结构\\用于处理维护区间\\数状数组\\BIT.md:1:![配图](../../../../截图文件/Pasted%20image%2020260514115706.png)"
+          },
+          {
+            "id": "call_00_xhisQV8LrbKoSeb0mWHg8735",
+            "name": "Grep",
+            "input": {
+              "-n": true,
+              "pattern": "\\\\\\[\\[|\\]\\]|\\\\le\\b|\\\\ge\\b|\\\\ne\\b|\\\\equiv\\b|\\\\not\\\\equiv|\\\\Rightarrow|\\\\rightarrow|\\\\overrightarrow|\\\\vec\\b|\\\\cdot\\b|\\\\times\\b|\\\\bmod\\b|\\\\pmod\\b|\\\\gcd\\b|\\\\oplus\\b|\\\\mid\\b|\\\\left|\\\\right|\\\\big|\\\\text\\b|\\\\boldsymbol\\b|\\\\hat\\{\\}|\\\\displaystyle\\b|\\\\frac\\b|\\\\sin\\b|\\\\cos\\b|\\\\tan\\b|\\\\sum\\b|\\\\prod\\b|\\\\int\\b|\\\\vert\\b|\\{|\\}|\\^|\\_",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "files_with_matches"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Found 42 files\nObsidian Vault note\\数据结构\\树\\树的遍历\\二叉树转化.md\nObsidian Vault note\\数论\\组合数学\\预处理 - 组合数.md\nObsidian Vault note\\数论\\哥德巴赫猜想\\模板题：哥德巴赫猜想与质数拆分.md\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md\nObsidian Vault note\\数论\\isprime(判断质数).md\nObsidian Vault note\\数据结构\\树\\LCA\\树上倍增.md\nObsidian Vault note\\基础算法\\二分算法.md\nObsidian Vault note\\数论\\组合数学\\容斥原理.md\nObsidian Vault note\\数论\\叉积.md\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md\nObsidian Vault note\\数论\\位运算\\线性基.md\nObsidian Vault note\\dp\\线性dp.md\nObsidian Vault note\\dp\\背包.md\nObsidian Vault note\\图论\\网格问题\\坐标压缩(小技巧).md\nObsidian Vault note\\图论\\图论算法\\floyd(多源最短路).md\nObsidian Vault note\\图论\\图论算法\\Dijkstra(单源最短路).md\nObsidian Vault note\\图论\\图论算法\\DFS(联系于-stack)和并查集.md\nObsidian Vault note\\图论\\图论算法\\BFS(联系于-queue).md\nObsidian Vault note\\图论\\图论算法\\最小生成树(Kruskal+Prim).md\nObsidian Vault note\\数论\\费马小定理.md\nObsidian Vault note\\数论\\埃式筛 线性筛.md\nObsidian Vault note\\数据结构\\stack\\单调栈.md\nObsidian Vault note\\数据结构\\ordered_set\\ordered_set(底层红黑树 - 平衡二叉搜索树).md\nObsidian Vault note\\数据结构\\用于处理维护区间\\ST表\\st表.md\nObsidian Vault note\\数据结构\\用于处理维护区间\\ST表\\模板例题.md\nObsidian Vault note\\数据结构\\用于处理维护区间\\线段树\\Segment Tree.md\nObsidian Vault note\\数据结构\\用于处理维护区间\\数状数组\\BIT.md\nObsidian Vault note\\数据结构\\树\\树的直径\\tree diameter.md\nObsidian Vault note\\数据结构\\堆\\priority_queue内部定义.md\nObsidian Vault note\\基础算法\\前缀和，差分\\前缀和.md\nObsidian Vault note\\基础算法\\前缀和，差分\\差分.md\nObsidian Vault note\\基础算法\\排序\\归并排序(nlogn).md\nObsidian Vault note\\基础算法\\排序\\插入排序 (n).md\nObsidian Vault note\\数据结构\\并查集\\Union and find.md\nObsidian Vault note\\数据结构\\并查集\\带权并查集.md\nObsidian Vault note\\.obsidian\\workspace.json\nObsidian Vault note\\.obsidian\\appearance.json\nObsidian Vault note\\.obsidian\\app.json\nObsidian Vault note\\.obsidian\\core-plugins.json\nObsidian Vault note\\.obsidian\\bookmarks.json\nObsidian Vault note\\.obsidian\\graph.json\nObsidian Vault note\\图论\\建图\\邻接表与邻接矩阵.md"
+          },
+          {
+            "id": "call_01_a8uvMt5xD2c0OHD9x6UE2640",
+            "name": "Grep",
+            "input": {
+              "-n": true,
+              "pattern": "\\\\newcommand|\\\\def\\b|\\\\renewcommand|\\\\newenvironment|\\\\DeclareMathOperator|\\\\operatorname\\*|\\\\xrightarrow|\\\\xleftarrow|\\\\overset|\\\\underset|\\\\sideset|\\\\substack|\\\\genfrac|\\\\cfrac|\\\\dbinom|\\\\tbinom|\\\\brace|\\\\brack|\\\\choose|\\\\atop|\\\\above|\\\\cases|\\\\hline|\\\\vspace|\\\\hspace|\\\\color|\\\\textcolor|\\\\pagecolor|\\\\fbox|\\\\boxed|\\\\phantom|\\\\mathbin|\\\\mathrel|\\\\mathop|\\\\mathord|\\\\mathopen|\\\\mathclose|\\\\mathpunct",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "No matches found"
+          },
+          {
+            "id": "call_00_ncV1OiKr9Dr824mQCg3V7674",
+            "name": "Read",
+            "input": {
+              "file_path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note\\数论\\位运算\\线性基.md",
+              "offset": 1,
+              "limit": 1
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "1\t**思想引入： 这里可以用我们高中所学习的向量坐标知识比较好形容线性基的思路，高中介绍的向量基底 如  𝒊![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 \"\\boldsymbol{i}\")，𝒋![](data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 \"\\boldsymbol{j}\")，𝒌这类的基向量，之后空间中任意一个向量都可以由这组基向量表示，这里通过少量的数据就可以等效代替海量数据的思路是线性基的本质思想"
+          },
+          {
+            "id": "call_01_r3EsZhrlWazYU8WYv6wA9226",
+            "name": "Grep",
+            "input": {
+              "-n": true,
+              "pattern": "\\\\text\\{[^}]*[\\x{4e00}-\\x{9fff}]",
+              "path": "C:\\Users\\l'x\\OneDrive\\Desktop\\个人仓库\\.obsidian_note\\Obsidian Vault note",
+              "output_mode": "content"
+            },
+            "status": "completed",
+            "isExpanded": false,
+            "result": "Obsidian Vault note\\数论\\叉积.md:118:2. $P$ 的坐标在 $A, B$ 横、纵坐标区间内（即 $\\min \\le \\text{坐标} \\le \\max$，确保点在线段内而非延长线上）\nObsidian Vault note\\数论\\哥德巴赫猜想\\Goldbach's Conjecture.md:22:$$n = 3 + (n - 3) = 3 + (\\text{质数} + \\text{质数})$$\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:11:#### 1. 交换律 $$a\\&b = b\\&a$$ 2. 结合律 $$(a\\&b)\\&c = a\\&(b\\&c)$$ 3. 幂等律 $$a\\&a = a$$ 4. 吸收律（搭配按位或） $$a\\&(a\\mid b) = a$$ 5. 分配律（对按位或分配） $$a\\&(b\\mid c) = (a\\&b)\\mid(a\\&c)$$ 6. 零元 / 单位元性质 $$a\\&0 = 0,\\quad a\\&\\text{全1掩码}=a$$ 7. 互补律（搭配按位取反） $$a\\&(\\sim a) = 0$$\nObsidian Vault note\\数论\\位运算\\按位取反、按位与、按位或、按位异或满足的运算法则.md:14:#### 1. 交换律 $$a\\mid b = b\\mid a$$ 2. 结合律 $$(a\\mid b)\\mid c = a\\mid(b\\mid c)$$ 3. 幂等律 $$a\\mid a = a$$ 4. 吸收律（搭配按位与） $$a\\mid(a\\&b) = a$$ 5. 分配律（对按位与分配） $$a\\mid(b\\&c) = (a\\mid b)\\&(a\\mid c)$$ 6. 零元 / 单位元性质 $$a\\mid 0 = a,\\quad a\\mid\\text{全1掩码}=\\text{全1掩码}$$ 7. 互补律（搭配按位取反） $$a\\mid(\\sim a) = \\text{全1掩码}$$"
+          }
+        ],
+        "asyncStatus": "completed",
+        "agentId": "ac9a86047bf3ce45a",
+        "startedAt": 1785412156878,
+        "result": "Let me check one final thing - the base64 embedded image in 线性基.md and verify that `\\text{}` won't cause KaTeX problems.",
+        "completedAt": 1785412459544
+      }
+    }
   },
   "usage": {
     "model": "haiku",
-    "inputTokens": 2118,
+    "inputTokens": 1732,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 87040,
+    "cacheReadInputTokens": 134784,
     "contextWindow": 200000,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 89158,
-    "percentage": 45
+    "contextTokens": 136516,
+    "percentage": 68
   }
 }
