@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/数论/isprime(判断质数).md",
+                "file": "Obsidian Vault note/数论/叉积.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "isprime(判断质数)"
+              "title": "叉积"
             }
           }
         ]
@@ -205,8 +205,9 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "ba50335858897656",
+  "active": "1cff170b5ea531be",
   "lastOpenFiles": [
+    "Obsidian Vault note/数论/isprime(判断质数).md",
     "Obsidian Vault note/数论/费马小定理.md",
     "Obsidian Vault note/数论/叉积.md",
     "题解/牛客/暑假训练营/2026/第3场/K - Turn-by-Turn Navigation.md",
@@ -244,7 +245,6 @@
     "Obsidian Vault note/图论/图论算法/BFS(联系于-queue).md",
     "Obsidian Vault note/图论/图论算法/DFS(联系于-stack)和并查集.md",
     "Obsidian Vault note/图论/图论算法/Dijkstra(单源最短路).md",
-    "Obsidian Vault note/数据结构/stack/单调栈.md",
     "截图文件/Pasted image 20260730182518.png",
     "题解/牛客/江西九校联盟",
     "截图文件/Pasted image 20260730180954.png",
