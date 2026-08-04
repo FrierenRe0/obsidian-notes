@@ -180,7 +180,7 @@ int f(int m,int num) {
             }
         }
         // m / temp 就是对应该状态的交集数量大小
-        if(sum % 2) res += m / temp; 
+        if(sum & 1) res += m / temp; 
         else res -= m / temp;
     }
     return res;
@@ -337,7 +337,7 @@ int f(int m,int num) {
                 temp *= factor[j];
             }
         }
-        if(sum % 2) res += m / temp;
+        if(sum & 1) res += m / temp;
         else res -= m / temp;
     }
     return res;
