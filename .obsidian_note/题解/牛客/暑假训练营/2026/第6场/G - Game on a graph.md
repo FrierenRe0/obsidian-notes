@@ -1,6 +1,6 @@
 ## 相关链接：
-题卷查看：[contest-57488-zh.pdf](https://uploadfiles.nowcoder.com/files/20260805/999991351_1785901556367/contest-57488-zh.pdf)
-题目链接：[G-Game on a Graph_2026牛客暑期多校训练营6](https://ac.nowcoder.com/acm/contest/133881/G)
+- 题卷查看：[contest-57488-zh.pdf](https://uploadfiles.nowcoder.com/files/20260805/999991351_1785901556367/contest-57488-zh.pdf)
+- 题目链接：[G-Game on a Graph_2026牛客暑期多校训练营6](https://ac.nowcoder.com/acm/contest/133881/G)
 
 ## 评价：
 变形题：拓扑排序 （本质：多源 BFS）

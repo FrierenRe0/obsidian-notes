@@ -1,10 +1,12 @@
 ## 相关链接
-题卷：[第3场题卷](../题卷/第3场.pdf)
-题目链接：[K-Turn-by-Turn Navigation_2026牛客暑期多校训练营3](https://ac.nowcoder.com/acm/contest/133878/K)
+- 题卷：[第3场题卷](../题卷/第3场.pdf)
+- 题目链接：[K-Turn-by-Turn Navigation_2026牛客暑期多校训练营3](https://ac.nowcoder.com/acm/contest/133878/K)
 
 ## 题目大意：
 
 ![](../../../../../截图文件/Pasted%20image%2020260730153408.png)
+
+### 题目解析：
 
 平面直线之间的位置关系判断，一段经典的叉乘问题：(模板题)
 --> 不了解叉乘的可以看我算法章中数论叉乘章节

@@ -1,6 +1,6 @@
 ## 相关链接：
-题卷查看：[第4场题卷](../题卷/第4场.pdf)
-题目链接：[B-Quadratic Residue_2026牛客暑期多校训练营4](https://ac.nowcoder.com/acm/contest/133879/B)
+- 题卷查看：[第4场题卷](../题卷/第4场.pdf)
+- 题目链接：[B-Quadratic Residue_2026牛客暑期多校训练营4](https://ac.nowcoder.com/acm/contest/133879/B)
 
 ## 评价：数学题
 
@@ -10,7 +10,6 @@
 ![](../../../../../截图文件/Pasted%20image%2020260730182518.png)
 
 ## 核心数学推导与证明
-
 
 为了构造出一组通解，我们可以尝试简化条件。
 

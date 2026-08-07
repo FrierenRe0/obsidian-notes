@@ -1,6 +1,6 @@
 ## 相关链接
-题卷查看：[第1场题卷](../题卷/第1场.pdf)
-题目链接：[C-Fish Eating_2026牛客暑期多校训练营1](https://ac.nowcoder.com/acm/contest/133876/C)
+- 题卷查看：[第1场题卷](../题卷/第1场.pdf)
+- 题目链接：[C-Fish Eating_2026牛客暑期多校训练营1](https://ac.nowcoder.com/acm/contest/133876/C)
 
 ## 题目大意：
 

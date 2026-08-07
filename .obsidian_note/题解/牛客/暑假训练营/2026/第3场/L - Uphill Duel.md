@@ -1,6 +1,6 @@
 ## 相关链接
-题卷：[第3场题卷](../题卷/第3场.pdf)
-题目链接：[L-Uphill Duel_2026牛客暑期多校训练营3](https://ac.nowcoder.com/acm/contest/133878/L)
+- 题卷：[第3场题卷](../题卷/第3场.pdf)
+- 题目链接：[L-Uphill Duel_2026牛客暑期多校训练营3](https://ac.nowcoder.com/acm/contest/133878/L)
 
 ## 评价：
 一道经典的博弈题，个人认为其中最重要的思想: 逆向思维

@@ -1,6 +1,6 @@
 ## 相关链接：
-题卷查看：[contest-57488-zh.pdf](https://uploadfiles.nowcoder.com/files/20260805/999991351_1785901556367/contest-57488-zh.pdf)
-题目链接：[D-Divisibility_2026牛客暑期多校训练营6](https://ac.nowcoder.com/acm/contest/133881/D)
+- 题卷查看：[contest-57488-zh.pdf](https://uploadfiles.nowcoder.com/files/20260805/999991351_1785901556367/contest-57488-zh.pdf)
+- 题目链接：[D-Divisibility_2026牛客暑期多校训练营6](https://ac.nowcoder.com/acm/contest/133881/D)
 
 ## 评价：
 数学思维题 + 图论：**二分图 BFS**（求到每个点的最短偶数长度路径与奇数长度路径）实现

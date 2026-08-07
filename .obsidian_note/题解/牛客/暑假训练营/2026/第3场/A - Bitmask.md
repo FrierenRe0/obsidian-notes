@@ -1,6 +1,6 @@
 ## 相关链接
-题卷：[第3场题卷](../题卷/第3场.pdf)
-题目链接：[A-Bitmask_2026牛客暑期多校训练营3](https://ac.nowcoder.com/acm/contest/133878/A)
+- 题卷：[第3场题卷](../题卷/第3场.pdf)
+- 题目链接：[A-Bitmask_2026牛客暑期多校训练营3](https://ac.nowcoder.com/acm/contest/133878/A)
 
 ## 题目大意：
 
