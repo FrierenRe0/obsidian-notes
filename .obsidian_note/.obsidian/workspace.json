@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "题解/牛客/暑假训练营/2026/第3场/G - Matrix Marking.md",
+                "file": "题解/牛客/暑假训练营/2026/第6场/G - Game on a graph.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "G - Matrix Marking"
+              "title": "G - Game on a graph"
             }
           }
         ]
@@ -176,6 +176,16 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "b13f40ed0ddafddc",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
         "currentTab": 5
@@ -199,8 +209,21 @@
   },
   "active": "ba50335858897656",
   "lastOpenFiles": [
-    "截图文件/Pasted image 20260804174758.png",
+    "题解/牛客/暑假训练营/2026/第6场/D - 整除.md",
+    "题解/牛客/暑假训练营/2026/第6场/G - Game on a graph.md",
+    "截图文件/Pasted image 20260807152923.png",
+    "截图文件/Pasted image 20260807151359.png",
+    "题解/牛客/暑假训练营/2026/第4场/B - Quadratic Residue.md",
+    "题解/牛客/暑假训练营/2026/题卷/第3场.pdf",
+    "题解/牛客/暑假训练营/2026/第3场/A - Bitmask.md",
+    "题解/牛客/暑假训练营/2026/第4场/I - Rounddog II.md",
+    "题解/牛客/暑假训练营/2026/题卷/第4场.pdf",
+    "题解/牛客/暑假训练营/2026/题卷/PDF.md",
+    "题解/牛客/暑假训练营/2026/题卷/第1场.pdf",
     "题解/牛客/暑假训练营/2026/第3场/G - Matrix Marking.md",
+    "题解/牛客/暑假训练营/2026/第6场",
+    "题解/牛客/暑假训练营/2026/第5场",
+    "截图文件/Pasted image 20260804174758.png",
     "Obsidian Vault note/dp/区间dp/例题.md",
     "Obsidian Vault note/dp/树形dp/例题.md",
     "Obsidian Vault note/dp/树形dp/树形dp.md",
@@ -225,25 +248,12 @@
     "CLAUDE.md",
     "题解/牛客/周赛/155",
     "题解/牛客/暑假训练营/2026/第2场/G - GCD graph.md",
-    "Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md",
-    "Obsidian Vault note/数论/isprime(判断质数).md",
-    "Obsidian Vault note/数论/费马小定理.md",
-    "Obsidian Vault note/基础算法/双指针，滑动窗口.md",
-    "Obsidian Vault note/基础算法/分治递归.md",
     "Obsidian Vault note/数论/叉积.md.tmp.50268.c54bc6785b12",
-    "Obsidian Vault note/数论/叉积.md.tmp.50268.478400568050",
-    "题解/牛客/暑假训练营/2026/第3场/K - Turn-by-Turn Navigation.md",
-    "Obsidian Vault note/数论/叉积.md.tmp.50268.1017de395ceb",
-    "题解/牛客/暑假训练营/2026/题卷/第4场.pdf",
-    "Obsidian Vault note/数论/叉积.md.tmp.13896.848b3f748af5",
-    "题解/牛客/暑假训练营/2026/题卷/第3场.pdf",
     "截图文件/Pasted image 20260728223938.png",
     "截图文件/Pasted image 20260725141031.png",
     "截图文件/Pasted image 20260730152118.png",
     "截图文件/Pasted image 20260730152242.png",
     "截图文件/Pasted image 20260730154436.png",
-    "截图文件/Pasted image 20260730182518.png",
-    "截图文件/Pasted image 20260730180954.png",
     "未命名.canvas"
   ]
 }
