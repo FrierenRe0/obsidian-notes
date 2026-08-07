@@ -50,13 +50,13 @@
     
     - 我们希望找一个 $d = c \cdot k \ge \text{dist}$，且 $d \pmod 2 = \text{parity}$。
         
-    - **情况 1：$k$ 为偶数**
+    - **情况 1： $k$ 为偶数**
         
         - $c \cdot k$ 一定是偶数。因此只能匹配 $dist[u][0]$。
             
         - 最小的 $c$ 为 $\lceil dist[u][0] / k \rceil$。答案即为 $c \cdot k$。
         
-    - **情况 2：$k$ 为奇数**
+    - **情况 2： $k$ 为奇数**
         
         - 若匹配 $dist[u][0]$（偶数路径），则 $c \cdot k$ 必须是偶数 $\implies c$ 必须是偶数。
             
