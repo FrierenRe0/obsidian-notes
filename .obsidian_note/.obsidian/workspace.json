@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7ff14fb0489322cb",
+        "id": "3d1613017ca5abce",
         "type": "tabs",
         "children": [
           {
-            "id": "ba50335858897656",
+            "id": "35baa5af1b3ee0fa",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian_note/Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
-                "bFile": ".obsidian_note/Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: 树上倍增  (Working Tree)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -207,7 +203,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "ba50335858897656",
+  "active": "1cff170b5ea531be",
   "lastOpenFiles": [
     "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
     "Obsidian Vault note/数据结构/树/树的直径/tree diameter.md",
