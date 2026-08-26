@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
+                "file": "Obsidian Vault note/基础算法/双指针（滑窗）/双指针，滑动窗口.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "树上倍增"
+              "title": "双指针，滑动窗口"
             }
           }
         ]
@@ -209,12 +209,17 @@
   },
   "active": "35baa5af1b3ee0fa",
   "lastOpenFiles": [
-    "Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md",
+    "Obsidian Vault note/基础算法/双指针（滑窗）",
+    "Obsidian Vault note/基础算法/二分/二分算法.md",
+    "Obsidian Vault note/基础算法/分治递归.md",
+    "题解/牛客/江西九校联盟/第1场/G - 网络故障.md",
+    "Obsidian Vault note/基础算法/二分",
     "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
+    "Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md",
     "Obsidian Vault note/博弈论/双方交替做最优解 ”谁多“ 的博弈论 - dp.md",
     "Obsidian Vault note/博弈论/双方交替做最优解 ”先手能否取胜“的问题 - 贪心思想.md",
     "Obsidian Vault note/数据结构/树/树的直径/tree diameter.md",
-    "Obsidian Vault note/基础算法/双指针，滑动窗口.md",
+    "Obsidian Vault note/基础算法/双指针（滑窗）/双指针，滑动窗口.md",
     "Obsidian Vault note/数据结构/用于处理维护区间/线段树/Segment Tree.md",
     "题解/牛客/暑假训练营/2026/第3场/A - Bitmask.md",
     "题解/牛客/暑假训练营/2026/第4场/I - Rounddog II.md",
@@ -241,13 +246,8 @@
     "题解/牛客/周赛/146/E题.md",
     "Obsidian Vault note/博弈论/题单",
     "题解/牛客/周赛/155/C - 小月的密码锁.md",
-    "题解/牛客/周赛/155/D - 小月的电台.md",
-    "题解/牛客/周赛/150/D，E题.md",
-    "题解/牛客/周赛/147/D题.md",
-    "Obsidian Vault note/博弈论/Leetcode - 石子游戏.md",
     "Obsidian Vault note/博弈论/石子问题",
     "Obsidian Vault note/博弈论",
-    "题解/牛客/江西九校联盟/题卷/main-zh.pdf",
     "截图文件/Pasted image 20260818160104.png",
     "截图文件/Pasted image 20260807152923.png",
     "截图文件/Pasted image 20260807151359.png",
