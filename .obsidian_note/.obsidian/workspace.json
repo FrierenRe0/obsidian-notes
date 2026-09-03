@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "一些经典问题集合/Top-k问题.md",
+                "file": "Obsidian Vault note/dp/背包问题/背包.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Top-k问题"
+              "title": "背包"
             }
           }
         ]
@@ -192,7 +192,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 399.0999755859375
+    "width": 342.2999267578125
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,33 +209,40 @@
   },
   "active": "1cff170b5ea531be",
   "lastOpenFiles": [
+    "截图文件/Pasted image 20260903232731.png",
+    "Obsidian Vault note/数论/费马小定理.md",
+    "Obsidian Vault note/数论/哥德巴赫猜想/Goldbach's Conjecture.md",
+    "Obsidian Vault note/dp/背包问题/背包.md",
+    "Obsidian Vault note/数论/组合数学/预处理 - 组合数.md",
+    "Obsidian Vault note/数论/组合数学/容斥原理.md",
+    "Obsidian Vault note/数论/哥德巴赫猜想/模板题：哥德巴赫猜想与质数拆分.md",
+    "Obsidian Vault note/数据结构/deque双端队列/单调队列/单调队列.md",
+    "Obsidian Vault note/数据结构/本质思想：/理解.md",
+    "Obsidian Vault note/数据结构/本质思想：/未命名",
+    "Obsidian Vault note/数据结构/本质思想：",
+    "Obsidian Vault note/数据结构/本质思想：.md",
+    "Obsidian Vault note/数据结构/本质思想：",
+    "Obsidian Vault note/数据结构/ordered_set/ordered_set(底层红黑树 - 平衡二叉搜索树).md",
+    "Obsidian Vault note/数据结构/deque双端队列",
+    "Obsidian Vault note/基础算法/二分/二分算法.md",
+    "Obsidian Vault note/博弈论/“双方交替完成当下最优选择”的博弈论.md",
+    "Obsidian Vault note/博弈论/题单.md",
+    "Obsidian Vault note/博弈论/双方交替做最优解 ”先手能否取胜“的问题 - 贪心思想.md",
+    "Obsidian Vault note/博弈论/未命名",
+    "Obsidian Vault note/博弈论/”当下最优解“问题",
+    "一些经典问题集合/Top-k问题.md",
     "一些经典问题集合/区间问题.md",
     "一些经典问题集合/两个正方形的重叠关系.md",
     "一些经典问题集合/矩阵覆盖问题.md",
     "一些经典问题集合/矩阵的圈型遍历.md",
-    "Obsidian Vault note/数论/哥德巴赫猜想/模板题：哥德巴赫猜想与质数拆分.md",
-    "Obsidian Vault note/数论/哥德巴赫猜想/Goldbach's Conjecture.md",
-    "Obsidian Vault note/数论/组合数学/容斥原理.md",
-    "Obsidian Vault note/数论/组合数学/预处理 - 组合数.md",
     "Obsidian Vault note/数论/埃式筛 线性筛.md",
     "Obsidian Vault note/数论/叉积.md",
-    "Obsidian Vault note/数论/费马小定理.md",
     "Obsidian Vault note/数论/isprime(判断质数).md",
     "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
     "Obsidian Vault note/图论/图论算法/拓扑排序（相当于时加了条件的BFS）.md",
     "Obsidian Vault note/图论/图论算法/最小生成树(Kruskal+Prim).md",
-    "Obsidian Vault note/图论/图论算法/BFS(联系于-queue).md",
-    "Obsidian Vault note/dp/背包问题/背包.md",
-    "Obsidian Vault note/图论/图论算法/Dijkstra(单源最短路).md",
-    "Obsidian Vault note/图论/图论算法/floyd(多源最短路).md",
     "截图文件/屏幕截图 2026-04-08 170918.png",
-    "Obsidian Vault note/dp/树形dp/树形dp.md",
-    "Obsidian Vault note/dp/树形dp/例题.md",
-    "Obsidian Vault note/图论/图论算法/DFS(联系于-stack)和并查集.md",
-    "Obsidian Vault note/dp/线性dp - 例题.md",
-    "Obsidian Vault note/dp/区间dp/例题.md",
     "截图文件/屏幕截图 2026-04-07 093348.png",
-    "Obsidian Vault note/基础算法/二分/二分算法.md",
     "截图文件/Pasted image 20260730154436.png",
     "截图文件/Pasted image 20260803154333.png",
     "截图文件/Pasted image 20260807152923.png",
@@ -246,15 +253,8 @@
     "截图文件/Pasted image 20260730152118.png",
     "截图文件/二分_闭区间_双开区间.svg.tmp.26396.f8cce29cb7b4",
     "未命名.base",
-    "2026-08-26.md",
     "Obsidian Vault note/基础算法/双指针（滑窗）",
     "Obsidian Vault note/基础算法/二分",
-    "题解/牛客/暑假训练营/2026/题卷/第10场.pdf",
-    "题解/牛客/暑假训练营/2026/题卷/第4场.pdf",
-    "题解/牛客/暑假训练营/2026/题卷/第6场.pdf",
-    "题解/牛客/暑假训练营/2026/题卷/第3场.pdf",
-    "题解/牛客/暑假训练营/2026/第10场",
-    "题解/牛客/暑假训练营/2026/第10场",
     "未命名.canvas"
   ]
 }
