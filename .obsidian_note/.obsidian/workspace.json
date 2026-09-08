@@ -11,10 +11,14 @@
             "id": "3a97739e037d0ce1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian Vault note/图论/图论算法/拓扑/习题：/26网络赛第一场 ：C - Permutation Inversions.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "26网络赛第一场 ：C - Permutation Inversions"
             }
           }
         ]
@@ -178,7 +182,18 @@
             "type": "leaf",
             "state": {
               "type": "claudian-view",
-              "state": {},
+              "state": {
+                "tabWorkspace": {
+                  "version": 1,
+                  "openTabs": [
+                    {
+                      "tabId": "tab-1784902657200-tpz5i3m",
+                      "conversationId": "conv-1784962273248-i7qwngqok"
+                    }
+                  ],
+                  "activeTabId": "tab-1784902657200-tpz5i3m"
+                }
+              },
               "icon": "bot",
               "title": "Claudian"
             }
@@ -188,7 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 342.2999267578125
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -203,44 +218,44 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "3a97739e037d0ce1",
+  "active": "06532555c7a18ece",
   "lastOpenFiles": [
-    "XCPC-main/10 - 动态规划/动态规划知识与结论.md",
-    "XCPC- 模板/10 - 动态规划/动态规划知识与结论.md",
-    "XCPC- 模板/10 - 动态规划/README.md",
+    "Obsidian Vault note/图论/图论算法/拓扑/习题：",
+    "Obsidian Vault note/图论/图论算法/拓扑/拓扑排序（有优先顺序的多源BFS）.md",
+    "Obsidian Vault note/图论/图论算法/拓扑/习题：/26网络赛第一场 ：C - Permutation Inversions.md",
+    "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
+    "CLAUDE.md",
+    "截图文件/statement_20018.pdf",
+    "Obsidian Vault note/图论/图论算法/拓扑",
+    "Obsidian Vault note/数据结构/并查集/带权并查集.md",
+    "Obsidian Vault note/数据结构/用于处理维护区间/ST表/st表.md",
+    "Obsidian Vault note/数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
+    "Obsidian Vault note/数据结构/deque双端队列/单调队列/单调队列.md",
+    "Obsidian Vault note/数据结构/用于处理维护区间/ST表/模板例题.md",
+    "Obsidian Vault note/数据结构/用于处理维护区间/线段树/Segment Tree.md",
+    "Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md",
+    "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
+    "Obsidian Vault note/数据结构/树/树的直径/tree diameter.md",
+    "Obsidian Vault note/数据结构/树/树的遍历/二叉树转化.md",
+    "Obsidian Vault note/数据结构/堆/priority_queue内部定义.md",
+    "Obsidian Vault note/数据结构/堆/堆（思想）排序.md",
+    "Obsidian Vault note/数据结构/并查集/Union and find.md",
+    "Obsidian Vault note/数据结构/本质思想：/理解.md",
+    "Obsidian Vault note/数论/哥德巴赫猜想/模板题：哥德巴赫猜想与质数拆分.md",
+    "Obsidian Vault note/数论/哥德巴赫猜想/Goldbach's Conjecture.md",
+    "Obsidian Vault note/数论/位运算/线性基.md",
+    "Obsidian Vault note/数论/组合数学/容斥原理.md",
+    "Obsidian Vault note/数论/组合数学/预处理 - 组合数.md",
+    "XCPC- 模板/模板索引.md",
+    "XCPC- 模板/README.md",
+    "未命名.base",
+    "XCPC- 模板/~$PC全量打印稿.docx",
+    "XCPC- 模板/XCPC全量打印稿.docx",
+    "XCPC- 模板/00 - 打印稿整理/_clean_test.docx",
+    "XCPC- 模板/Doc1.pdf",
     "XCPC- 模板/10 - 动态规划/06B - 最长公共子序列（Bitset）.cpp",
     "XCPC- 模板/10 - 动态规划/06A - 最长公共子序列（常规）.cpp",
     "XCPC- 模板/10 - 动态规划/05B - Knuth优化.cpp",
-    "XCPC- 模板/10 - 动态规划/05A - 分治DP优化.cpp",
-    "XCPC- 模板/10 - 动态规划/04 - 轮廓线DP（多米诺骨牌）.cpp",
-    "XCPC- 模板/10 - 动态规划/03 - 状压DP（TSP）.cpp",
-    "XCPC- 模板/10 - 动态规划/02 - 数位DP（DFA）.cpp",
-    "XCPC- 模板/10 - 动态规划/01J - 01背包具体方案.cpp",
-    "XCPC- 模板/10 - 动态规划/01I - 有依赖的背包（树形）.cpp",
-    "XCPC- 模板/10 - 动态规划/01H - 混合背包.cpp",
-    "XCPC- 模板/09 - 杂类/杂类知识与结论.md",
-    "XCPC- 模板/09 - 杂类/README.md",
-    "XCPC- 模板/09 - 杂类/09 - Python短代码.md",
-    "XCPC- 模板/08 - 高精度/README.md",
-    "XCPC- 模板/07 - 字符串/字符串知识与结论.md",
-    "XCPC- 模板/07 - 字符串/README.md",
-    "XCPC- 模板/06 - 数学/数学知识与结论.md",
-    "XCPC- 模板/06 - 数学/README.md",
-    "XCPC- 模板/05 - 网络流/网络流建模与结论.md",
-    "XCPC- 模板/05 - 网络流/README.md",
-    "XCPC- 模板/04 - 图论/图论知识与结论.md",
-    "XCPC- 模板/04 - 图论/README.md",
-    "XCPC- 模板/03 - 数据结构/数据结构知识与结论.md",
-    "XCPC- 模板/03 - 数据结构/README.md",
-    "XCPC- 模板/01 - 基础算法/基础算法与STL速查.md",
-    "XCPC- 模板/01 - 基础算法/README.md",
-    "XCPC- 模板/02 - 树上问题/树上问题知识与结论.md",
-    "XCPC- 模板/02 - 树上问题/README.md",
-    "XCPC- 模板/00 - 打印稿整理/README.md",
-    "XCPC- 模板/00 - 打印稿整理/10B - 动态规划（优化与LCS）.md",
-    "XCPC- 模板/00 - 打印稿整理/10A - 动态规划（背包与状态设计）.md",
-    "XCPC- 模板/00 - 打印稿整理/09 - 杂类.md",
-    "XCPC- 模板/00 - 打印稿整理/08 - 高精度.md",
     "截图文件/Pasted image 20260903232731.png",
     "截图文件/屏幕截图 2026-04-08 170918.png",
     "截图文件/屏幕截图 2026-04-07 093348.png",

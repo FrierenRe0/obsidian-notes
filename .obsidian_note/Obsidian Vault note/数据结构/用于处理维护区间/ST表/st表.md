@@ -17,7 +17,7 @@
 vector<vector<int>> st;
 void init(vector<int>& nums) {
 	int n = nums.size();
-	int m = bit_width((unsigned)n);
+	int m = bit_width(1u * n);
 	st.resize(n,vector<int>(m));
 	for(int i = 0;i < n;i++) {
 		st[i][0] = nums[i];
