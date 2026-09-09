@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/图论/图论算法/拓扑/习题：/26网络赛第一场 ：C - Permutation Inversions.md",
+                "file": "Obsidian Vault note/dp/背包问题/背包.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "26网络赛第一场 ：C - Permutation Inversions"
+              "title": "背包"
             }
           }
         ]
@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 355.5
   },
   "right": {
     "id": "f49b4aa84207e019",
@@ -203,7 +203,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 369.1666259765625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,18 +218,19 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "06532555c7a18ece",
+  "active": "3a97739e037d0ce1",
   "lastOpenFiles": [
-    "Obsidian Vault note/图论/图论算法/拓扑/习题：",
+    "截图文件/Pasted image 20260909115054.png",
     "Obsidian Vault note/图论/图论算法/拓扑/拓扑排序（有优先顺序的多源BFS）.md",
-    "Obsidian Vault note/图论/图论算法/拓扑/习题：/26网络赛第一场 ：C - Permutation Inversions.md",
-    "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
     "CLAUDE.md",
+    "Obsidian Vault note/数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
+    "Obsidian Vault note/图论/图论算法/拓扑/习题：/26网络赛第一场 ：C - Permutation Inversions.md",
+    "Obsidian Vault note/图论/图论算法/拓扑/习题：",
+    "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
     "截图文件/statement_20018.pdf",
     "Obsidian Vault note/图论/图论算法/拓扑",
     "Obsidian Vault note/数据结构/并查集/带权并查集.md",
     "Obsidian Vault note/数据结构/用于处理维护区间/ST表/st表.md",
-    "Obsidian Vault note/数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
     "Obsidian Vault note/数据结构/deque双端队列/单调队列/单调队列.md",
     "Obsidian Vault note/数据结构/用于处理维护区间/ST表/模板例题.md",
     "Obsidian Vault note/数据结构/用于处理维护区间/线段树/Segment Tree.md",
@@ -255,7 +256,6 @@
     "XCPC- 模板/Doc1.pdf",
     "XCPC- 模板/10 - 动态规划/06B - 最长公共子序列（Bitset）.cpp",
     "XCPC- 模板/10 - 动态规划/06A - 最长公共子序列（常规）.cpp",
-    "XCPC- 模板/10 - 动态规划/05B - Knuth优化.cpp",
     "截图文件/Pasted image 20260903232731.png",
     "截图文件/屏幕截图 2026-04-08 170918.png",
     "截图文件/屏幕截图 2026-04-07 093348.png",
