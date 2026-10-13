@@ -135,6 +135,76 @@
       "contentDigest": "0f3b3d8412bf9454f75eaeab679cb05bf5e5300cd56d7e1e30921b32d08e7499",
       "providerUserMessageId": "7460a191-5b46-474c-aeea-b72947403d5c",
       "providerAssistantMessageId": "6ab7a07a-6e5d-4ad8-9d68-410312967b6f"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789452078184-wbmklbz",
+      "userTurnOrdinal": 15,
+      "state": "accepted",
+      "localMessageId": "msg-1789452078147-seibyaf",
+      "timestamp": 1789452078147,
+      "rawDisplayText": "这里我的cpp文件打开都用vscode打开",
+      "canonicalText": "这里我的cpp文件打开都用vscode打开",
+      "images": [],
+      "contentDigest": "bacff32f6f017df07977ca82833fff9dedb66789a76c439882f8ad67e6e7d7a9",
+      "providerUserMessageId": "e989c9fd-fb77-4435-be77-06b2318bde34",
+      "providerAssistantMessageId": "826f2236-7d02-483d-924e-a9f3b7ddb9bf"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789456504768-yb7ubh2",
+      "userTurnOrdinal": 16,
+      "state": "accepted",
+      "localMessageId": "msg-1789456504764-d3tj4q9",
+      "timestamp": 1789456504764,
+      "rawDisplayText": "我的意思是我现在打开时，是用dvc打开的，但是我现在想用vscode来打开",
+      "canonicalText": "我的意思是我现在打开时，是用dvc打开的，但是我现在想用vscode来打开",
+      "images": [],
+      "contentDigest": "4bf1710c8c9ff73da67a1da0e9c57a4b232ac4f793b07b6aace9a40c35ca20d5",
+      "providerUserMessageId": "b5cc0b55-855a-4b0c-bdb6-5406de2e86c6",
+      "providerAssistantMessageId": "2d08d3b9-578a-4954-b716-1741b7363b16"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789456868262-mg2kkzd",
+      "userTurnOrdinal": 17,
+      "state": "accepted",
+      "localMessageId": "msg-1789456868257-5k3zoy4",
+      "timestamp": 1789456868257,
+      "rawDisplayText": "我怎么没看到这里左下角有始终使用此应用打开 .cpp 文件",
+      "canonicalText": "我怎么没看到这里左下角有始终使用此应用打开 .cpp 文件",
+      "images": [],
+      "contentDigest": "0f052ed5ed78019136e4b416f3c92e4e5588e6bf96a3bffb79627cdd2ec17cb1",
+      "providerUserMessageId": "58da7c2e-7146-4f07-98a7-34121ab56ced",
+      "providerAssistantMessageId": "fbb1843b-71e7-4720-856f-ad16cb72ce92"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789457095076-w7l1xvy",
+      "userTurnOrdinal": 18,
+      "state": "accepted",
+      "localMessageId": "msg-1789457095072-0nvctcb",
+      "timestamp": 1789457095072,
+      "rawDisplayText": "我不要这个删掉",
+      "canonicalText": "我不要这个删掉",
+      "images": [],
+      "contentDigest": "fe1403d940d1a4266bdaec6dd8340f0ca147c940ad1bdd849d8b1d0d452ffbae",
+      "providerUserMessageId": "d47fb61d-6e6f-48ff-886d-39806ebc9190",
+      "providerAssistantMessageId": "8ffbad26-ce86-4dee-9f49-02d0e60358b8"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1789457153405-7dfllak",
+      "userTurnOrdinal": 19,
+      "state": "accepted",
+      "localMessageId": "msg-1789457153401-cr2e0ey",
+      "timestamp": 1789457153401,
+      "rawDisplayText": "okk",
+      "canonicalText": "okk",
+      "images": [],
+      "contentDigest": "5f6832e7e01b10f98721c3311f64ddbab621f75099c59d372ea6a1842bb45fb2",
+      "providerUserMessageId": "d586bae8-591b-421b-8d33-d98fcab76834",
+      "providerAssistantMessageId": "40fa53ce-31a8-4069-a559-d916ddf87e67"
     }
   ]
 }

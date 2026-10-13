@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "f00fde581e35919a",
+        "id": "1745cf481ff92172",
         "type": "tabs",
         "children": [
           {
-            "id": "3a97739e037d0ce1",
+            "id": "3d6757442f271c37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/dp/背包问题/背包.md",
+                "file": "Obsidian Vault note/G - 数论/费马小定理.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "背包"
+              "title": "费马小定理"
+            }
+          },
+          {
+            "id": "ad0e30c45e4df84e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian Vault note/B - 数据结构/笛卡尔树/习题：/E - Yet Another Array Counting Problem.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "E - Yet Another Array Counting Problem"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -75,12 +90,26 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "cac2d7d2284ed99a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Obsidian Vault note/图论/图论算法/最小生成树 - Kruskal+Prim.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "最小生成树 - Kruskal+Prim"
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 355.5
+    "width": 306.3000183105469
   },
   "right": {
     "id": "f49b4aa84207e019",
@@ -203,7 +232,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 369.1666259765625
+    "width": 289.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,54 +247,54 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "3a97739e037d0ce1",
+  "active": "ad0e30c45e4df84e",
   "lastOpenFiles": [
+    "Obsidian Vault note/B - 数据结构/笛卡尔树/A - 笛卡尔树 (static) - Cartesian Tree.md",
+    "Obsidian Vault note/B - 数据结构/笛卡尔树/习题：/E - Yet Another Array Counting Problem.md",
+    "Obsidian Vault note/B - 数据结构/笛卡尔树/习题：",
+    "Obsidian Vault note/B - 数据结构/stack栈/单调栈.md",
+    "Obsidian Vault note/B - 数据结构/笛卡尔树",
+    "Obsidian Vault note/G - 数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
+    "Obsidian Vault note/D - 树上问题/LCA - 最近公共祖先/LCA树上倍增.md",
+    "Obsidian Vault note/A - 基础算法/二分/二分算法.md",
+    "Obsidian Vault note/D - 树上问题/kruskal 重构树.md",
+    "题解/牛客/小白月赛/138/F - Permutation of RBS.md",
+    "截图文件/Pasted image 20261010161641.png",
+    "一些经典问题集合/区间问题.md",
+    "题解/牛客/小白月赛/138",
+    "题解/牛客/小白月赛/未命名.md",
+    "题解/牛客/小白月赛",
+    "Obsidian Vault note/G - 数论/费马小定理.md",
+    "Obsidian Vault note/G - 数论/埃式筛 线性筛.md",
+    "Obsidian Vault note/G - 数论/组合数学/预处理 - 组合数.md",
+    "Obsidian Vault note/G - 数论/组合数学/容斥原理.md",
+    "Obsidian Vault note/G - 数论/位运算/线性基.md",
+    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/线性dp/习题：.md",
+    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/二分+dp/洛谷 - P17515 一分为二 2.md",
+    "题解/Leetcode/并查集/3710.最大划分因子.md",
+    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合",
+    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/二分+dp",
+    "题解/cfcode/div2/1124/D - What a SauSaGe! It's All Meat.md",
+    "题解/牛客/暑假训练营/2026/第3场/G - Matrix Marking.md",
+    "题解/牛客/暑假训练营/2026/第3场/A - Bitmask.md",
+    "题解/牛客/暑假训练营/2026/第2场/B - Bitwise Maximization.md",
+    "题解/牛客/暑假训练营/2026/第1场/C - 带权并查集.md",
+    "一些经典问题集合/树上0-1字典树 - 0-1trie.md",
+    "题解/cfcode/div2/1124",
+    "题解/cfcode/div2",
+    "Obsidian Vault note/B - 数据结构/并查集/B - 带权并查集.md",
+    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/区间dp/例题.md",
+    "Obsidian Vault note/B - 数据结构/双端队列 - deque/单调队列",
+    "Obsidian Vault note/B - 数据结构/双端队列 - deque",
+    "未命名.canvas",
     "截图文件/Pasted image 20260910171716.jpg",
     "截图文件/Pasted image 20260910153156.jpg",
     "截图文件/Pasted image 20260910151900.jpg",
     "截图文件/Pasted image 20260910151833.jpg",
     "截图文件/Pasted image 20260909115054.png",
-    "Obsidian Vault note/图论/图论算法/拓扑/拓扑排序（有优先顺序的多源BFS）.md",
-    "CLAUDE.md",
-    "Obsidian Vault note/数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
-    "Obsidian Vault note/图论/图论算法/拓扑/习题：/26网络赛第一场 ：C - Permutation Inversions.md",
-    "Obsidian Vault note/图论/图论算法/拓扑/习题：",
-    "Obsidian Vault note/图论/图论算法/二分图（相当于时加了一种节点状态的DFS）.md",
-    "截图文件/statement_20018.pdf",
-    "Obsidian Vault note/图论/图论算法/拓扑",
-    "Obsidian Vault note/数据结构/并查集/带权并查集.md",
-    "Obsidian Vault note/数据结构/用于处理维护区间/ST表/st表.md",
-    "Obsidian Vault note/数据结构/deque双端队列/单调队列/单调队列.md",
-    "Obsidian Vault note/数据结构/用于处理维护区间/ST表/模板例题.md",
-    "Obsidian Vault note/数据结构/用于处理维护区间/线段树/Segment Tree.md",
-    "Obsidian Vault note/数据结构/用于处理维护区间/数状数组/BIT.md",
-    "Obsidian Vault note/数据结构/树/LCA/树上倍增.md",
-    "Obsidian Vault note/数据结构/树/树的直径/tree diameter.md",
-    "Obsidian Vault note/数据结构/树/树的遍历/二叉树转化.md",
-    "Obsidian Vault note/数据结构/堆/priority_queue内部定义.md",
-    "Obsidian Vault note/数据结构/堆/堆（思想）排序.md",
-    "Obsidian Vault note/数据结构/并查集/Union and find.md",
-    "Obsidian Vault note/数据结构/本质思想：/理解.md",
-    "Obsidian Vault note/数论/哥德巴赫猜想/模板题：哥德巴赫猜想与质数拆分.md",
-    "Obsidian Vault note/数论/哥德巴赫猜想/Goldbach's Conjecture.md",
-    "Obsidian Vault note/数论/位运算/线性基.md",
-    "Obsidian Vault note/数论/组合数学/容斥原理.md",
-    "Obsidian Vault note/数论/组合数学/预处理 - 组合数.md",
-    "XCPC- 模板/模板索引.md",
-    "XCPC- 模板/README.md",
-    "未命名.base",
-    "XCPC- 模板/~$PC全量打印稿.docx",
-    "XCPC- 模板/XCPC全量打印稿.docx",
-    "XCPC- 模板/00 - 打印稿整理/_clean_test.docx",
-    "XCPC- 模板/Doc1.pdf",
-    "XCPC- 模板/10 - 动态规划/06B - 最长公共子序列（Bitset）.cpp",
-    "XCPC- 模板/10 - 动态规划/06A - 最长公共子序列（常规）.cpp",
     "截图文件/Pasted image 20260903232731.png",
     "截图文件/屏幕截图 2026-04-08 170918.png",
     "截图文件/屏幕截图 2026-04-07 093348.png",
-    "截图文件/Pasted image 20260730154436.png",
-    "截图文件/Pasted image 20260803154333.png",
-    "截图文件/Pasted image 20260807152923.png",
-    "未命名.canvas"
+    "截图文件/Pasted image 20260730154436.png"
   ]
 }
