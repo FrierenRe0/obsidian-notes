@@ -54,16 +54,16 @@
 
 - 左子树由于要求严格小于 $v$，其最大值上限为 $v - 1$，方案数为：
     
-    $$\text{left\_ways} = \begin{cases} dp[\text{left}[u]][v - 1], & \text{若左子树存在} \\ 1, & \text{若无左子树} \end{cases}$$
+    $$\mathrm{left\_ways} = \begin{cases} dp[\text{left}[u]][v - 1], & \text{若左子树存在} \\ 1, & \text{若无左子树} \end{cases}$$
     
 - 右子树由于要求小于等于 $v$，其最大值上限为 $v$，方案数为：
     
-    $$\text{right\_ways} = \begin{cases} dp[\text{right}[u]][v], & \text{若右子树存在} \\ 1, & \text{若无右子树} \end{cases}$$
+    $$\mathrm{right\_ways} = \begin{cases} dp[\text{right}[u]][v], & \text{若右子树存在} \\ 1, & \text{若无右子树} \end{cases}$$
     
 
 当节点 $u$ 权值恰好为 $v$ 时的总方案数：
 
-$$\text{ways}(v) = (\text{left\_ways} \times \text{right\_ways}) \pmod{10^9+7}$$
+$$\text{ways}(v) = (\mathrm{left\_ways} \times \mathrm{right\_ways}) \pmod{10^9+7}$$
 
 由于 $dp[u][v]$ 要求的是权值 $\le v$ 的累加和，因此可以利用前缀和思想进行滚动累加：
 

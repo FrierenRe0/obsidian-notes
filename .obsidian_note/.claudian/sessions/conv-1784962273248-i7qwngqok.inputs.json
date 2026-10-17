@@ -205,6 +205,20 @@
       "contentDigest": "5f6832e7e01b10f98721c3311f64ddbab621f75099c59d372ea6a1842bb45fb2",
       "providerUserMessageId": "d586bae8-591b-421b-8d33-d98fcab76834",
       "providerAssistantMessageId": "40fa53ce-31a8-4069-a559-d916ddf87e67"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792216308827-udm3e60",
+      "userTurnOrdinal": 19,
+      "state": "accepted",
+      "localMessageId": "msg-1792216308701-8khbdpm",
+      "timestamp": 1792216308701,
+      "rawDisplayText": "选择当前节点：\n\n如果选择了当前节点 i，它会消耗 1 个容量，并带来 dfn_val[i] 的学分。\n\n接下来我们可以继续处理它的下一个紧邻节点（即 DFN 序的下一个位置 i + 1），剩余容量变为 j - 1。\n\n状态转移：dp[i][j] = dp[i + 1][j - 1] + dfn_val[i]\n\n综合转移方程： \n'_' allowed only in math mode\n$$\\text{dp}[i][j] = \\max(\\text{dp}[i + \\text{sz}[i]][j], \\text{dp}[i + 1][j - 1] + \\text{dfn_val}[i])$$在01 - 完全 - 分组 - 多重 - 混合 - 树上背包中，这里在我的github中出现的是源码",
+      "canonicalText": "选择当前节点：\n\n如果选择了当前节点 i，它会消耗 1 个容量，并带来 dfn_val[i] 的学分。\n\n接下来我们可以继续处理它的下一个紧邻节点（即 DFN 序的下一个位置 i + 1），剩余容量变为 j - 1。\n\n状态转移：dp[i][j] = dp[i + 1][j - 1] + dfn_val[i]\n\n综合转移方程： \n'_' allowed only in math mode\n$$\\text{dp}[i][j] = \\max(\\text{dp}[i + \\text{sz}[i]][j], \\text{dp}[i + 1][j - 1] + \\text{dfn_val}[i])$$在01 - 完全 - 分组 - 多重 - 混合 - 树上背包中，这里在我的github中出现的是源码",
+      "images": [],
+      "contentDigest": "cd9ff858758ac6ca35909b03c6818b9b2aa21c6983e409a664fbbd75eefcf462",
+      "providerUserMessageId": "5202faa8-7c58-4b4f-b273-ccf4282e734b",
+      "providerAssistantMessageId": "603337b6-c442-435a-8bbc-722c5258e4b7"
     }
   ]
 }

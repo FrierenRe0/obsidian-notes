@@ -35,9 +35,9 @@ $$\text{Score}(i, j, k) = res[i][j] + res[j][k] + res[k][i]$$
         
     - 转移方程：
         
-        $$\text{dfs}(\text{mask}) = \max_{(j, k)} \left( \text{res}[\text{first}][j] + \text{res}[j][k] + \text{res}[k][\text{first}] + \text{dfs}(\text{next\_mask}) \right)$$
+        $$\text{dfs}(\text{mask}) = \max_{(j, k)} \left( \text{res}[\text{first}][j] + \text{res}[j][k] + \text{res}[k][\text{first}] + \text{dfs}(\mathrm{next\_mask}) \right)$$
         
-        其中 $\text{next\_mask} = \text{mask} \mid (1 \ll \text{first}) \mid (1 \ll j) \mid (1 \ll k)$。
+        其中 $\mathrm{next\_mask} = \text{mask} \mid (1 \ll \text{first}) \mid (1 \ll j) \mid (1 \ll k)$。
         
 - **递归边界**：
     
@@ -63,9 +63,9 @@ $$\text{Score}(i, j, k) = res[i][j] + res[j][k] + res[k][i]$$
         
     - **转移方程**：在 `mask` 中寻找另外两个未分配的学生 `j` 和 `k`（满足 $\text{first} < j < k$），将他们三人选中并置为 `1`，得到新状态 `next_mask`：
         
-        $$\text{next\_mask} = \text{mask} \mid (1 \ll \text{first}) \mid (1 \ll j) \mid (1 \ll k)$$
+        $$\mathrm{next\_mask} = \text{mask} \mid (1 \ll \text{first}) \mid (1 \ll j) \mid (1 \ll k)$$
         
-        $$\text{dp}[\text{next\_mask}] = \max(\text{dp}[\text{next\_mask}], \text{dp}[\text{mask}] + \text{res}[\text{first}][j] + \text{res}[j][k] + \text{res}[k][\text{first}])$$
+        $$\text{dp}[\mathrm{next\_mask}] = \max(\text{dp}[\mathrm{next\_mask}], \text{dp}[\text{mask}] + \text{res}[\text{first}][j] + \text{res}[j][k] + \text{res}[k][\text{first}])$$
         
     - **终点**：所有人均被选走（二进制位全为 `1`），答案即为 `dp[(1 << m) - 1]`。
 

@@ -39,6 +39,8 @@
 - ✅ 异或用 `\oplus`（⊕）
 - ❌ `\text{^}`（^ 是保留字符）→ 可能报错
 - ✅ `\text{^}` 换成 `\oplus` 或 `\wedge`
+- ❌ `\text{dfn_val}`、`\text{dfn\_val}`（`\text{}` 里含下划线 `_`，转义 `\_` 也不行）→ 报错 `'_' allowed only in math mode` 显示源码
+- ✅ 改成 `\mathrm{dfn\_val}`（数学模式里 `\_` 合法），或拆成 `\text{dfn}\_\text{val}`
 
 ### 7. 已验证可用的命令
 `\vec`、`\overrightarrow`、`\text`、`\left\vert`、`\begin{aligned}`（单行）、`\left|\begin{matrix}`、`$...$`、单行`$$...$$`、`\oplus`（加空格）、`\wedge`（加空格）、`\mid`、`\gcd`、`\sim`
