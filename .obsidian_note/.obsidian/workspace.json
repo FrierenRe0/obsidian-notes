@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/G - 数论/费马小定理.md",
+                "file": "Obsidian Vault note/H - 字符串/kmp/习题.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "费马小定理"
-            }
-          },
-          {
-            "id": "ad0e30c45e4df84e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/背包问题/01 - 完全 - 分组 - 多重 - 混合 - 树上背包.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 - 完全 - 分组 - 多重 - 混合 - 树上背包"
+              "title": "习题"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -247,54 +232,54 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "1cff170b5ea531be",
+  "active": "06532555c7a18ece",
   "lastOpenFiles": [
-    "CLAUDE.md",
+    "Obsidian Vault note/H - 字符串/kmp/kmp - 字符串快速比对.md",
+    "Obsidian Vault note/H - 字符串/kmp/习题.md",
     "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/背包问题/01 - 完全 - 分组 - 多重 - 混合 - 树上背包.md",
-    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/树形dp/树形dp.md",
-    "截图文件/Pasted image 20261017115127.png",
+    "Obsidian Vault note/H - 字符串/kmp/未命名",
+    "一些经典问题集合/Top-k问题.md",
+    "Obsidian Vault note/H - 字符串/马拉车",
+    "一些经典问题集合/树上0-1字典树 - 0-1trie.md",
+    "一些经典问题集合/区间问题.md",
+    "一些经典问题集合/两个正方形的重叠关系.md",
+    "Obsidian Vault note/C - 图论/图论算法/最短路问题/B - floyd - 多源最短路 - 无负环.md",
+    "Obsidian Vault note/C - 图论/图论算法/最短路问题/A - Dijkstra - 单源最短路 - 无负权.md",
+    "Obsidian Vault note/C - 图论/图论算法/最短路问题/C - bellman-fold - 单源最短路 - 有负权.md",
+    "题解/cfcode/省赛/ccpc长春2026.10/M - 余镜.md",
+    "Obsidian Vault note/H - 字符串/kmp",
+    "截图文件/Pasted image 20261022104954.png",
+    "Obsidian Vault note/B - 数据结构/笛卡尔树/A - 笛卡尔树 (static) - Cartesian Tree.md",
+    "题解/cfcode/省赛/ccpc长春2026.10",
+    "题解/cfcode/省赛",
+    "Obsidian Vault note/H - 字符串",
+    "Obsidian Vault note/D - 树上问题/重构树/kruskal 重构树.md",
+    "Obsidian Vault note/D - 树上问题/重构树",
     "Obsidian Vault note/C - 图论/树/dfn序/dfn序 - 对于树上节点的先序编码.md",
+    "Obsidian Vault note/C - 图论/树/树的直径/习题.md",
+    "Obsidian Vault note/C - 图论/树/树的遍历/习题.md",
+    "Obsidian Vault note/C - 图论/树/树的直径/tree diameter - 树形dp.md",
+    "Obsidian Vault note/C - 图论/树/基环树/内向基环树.md",
+    "Obsidian Vault note/C - 图论/树/基环树/外向基环树.md",
+    "Obsidian Vault note/B - 数据结构/字典树 - 前缀树/B - (二进制 or 0-1)字典树/A1 - (变形)查找第 K (小 or 大) - 高位分类贪心/习题：.md",
+    "Obsidian Vault note/A - 基础算法/双指针，滑窗/双指针，滑动窗口.md",
+    "Obsidian Vault note/A - 基础算法/前缀和/前缀和 - 一维 二维.md",
+    "Obsidian Vault note/A - 基础算法/前缀和/例题.md",
+    "Obsidian Vault note/A - 基础算法/二分/二分算法.md",
+    "Obsidian Vault note/A - 基础算法/排序/插入排序 (n).md",
+    "Obsidian Vault note/A - 基础算法/排序/归并排序(nlogn).md",
+    "截图文件/Pasted image 20261019115850.png",
+    "题解/牛客/周赛/166",
+    "截图文件/Pasted image 20261017115127.png",
     "截图文件/Pasted image 20261016151038.png",
     "Obsidian Vault note/C - 图论/树/dfn序",
-    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/树形dp/习题.md",
-    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/线性dp/习题：.md",
     "截图文件/Pasted image 20261015175248.png",
-    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/二分+dp/洛谷 - P17515 一分为二 2.md",
-    "Obsidian Vault note/C - 图论/树/基环树/习题：/Leetcode - 2127. 参加会议的最多员工数.md",
-    "Obsidian Vault note/F - 博弈论/“双方交替完成当下最优选择”的博弈论.md",
-    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/区间dp/例题.md",
-    "Obsidian Vault note/C - 图论/树/基环树/外向基环树.md",
-    "Obsidian Vault note/C - 图论/树/基环树/内向基环树.md",
     "Obsidian Vault note/C - 图论/树/基环树/习题：",
-    "Obsidian Vault note/C - 图论/树/拓扑 - 有优先顺序的多源BFS/拓扑排序.md",
-    "Obsidian Vault note/C - 图论/树/基环树",
-    "Obsidian Vault note/A - 基础算法/差分/差分.md",
-    "Obsidian Vault note/A - 基础算法/前缀和/前缀和 - 一维 二维.md",
-    "Obsidian Vault note/B - 数据结构/笛卡尔树/习题：/E - Yet Another Array Counting Problem.md",
-    "Obsidian Vault note/B - 数据结构/笛卡尔树/A - 笛卡尔树 (static) - Cartesian Tree.md",
-    "Obsidian Vault note/B - 数据结构/笛卡尔树/习题：",
-    "Obsidian Vault note/B - 数据结构/stack栈/单调栈.md",
-    "Obsidian Vault note/B - 数据结构/笛卡尔树",
-    "Obsidian Vault note/G - 数论/位运算/按位取反、按位与、按位或、按位异或满足的运算法则.md",
-    "Obsidian Vault note/D - 树上问题/LCA - 最近公共祖先/LCA树上倍增.md",
-    "Obsidian Vault note/A - 基础算法/二分/二分算法.md",
-    "Obsidian Vault note/D - 树上问题/kruskal 重构树.md",
-    "题解/牛客/小白月赛/138/F - Permutation of RBS.md",
     "截图文件/Pasted image 20261010161641.png",
-    "一些经典问题集合/区间问题.md",
-    "题解/牛客/小白月赛/138",
-    "题解/牛客/小白月赛/未命名.md",
-    "题解/牛客/小白月赛",
-    "Obsidian Vault note/G - 数论/费马小定理.md",
-    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合",
-    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/二分+dp",
-    "题解/cfcode/div2/1124",
     "未命名.canvas",
     "截图文件/Pasted image 20260910171716.jpg",
     "截图文件/Pasted image 20260910153156.jpg",
     "截图文件/Pasted image 20260910151900.jpg",
-    "截图文件/Pasted image 20260910151833.jpg",
-    "截图文件/Pasted image 20260909115054.png",
-    "截图文件/Pasted image 20260903232731.png"
+    "截图文件/Pasted image 20260910151833.jpg"
   ]
 }

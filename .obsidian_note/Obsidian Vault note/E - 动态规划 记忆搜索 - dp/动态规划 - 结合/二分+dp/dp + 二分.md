@@ -1,5 +1,9 @@
 ## 相关链接：
-- **题目链接 ：** [P17515 [ECUSTPC 2026 Fall] 一分为二 2 - 洛谷](https://www.luogu.com.cn/problem/P17515?contestId=356798)
+	
+- **题目链接 ：**
+	- [P17515 [ECUSTPC 2026 Fall] 一分为二 2 - 洛谷](https://www.luogu.com.cn/problem/P17515?contestId=356798)
+	- [F-小月的订单_牛客周赛 Round 166](https://ac.nowcoder.com/acm/contest/141877/F) (具体查看“题解” - 牛客周赛166)
+
 
 
 ## 评价：二分 + dp
