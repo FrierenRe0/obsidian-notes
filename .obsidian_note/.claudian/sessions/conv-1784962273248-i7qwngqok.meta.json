@@ -4,7 +4,7 @@
   "title": "Convert Markdown bold to LaTeX for GitHub",
   "titleGenerationStatus": "success",
   "createdAt": 1784962273250,
-  "lastActivityAt": 1792216497453,
+  "lastActivityAt": 1792741729502,
   "sessionId": "26de725e-33de-493c-9c8c-03d22ba1ad77",
   "selectedModel": "opus",
   "providerState": {
@@ -420,12 +420,12 @@
   },
   "usage": {
     "model": "opus",
-    "inputTokens": 90,
+    "inputTokens": 194,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 65536,
+    "cacheReadInputTokens": 134528,
     "contextWindow": 200000,
-    "contextTokens": 65626,
-    "percentage": 33,
+    "contextTokens": 134722,
+    "percentage": 67,
     "contextWindowIsAuthoritative": true
   }
 }

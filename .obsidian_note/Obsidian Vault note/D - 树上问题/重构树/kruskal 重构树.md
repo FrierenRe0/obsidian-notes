@@ -127,7 +127,7 @@ weight[Lca(u,v)]
 
 对应模板题 ：[P2245 星际导航 - 洛谷](https://www.luogu.com.cn/problem/P2245)
 
-```c++
+```
 #include <bits/stdc++.h>
 using namespace std;
 #define int long long

@@ -219,6 +219,20 @@
       "contentDigest": "cd9ff858758ac6ca35909b03c6818b9b2aa21c6983e409a664fbbd75eefcf462",
       "providerUserMessageId": "5202faa8-7c58-4b4f-b273-ccf4282e734b",
       "providerAssistantMessageId": "603337b6-c442-435a-8bbc-722c5258e4b7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1792740943564-1s1f1uo",
+      "userTurnOrdinal": 20,
+      "state": "accepted",
+      "localMessageId": "msg-1792740943457-vuxcqj8",
+      "timestamp": 1792740943457,
+      "rawDisplayText": "这里可以不可以给我生成一个pdf,里面的内容只要obsdian Vault node里面D - 树上问题，E - 动态规划 记忆搜索 - dp，G - 数论所有内容，还有给我编号页码和目录",
+      "canonicalText": "这里可以不可以给我生成一个pdf,里面的内容只要obsdian Vault node里面D - 树上问题，E - 动态规划 记忆搜索 - dp，G - 数论所有内容，还有给我编号页码和目录",
+      "images": [],
+      "contentDigest": "c94c27355f72ec0fb1cad82df257a47bd72e0cf7934342a1ec646fc02da65755",
+      "providerUserMessageId": "d9e122d9-10bc-4af6-8052-d239e7ff3e11",
+      "providerAssistantMessageId": "7cd114fd-024b-40fd-bde2-5e855e7c15df"
     }
   ]
 }
