@@ -217,7 +217,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 455.1666259765625
+    "width": 331.0999755859375
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -234,10 +234,10 @@
   },
   "active": "1cff170b5ea531be",
   "lastOpenFiles": [
-    "一些经典问题集合/中位数贪心.md",
-    "Obsidian Vault note/I - 构造/贪心构造.md",
     "Obsidian Vault note/I - 构造/贪心构造/相关题目.md",
     "Obsidian Vault note/I - 构造/贪心构造",
+    "一些经典问题集合/中位数贪心.md",
+    "Obsidian Vault note/I - 构造/贪心构造.md",
     "Obsidian Vault note/I - 构造",
     "截图文件/Pasted image 20261102144348.jpg",
     "Obsidian Vault note/A - 基础算法/二分/二分算法.md",
@@ -277,7 +277,6 @@
     "Obsidian Vault note/B - 数据结构/双端队列 - deque/单调队列/单调队列.md",
     "Obsidian Vault note/D - 树上问题/LCA - 最近公共祖先/LCA树上倍增.md",
     "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/树形dp/树形dp.md",
-    "Obsidian Vault note/G - 数论/二进制/集合/子集问题 - 二进制.md",
     "_pdf_build/check_math.py",
     "_pdf_build/check_imgs.py",
     "未命名.canvas"
