@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Obsidian Vault note/G - 数论/质因数.md",
+                "file": "Obsidian Vault note/G - 数论/埃式筛 线性筛.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "质因数"
+              "title": "埃式筛 线性筛"
             }
           }
         ]
@@ -234,6 +234,9 @@
   },
   "active": "3d6757442f271c37",
   "lastOpenFiles": [
+    "Obsidian Vault note/G - 数论/费马小定理.md",
+    "Obsidian Vault note/G - 数论/叉积.md",
+    "Obsidian Vault note/G - 数论/质因数.md",
     "Obsidian Vault note/D - 树上问题/重构树/kruskal 重构树.md",
     "Obsidian Vault note/D - 树上问题/LCA - 最近公共祖先/LCA树上倍增.md",
     "Obsidian Vault note/G - 数论/组合数学/预处理 - 组合数.md",
@@ -261,7 +264,6 @@
     "Obsidian Vault note/G - 数论/埃式筛 线性筛.md",
     "Obsidian Vault note/G - 数论/上下取整 - ceil and floor",
     "Obsidian Vault note/G - 数论/取模",
-    "Obsidian Vault note/G - 数论/质因数.md",
     "截图文件/Pasted image 20260909115054.png",
     "截图文件/Pasted image 20260910151833.jpg",
     "截图文件/Pasted image 20260826213144.png",
@@ -272,12 +274,10 @@
     "截图文件/Pasted image 20260807152923.png",
     "截图文件/Pasted image 20260804174758.png",
     "截图文件/Pasted image 20260730180954.png",
-    "Obsidian Vault note/G - 数论/费马小定理.md",
     "Obsidian Vault note/H - 字符串/马拉车/manacher.md",
     "补充.md",
     "Obsidian Vault note/B - 数据结构/stack栈/单调栈.md",
     "Obsidian Vault note/B - 数据结构/双端队列 - deque/单调队列/单调队列.md",
-    "Obsidian Vault note/E - 动态规划 记忆搜索 - dp/树形dp/树形dp.md",
     "_pdf_build/check_math.py",
     "_pdf_build/check_imgs.py",
     "未命名.canvas"
