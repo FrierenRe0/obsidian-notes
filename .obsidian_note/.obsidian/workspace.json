@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "题解/cfcode/div4/1134/G2 - Lakeside Trail (Hard Version).md",
+                "file": "题解/cfcode/div2/1124/D - What a SauSaGe! It's All Meat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "G2 - Lakeside Trail (Hard Version)"
+              "title": "D - What a SauSaGe! It's All Meat"
             }
           }
         ]
@@ -172,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "题解/cfcode/div4/1134/G2 - Lakeside Trail (Hard Version).md",
+                "file": "题解/cfcode/div2/1124/D - What a SauSaGe! It's All Meat.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -234,8 +234,13 @@
   },
   "active": "3d6757442f271c37",
   "lastOpenFiles": [
-    "Obsidian Vault note/B - 数据结构/数状数组/A - 一维树状数组 - 普通BIT/A01 - 单点修改，范围查询  or  范围修改，单点查询 (差分).md",
+    "题解/cfcode/div2/1135/C - Max Substitution.md",
+    "题解/cfcode/div2/1135/D - Reverse Partition.md",
     "题解/cfcode/div4/1134/G2 - Lakeside Trail (Hard Version).md",
+    "题解/cfcode/div2/1124/D - What a SauSaGe! It's All Meat.md",
+    "Obsidian Vault note/G - 数论/组合数学/预处理 - 组合数.md",
+    "题解/cfcode/div2/1135",
+    "Obsidian Vault note/B - 数据结构/数状数组/A - 一维树状数组 - 普通BIT/A01 - 单点修改，范围查询  or  范围修改，单点查询 (差分).md",
     "题解/cfcode/div4/1134",
     "题解/cfcode/div4",
     "题解/cfcode/div3",
@@ -251,7 +256,6 @@
     "Obsidian Vault note/G - 数论/叉积.md",
     "Obsidian Vault note/D - 树上问题/重构树/kruskal 重构树.md",
     "Obsidian Vault note/D - 树上问题/LCA - 最近公共祖先/LCA树上倍增.md",
-    "Obsidian Vault note/G - 数论/组合数学/预处理 - 组合数.md",
     "Obsidian Vault note/B - 数据结构/数状数组/A - 一维树状数组 - 普通BIT/A02 - 范围增加，范围查询 - 2个树状数组.md",
     "Obsidian Vault note/I - 构造/贪心构造.md",
     "Obsidian Vault note/I - 构造/贪心构造/相关题目.md",
@@ -266,11 +270,7 @@
     "Obsidian Vault note/B - 数据结构/数状数组/A - 一维树状数组 - 普通BIT",
     "Obsidian Vault note/B - 数据结构/数状数组/B - 二维树状数组",
     "Obsidian Vault note/B - 数据结构/数状数组/B01 - （上升至二维）二维树状数组.md",
-    "Obsidian Vault note/B - 数据结构/数状数组/范围修改，单点查询 - 差分BIT.md",
-    "Obsidian Vault note/B - 数据结构/字典树 - 前缀树/B - (二进制 or 0-1)字典树/A1 - (变形)查找第 K (小 or 大) - 高位分类贪心/(变形)查找第 K (小 or 大) - 高位分类贪心.md",
-    "Obsidian Vault note/A - 基础算法/差分/差分.md",
     "Obsidian Vault note/G - 数论/上下取整 - ceil and floor",
-    "Obsidian Vault note/G - 数论/取模",
     "截图文件/Pasted image 20260909115054.png",
     "截图文件/Pasted image 20260910151833.jpg",
     "截图文件/Pasted image 20260826213144.png",

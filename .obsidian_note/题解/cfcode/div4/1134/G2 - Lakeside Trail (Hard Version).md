@@ -15,6 +15,17 @@ You have $k$ units of soil. One unit of soil increases the height of one section
 
 Find the minimum possible steepness of the trail after using at most $k$ units of soil.
 
+**Input**
+
+Each test contains multiple test cases. The first line contains the number of test cases $t$ ($1 \le t \le 10^4$). The description of the test cases follows.
+
+The first line of each test case contains two integers $n$ and $k$ ($3 \le n \le 10^6$, $0 \le k \le 10^{18}$) — the number of sections and the number of units of soil.
+
+The second line contains $n$ integers $h_1, h_2, \ldots, h_n$ ($1 \le h_i \le 10^9$) — the heights of the sections.
+
+It is guaranteed that the sum of $n$ over all test cases does not exceed $10^6$.
+
+
 
 ## 分析 ：
 
@@ -24,6 +35,8 @@ Find the minimum possible steepness of the trail after using at most $k$ units o
 
 ### 现在关键就是对于`check`函数这么去处理 ？ 
 在 `check(mid)` 函数中，我们需要根据限制条件计算出每个点最终的最低高度 $lim[i]$。 限制条件为：对于任意相邻的 $x$ 和 $y$，必须满足 $\vert{}lim[x] - lim[y]\vert{} \le mid$。 转化为单向约束即为：**$lim[y] \ge lim[x] - mid$**。 这意味着，如果某一座山峰很高，它的邻居不能太矮，至少要达到“当前山峰高度减去 $mid$”的高度。高度要求会像波浪一样向四周传递。
+
+
 
 ## 思路：
 ### 方法一：优先队列 / Dijkstra 扩散法
@@ -133,6 +146,8 @@ signed main() {
 
 
 
+
+
 ### 方法二：正反线性扫描 / DP 传递法
 
 **逻辑解析：** 因为整个地形只有一条**环形的一维路径**，且高度传递的衰减代价是恒定的 $mid$，我们根本不需要复杂的图论算法来动态寻找“最高点”。 高度的传递只可能有两个绝对的方向：**顺时针（向右）**和**逆时针（向左）**。
@@ -142,6 +157,7 @@ signed main() {
 2. **逆时针扫描**：只考虑高度向左传递的影响。从右向左遍历数组，执行类似的更新。
     
 3. **为什么是 $2N$ 次循环？** 因为地形是一个**环**。如果有一座极高的山峰位于数组末尾 $N-1$ 处，它向右传递高度时，需要跨过边界影响到 $0, 1, 2 \dots$ 等位置。跑两圈（$2N$ 次）在数学上可以绝对保证，任何一个最高点的约束都能绕着环传透整座山脉。
+
 
 #### 代码展示 ：
 ```c++
