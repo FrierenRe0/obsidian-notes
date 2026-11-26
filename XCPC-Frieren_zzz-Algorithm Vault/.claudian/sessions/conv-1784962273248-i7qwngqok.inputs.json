@@ -259,7 +259,35 @@
       "canonicalText": "好",
       "images": [],
       "contentDigest": "bc9591063dd21255c4b992111ec3cd4187a7ac427f3d03ddb3091502f1abb3e1",
-      "providerUserMessageId": "583b1e93-7d2f-4ff7-ae4c-7bbc16aa7311"
+      "providerUserMessageId": "583b1e93-7d2f-4ff7-ae4c-7bbc16aa7311",
+      "providerAssistantMessageId": "95adc013-17ef-4ab9-8023-78fc8cbdf168"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795683867629-61yfpzj",
+      "userTurnOrdinal": 23,
+      "state": "accepted",
+      "localMessageId": "msg-1795683867619-j2twso0",
+      "timestamp": 1795683867619,
+      "rawDisplayText": "对了还是这里不要把XCPC- 模板这个文件传上去了",
+      "canonicalText": "对了还是这里不要把XCPC- 模板这个文件传上去了",
+      "images": [],
+      "contentDigest": "4445b3b6ad14e7e59628403b406d09a361ac5b387419b68ed773c1e34b065391",
+      "providerUserMessageId": "790ea9e1-336a-43fe-924a-67cf74454df8",
+      "providerAssistantMessageId": "95521e4a-cc71-4d80-b56a-89f0381792e2"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795684128364-hfp6mq4",
+      "userTurnOrdinal": 24,
+      "state": "accepted",
+      "localMessageId": "msg-1795684128356-x4dqo31",
+      "timestamp": 1795684128356,
+      "rawDisplayText": "还有我把一些文件按移到父文件了",
+      "canonicalText": "还有我把一些文件按移到父文件了",
+      "images": [],
+      "contentDigest": "97721c6876a13aae3ce5b6a50147e876d9b7b6bc0f652c43bcd5a78f1fb82fbc",
+      "providerUserMessageId": "b9ab7701-ff22-4bb9-9484-17bc6e5db82a"
     }
   ]
 }
