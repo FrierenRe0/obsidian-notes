@@ -233,6 +233,33 @@
       "contentDigest": "c94c27355f72ec0fb1cad82df257a47bd72e0cf7934342a1ec646fc02da65755",
       "providerUserMessageId": "d9e122d9-10bc-4af6-8052-d239e7ff3e11",
       "providerAssistantMessageId": "7cd114fd-024b-40fd-bde2-5e855e7c15df"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795683331324-yyq4ymh",
+      "userTurnOrdinal": 21,
+      "state": "accepted",
+      "localMessageId": "msg-1795683331230-4t9clvd",
+      "timestamp": 1795683331230,
+      "rawDisplayText": "问问为什么我这里改了我的文件名字，就github上传不了了",
+      "canonicalText": "问问为什么我这里改了我的文件名字，就github上传不了了",
+      "images": [],
+      "contentDigest": "70c953505c6f8cd7dd4464092dea61e4828e081d4df7b9110cb67a0d9099d70e",
+      "providerUserMessageId": "5327776c-b11a-4419-8dd6-846cdcc9a03c",
+      "providerAssistantMessageId": "061212f5-4173-42b4-8102-05dbcf63fc44"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795683571797-g8wu93i",
+      "userTurnOrdinal": 22,
+      "state": "accepted",
+      "localMessageId": "msg-1795683571789-fubaqww",
+      "timestamp": 1795683571789,
+      "rawDisplayText": "好",
+      "canonicalText": "好",
+      "images": [],
+      "contentDigest": "bc9591063dd21255c4b992111ec3cd4187a7ac427f3d03ddb3091502f1abb3e1",
+      "providerUserMessageId": "583b1e93-7d2f-4ff7-ae4c-7bbc16aa7311"
     }
   ]
 }

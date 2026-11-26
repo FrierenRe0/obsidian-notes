@@ -213,11 +213,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 524.699951171875
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -232,7 +232,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "3d6757442f271c37",
+  "active": "b13f40ed0ddafddc",
   "lastOpenFiles": [
     "一些经典问题集合/逆序对.md",
     "Obsidian Vault note/B - 数据结构/线段树/(非递归) ZKW线段树 - 维护区间极值.md",
