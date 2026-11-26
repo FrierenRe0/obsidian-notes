@@ -287,7 +287,35 @@
       "canonicalText": "还有我把一些文件按移到父文件了",
       "images": [],
       "contentDigest": "97721c6876a13aae3ce5b6a50147e876d9b7b6bc0f652c43bcd5a78f1fb82fbc",
-      "providerUserMessageId": "b9ab7701-ff22-4bb9-9484-17bc6e5db82a"
+      "providerUserMessageId": "b9ab7701-ff22-4bb9-9484-17bc6e5db82a",
+      "providerAssistantMessageId": "5bdf351b-6b79-4e0d-8982-eeda2f0445ef"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795684368590-88rsc4t",
+      "userTurnOrdinal": 25,
+      "state": "accepted",
+      "localMessageId": "msg-1795684368582-s771mur",
+      "timestamp": 1795684368582,
+      "rawDisplayText": "好",
+      "canonicalText": "好",
+      "images": [],
+      "contentDigest": "bc9591063dd21255c4b992111ec3cd4187a7ac427f3d03ddb3091502f1abb3e1",
+      "providerUserMessageId": "25f89b21-c3f2-4538-83f9-d17bed9828f3",
+      "providerAssistantMessageId": "8894d6f3-e452-4b9a-83de-e768bc90512e"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795684881394-97qubgm",
+      "userTurnOrdinal": 5,
+      "state": "accepted",
+      "localMessageId": "msg-1795684881339-4r6omla",
+      "timestamp": 1795684881339,
+      "rawDisplayText": "我还是把它放回来了",
+      "canonicalText": "我还是把它放回来了",
+      "images": [],
+      "contentDigest": "9fc7987099c48dfa058a8573597898ec3cb174e79d353e64b28c2aabaacfe5ef",
+      "providerUserMessageId": "6757145b-d593-4eb5-b2b9-639f81ad4191"
     }
   ]
 }
