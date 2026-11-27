@@ -55,7 +55,7 @@
 ## 需要 Git 忽略的内容
 
 - `算法比赛常见单词/`（已加入根目录 `.gitignore`）
-- `Obsidian Vault note/` 需要推送到 GitHub（不要忽略）
+- `Frieren Vault note/` 需要推送到 GitHub（不要忽略）
 - 根目录 `.gitignore` 是唯一有效的忽略文件（git 根在 `个人仓库/`，不在 `.obsidian_note/`）
 
 ## 题卷 PDF
