@@ -11,10 +11,14 @@
             "id": "3d6757442f271c37",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Frieren Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/数据结构优化 + dp/单队优化/I. Gotta Go Fast - 单调队列 + dp.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "I. Gotta Go Fast - 单调队列 + dp"
             }
           }
         ]
@@ -90,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 255.89999389648438
   },
   "right": {
     "id": "f49b4aa84207e019",
@@ -230,6 +234,18 @@
   },
   "active": "1cff170b5ea531be",
   "lastOpenFiles": [
+    "Frieren Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/数据结构优化 + dp/LIS",
+    "Frieren Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/数据结构优化 + dp/单队优化",
+    "Frieren Vault note/G - 数论/埃式筛 线性筛.md",
+    "Frieren Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/数据结构优化 + dp/单队优化/I. Gotta Go Fast - 单调队列 + dp.md",
+    "Frieren Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/数据结构优化 + dp",
+    "Frieren Vault note/G - 数论/质因数.md",
+    "Frieren Vault note/A - 基础算法/二分/二分算法.md",
+    "Frieren Vault note/build/cf-74c.pdf",
+    "Frieren Vault note/problems/cf-74c/statement.md",
+    "Frieren Vault note/problems/cf-74c/samples",
+    "Frieren Vault note/problems/cf-74c/problem.toml",
+    "Frieren Vault note/problems/cf-74c",
     "CLAUDE.md.tmp.16360.1b30b448bcc2",
     "Obsidian Vault note/G - 数论/二进制/集合/子集问题 - 二进制.md",
     "Frieren Vault note/C - 图论/树/拓扑 - 有优先顺序的多源BFS/习题：/26网络赛第一场 ：C - Permutation Inversions.md",
@@ -253,19 +269,7 @@
     "Frieren Vault note/C - 图论/树/dfn序/习题 ：.md",
     "Frieren Vault note/C - 图论/树/dfn序/dfn序 - 对于树上节点的先序编码.md",
     "Frieren Vault note/C - 图论/图论算法/最短路问题/C - bellman-fold - 单源最短路 - 有负权.md",
-    "Frieren Vault note/C - 图论/图论算法/最短路问题/B - floyd - 多源最短路 - 无负环.md",
-    "Frieren Vault note/C - 图论/图论算法/最短路问题/A - Dijkstra - 单源最短路 - 无负权.md",
-    "Frieren Vault note/B - 数据结构/笛卡尔树/习题：/E - Yet Another Array Counting Problem.md",
-    "Frieren Vault note/B - 数据结构/数状数组/A - 一维树状数组 - 普通BIT/A02 - 范围增加，范围查询 - 2个树状数组.md",
-    "Frieren Vault note/B - 数据结构/数状数组/A - 一维树状数组 - 普通BIT/A01 - 单点修改，范围查询  or  范围修改，单点查询 (差分).md",
     "Frieren Vault note/B - 数据结构/字典树 - 前缀树/B - (二进制 or 0-1)字典树/A1 - (变形)查找第 K (小 or 大) - 高位分类贪心",
-    "Frieren Vault note/B - 数据结构/字典树 - 前缀树/B - (二进制 or 0-1)字典树/A0 - 查找极值 - 二进制高位暴力贪心",
-    "Frieren Vault note/G - 数论/二进制/集合",
-    "Frieren Vault note/G - 数论/二进制/位运算",
-    "Frieren Vault note/E - 动态规划 记忆搜索 - dp/动态规划 - 结合/二分+dp",
-    "Frieren Vault note/C - 图论/树/树的遍历",
-    "Frieren Vault note/C - 图论/树/树的直径",
-    "Frieren Vault note/C - 图论/树/拓扑 - 有优先顺序的多源BFS",
     "截图文件/屏幕截图 2026-04-08 170918.png",
     "截图文件/屏幕截图 2026-04-07 093348.png",
     "截图文件/屏幕截图 2026-04-07 120732.png",

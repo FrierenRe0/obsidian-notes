@@ -414,6 +414,47 @@
       "contentDigest": "fc28bd21b085d4aeb5fbcd0a20ef2bf2f59569864172c129c9f151a935ee2e4e",
       "providerUserMessageId": "969abefc-bfe2-45e8-bcf6-33ebafdc1795",
       "providerAssistantMessageId": "d4435b68-e27f-49e8-abe6-a6b28f8e5d96"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795861311024-y8w2kc4",
+      "userTurnOrdinal": 13,
+      "state": "accepted",
+      "localMessageId": "msg-1795861310919-fy2i3v8",
+      "timestamp": 1795861310919,
+      "rawDisplayText": "这里把我个人仓库的Frieren_zzz workstation不要上传到github上面",
+      "canonicalText": "这里把我个人仓库的Frieren_zzz workstation不要上传到github上面",
+      "images": [],
+      "contentDigest": "9c64667cb27d28165a18fce73f956093f2c8eee72cc4eccb611710c13c926d15",
+      "providerUserMessageId": "d57fae94-5136-419b-a8fe-ec4b7d71a228",
+      "providerAssistantMessageId": "215443ae-3206-4afa-af0c-3541c32b5f3c"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795861532696-568y24m",
+      "userTurnOrdinal": 14,
+      "state": "accepted",
+      "localMessageId": "msg-1795861532689-r0182jg",
+      "timestamp": 1795861532689,
+      "rawDisplayText": "现在为什么github传不上去了",
+      "canonicalText": "现在为什么github传不上去了",
+      "images": [],
+      "contentDigest": "a04b4c89799ea5f9b5f9f547d86d0a39a8b6196bb70b05ecd56c7371d7800e1f",
+      "providerUserMessageId": "f50fa783-34d5-431e-8531-11acb12f7bd6",
+      "providerAssistantMessageId": "ed9c3051-2326-40f3-a2f9-8d1d16f990d7"
+    },
+    {
+      "schemaVersion": 1,
+      "id": "msg-1795861816029-yb70hf3",
+      "userTurnOrdinal": 15,
+      "state": "accepted",
+      "localMessageId": "msg-1795861815978-ttlgkhr",
+      "timestamp": 1795861815978,
+      "rawDisplayText": "现在还有问题",
+      "canonicalText": "现在还有问题",
+      "images": [],
+      "contentDigest": "4b95af6c4404ea952458e679ab545d4dc2ddc822d54dde37d56abe612656072c",
+      "providerUserMessageId": "b5e86201-df47-4218-9856-3dee46db1755"
     }
   ]
 }
