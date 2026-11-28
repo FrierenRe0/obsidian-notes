@@ -10,7 +10,11 @@
 算法比赛常见单词/
 # XCPC- 模板（本地打印用，不上传）
 XCPC-Frieren_zzz-Algorithm Vault/XCPC- 模板/
+# Frieren_zzz workstation（本地刷题工作区，不上传）
+Frieren_zzz workstation/
 
 # 临时文件、缓存
 *.tmp
 *.log
+build/
+.xcpc/
